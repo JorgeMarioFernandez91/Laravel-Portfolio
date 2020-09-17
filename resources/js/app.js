@@ -23,6 +23,8 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 Vue.component('welcome', require('./components/Welcome.vue').default);
 
+Vue.component('navbar', require('./components/Navbar.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -39,4 +41,10 @@ window.onload = function () {
     const welcome = new Vue({
         el: '#welcome',
     });
+
+    const navbar = new Vue({
+        el: '#navbar',
+    });
 }
+
+

@@ -1,14 +1,20 @@
 <template>
     <div id="curtain">
+
+        
+        
         <div v-bind:class="[fadeIn == true ? 'makeVisible': 'makeInvisible' ]">
 
-            <div class="container" style="padding-top: 25%">
+            <div id="navbar">
+                <navbar></navbar>
+            </div>
+
+            <div class="container" style="padding-top: 20%">
 
                 <!-- main -->
                 <span class="row">
-                    <span class="col">
-                        <h1>My Portfolio</h1>
-                        <h2>Jorge Mario Fernandez</h2>
+                    <span class="col" style="padding-left: 20px">
+                        <h1 style="padding-left: 15px; font-size: 80px">My Portfolio</h1>
                     </span>
                     <span class="col">
                     
