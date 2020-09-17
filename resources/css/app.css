@@ -1,0 +1,7 @@
+.fadeinEffect {
+    transition: opacity 5s;
+}
+
+.text-color{
+    color:red;
+}
