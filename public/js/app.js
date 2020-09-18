@@ -2010,6 +2010,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Welcome Component mounted.');
@@ -37772,21 +37781,42 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "container", staticStyle: { "padding-top": "20%" } },
+      { staticClass: "container", staticStyle: { "padding-top": "18%" } },
       [
         _c("span", { staticClass: "row" }, [
           _c(
             "span",
-            { staticClass: "col ", staticStyle: { "padding-left": "20px" } },
+            {
+              staticClass: "col up-slide",
+              staticStyle: { "padding-left": "20px" }
+            },
             [
-              _c(
-                "h1",
-                {
-                  staticClass: "up-slide",
-                  staticStyle: { "padding-left": "15px", "font-size": "80px" }
-                },
-                [_vm._v("My Portfolio")]
-              )
+              _c("span", { staticClass: "row" }, [
+                _c(
+                  "h1",
+                  {
+                    staticStyle: { "padding-left": "15px", "font-size": "80px" }
+                  },
+                  [_vm._v("My Portfolio")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "row" }, [
+                _c(
+                  "ul",
+                  {
+                    staticStyle: {
+                      "list-style": "none",
+                      "padding-left": "20px"
+                    }
+                  },
+                  [
+                    _c("li", [_c("h3", [_vm._v("Full Stack Developer")])]),
+                    _vm._v(" "),
+                    _c("li", [_c("h3", [_vm._v("Web Developer")])])
+                  ]
+                )
+              ])
             ]
           ),
           _vm._v(" "),

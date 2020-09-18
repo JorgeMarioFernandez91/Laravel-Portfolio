@@ -9,12 +9,21 @@
                 <navbar></navbar>
             </div>
 
-            <div class="container" style="padding-top: 20%">
+            <div class="container" style="padding-top: 18%">
 
                 <!-- main -->
                 <span class="row">
-                    <span class="col " style="padding-left: 20px" >
-                        <h1 class="up-slide" style="padding-left: 15px; font-size: 80px">My Portfolio</h1>
+                    <span class="col up-slide" style="padding-left: 20px" >
+                        <span class="row">
+                            <h1  style="padding-left: 15px; font-size: 80px">My Portfolio</h1>
+                        </span>
+                        <span class="row">
+                            <ul  style="list-style: none; padding-left: 20px;">
+                                <li> <h3>Full Stack Developer</h3> </li>
+                                <li> <h3>Web Developer</h3> </li>
+                            </ul>
+                        </span>
+                        
                     </span>
                     <span class="col" style="padding: 25px;">
                         <div id="left-slide" >
