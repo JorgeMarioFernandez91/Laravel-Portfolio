@@ -2005,6 +2005,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Welcome Component mounted.');
@@ -37668,7 +37673,7 @@ var staticRenderFns = [
         "nav",
         { staticClass: "navbar navbar-expand-lg navbar-light bg-light" },
         [
-          _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
+          _c("a", { staticClass: "navbar-brand", attrs: { href: "/" } }, [
             _vm._v("Jorge Mario Fernandez")
           ]),
           _vm._v(" "),
@@ -37695,7 +37700,7 @@ var staticRenderFns = [
               attrs: { id: "navbarNavAltMarkup" }
             },
             [
-              _c("div", { staticClass: "navbar-nav " }, [
+              _c("div", { staticClass: "navbar-nav" }, [
                 _c(
                   "a",
                   { staticClass: "nav-item nav-link ", attrs: { href: "#" } },
@@ -37772,11 +37777,12 @@ var staticRenderFns = [
         _c("span", { staticClass: "row" }, [
           _c(
             "span",
-            { staticClass: "col", staticStyle: { "padding-left": "20px" } },
+            { staticClass: "col ", staticStyle: { "padding-left": "20px" } },
             [
               _c(
                 "h1",
                 {
+                  staticClass: "up-slide",
                   staticStyle: { "padding-left": "15px", "font-size": "80px" }
                 },
                 [_vm._v("My Portfolio")]
@@ -37784,7 +37790,25 @@ var staticRenderFns = [
             ]
           ),
           _vm._v(" "),
-          _c("span", { staticClass: "col" })
+          _c("span", { staticClass: "col", staticStyle: { padding: "25px" } }, [
+            _c("div", { attrs: { id: "left-slide" } }, [
+              _c("a", { staticClass: "work-links", attrs: { href: "" } }, [
+                _vm._v("1")
+              ]),
+              _vm._v(" "),
+              _c("a", { staticClass: "work-links", attrs: { href: "" } }, [
+                _vm._v("2")
+              ]),
+              _vm._v(" "),
+              _c("a", { staticClass: "work-links", attrs: { href: "" } }, [
+                _vm._v("3")
+              ]),
+              _vm._v(" "),
+              _c("a", { staticClass: "work-links", attrs: { href: "" } }, [
+                _vm._v("4")
+              ])
+            ])
+          ])
         ])
       ]
     )

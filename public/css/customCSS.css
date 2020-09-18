@@ -1,26 +1,15 @@
 .makeInvisible {
     opacity: 0
 }
-
-.makeVisible {
-    animation-delay: 1.5s;  /* waits until curtain is up */
-    opacity: 0;             /* initial opacity */
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-    animation-duration: 3s;
+  
+#curtain {  
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation-name: raiseCurtain;
+    animation-duration: 2.5s;
+    height: 100vh;  /* height of view port */
+    min-width: 100%;
+    background-color: black;
     -webkit-animation-fill-mode: forwards; /* keeps animation at final state rather than boomeranging back! */
-
-}
-
-
-@keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
 }
 
 @keyframes raiseCurtain {
@@ -33,15 +22,68 @@
         height: 0;
     }
 }
-  
-#curtain {  
-    /* This section calls the slideInFromLeft animation we defined above */
-    animation-name: raiseCurtain;
-    animation-duration: 2.5s;
-    height: 100vh;  /* height of view port */
-    min-width: 100%;
-    background-color: black;
+
+.makeVisible {
+    animation-delay: 1.5s;  /* waits until curtain is up */
+    opacity: 0;             /* initial opacity */
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-duration: 3s;
     -webkit-animation-fill-mode: forwards; /* keeps animation at final state rather than boomeranging back! */
 
+}
+
+@keyframes fadeInOpacity {
+	0% {
+        opacity: 0;
+	}
+	100% {
+        opacity: 1;
+	}
+}
+
+.up-slide {
+    animation-delay: 1.5s;  /* waits until curtain is up */
+    animation-name: slideUp;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards; /* keeps animation at final state rather than boomeranging back! */
+
+}
+
+@keyframes slideUp {
+	0% {
+        transform: translateY(100%);
+	}
+	100% {
+        transform: translateY(0%);
+	}
+}
+
+#left-slide {
+    animation-delay: 2s;  /* waits until curtain is up */
+    animation-name: slideIn;
+    animation-duration: 2.5s;
+
+    -webkit-animation-fill-mode: forwards; /* keeps animation at final state rather than boomeranging back! */
+
+}
+
+@keyframes slideIn {
+    0% {
+      /* transform: translateY(0); */
+        transform: translateX(100%);    }
+    100% {
+      /* transform: translateY(-100%); */
+        transform: translateX(0%);  
+    }
+}
+
+a.work-links {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    /* padding-right: 50px; */
+    padding: 50px;
 }
   
