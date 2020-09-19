@@ -63,7 +63,7 @@
 }
 
 /* after curtain raises work links slide in the from the right */
-#left-slide {
+.left-slide {
     animation-delay: 2s;  /* waits until curtain is up */
     animation-name: slideIn;
     animation-duration: 2.5s;
@@ -80,13 +80,20 @@
     }
 }
 
+.work-desc-slide{
+    /* padding: 15px 0 0 50px; */
+    animation-name: slideIn;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards; /* keeps animation at final state rather than boomeranging back! */
+}
+
 /* removes the formatting for <a></a> elements */
 a.work-links {
     text-decoration: none;
     color: black;
-    font-size: 25px;
-    /* padding-right: 50px; */
-    padding: 50px;
+    padding: 40px 70px 0px 0px;
+    display: inline-block;
+    font-size: 30px;
 }
 
 /* for testing purposes */
@@ -104,5 +111,18 @@ a.work-links {
 /* makes work links invisible */
 .makeWorkInvisible {
     opacity: 0
+}
+
+.increaseHoverArea {
+    /* padding-left: 100px; */
+    /* padding: 40px 500px 0px 50px; */
+    padding-right: 400px;
+    /* border-style: solid;
+    border-color: coral; */
+}
+
+.testBorder {
+    /* border-style: solid;
+    border-color: coral; */
 }
   

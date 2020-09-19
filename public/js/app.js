@@ -2036,9 +2036,81 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Welcome Component mounted.');
+  mounted: function mounted() {// console.log('Welcome Component mounted.')
   },
   updated: function updated() {// console.log("updated");
   },
@@ -2059,10 +2131,11 @@ __webpack_require__.r(__webpack_exports__);
     fade: function fade() {
       this.fadeIn = !this.fadeIn;
     },
+    doSomething: function doSomething() {
+      console.log("clicked something!!!");
+    },
     updateWork1: function updateWork1() {
       // allows the hovered element to stay visible while hiding the others
-      this.hoverWork1 = !this.hoverWork1;
-
       if (this.hoverWork1 == true) {
         this.showWork2 = false;
         this.showWork3 = false;
@@ -2074,8 +2147,6 @@ __webpack_require__.r(__webpack_exports__);
       }
     },
     updateWork2: function updateWork2() {
-      this.hoverWork2 = !this.hoverWork2;
-
       if (this.hoverWork2 == true) {
         this.showWork1 = false;
         this.showWork3 = false;
@@ -2087,8 +2158,6 @@ __webpack_require__.r(__webpack_exports__);
       }
     },
     updateWork3: function updateWork3() {
-      this.hoverWork3 = !this.hoverWork3;
-
       if (this.hoverWork3 == true) {
         this.showWork1 = false;
         this.showWork2 = false;
@@ -2100,8 +2169,6 @@ __webpack_require__.r(__webpack_exports__);
       }
     },
     updateWork4: function updateWork4() {
-      this.hoverWork4 = !this.hoverWork4;
-
       if (this.hoverWork4 == true) {
         this.showWork1 = false;
         this.showWork2 = false;
@@ -2111,6 +2178,45 @@ __webpack_require__.r(__webpack_exports__);
         this.showWork2 = true;
         this.showWork3 = true;
       }
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/WorkLink.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/WorkLink.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "WorkLink",
+  props: ['workNum', 'workTitle', 'workDesc'],
+  mounted: function mounted() {
+    console.log('Worklink Component mounted.');
+  },
+  data: function data() {
+    return {
+      fadeIn: true,
+      hoverWork: false,
+      showWork: true
+    };
+  },
+  methods: {
+    childMethod: function childMethod() {
+      //  this.$emit()
+      console.log("something happens");
     }
   }
 });
@@ -37852,121 +37958,364 @@ var render = function() {
             _c("span", { staticClass: "row" }, [
               _vm._m(0),
               _vm._v(" "),
-              _c(
-                "span",
-                { staticClass: "col", staticStyle: { padding: "25px" } },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "float-right", attrs: { id: "left-slide" } },
-                    [
-                      _c(
-                        "a",
-                        { staticClass: "work-links", attrs: { href: "" } },
-                        [
+              _c("span", { staticClass: "col-lg" }, [
+                _c("span", { staticClass: "row " }, [
+                  _c("div", { staticClass: "left-slide " }, [
+                    _vm.showWork1
+                      ? _c("span", [
                           _c(
-                            "span",
+                            "div",
                             {
-                              class: {
-                                makeWorkVisible: _vm.showWork1,
-                                makeWorkInvisible: _vm.showWork1 == false
+                              staticStyle: {
+                                display: "inline-block",
+                                "margin-right": "30px"
                               },
                               on: {
                                 mouseover: function($event) {
-                                  return _vm.updateWork1()
+                                  _vm.hoverWork1 = true
+                                  _vm.updateWork1()
+                                },
+                                click: function($event) {
+                                  _vm.hoverWork1 = true
+                                  _vm.updateWork1()
                                 },
                                 mouseleave: function($event) {
-                                  return _vm.updateWork1()
+                                  _vm.hoverWork1 = false
+                                  _vm.updateWork1()
                                 }
                               }
                             },
-                            [_vm._v("1")]
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "row",
+                                  staticStyle: { padding: "0 0 20px 35px" }
+                                },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "work-links testBorder",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c(
+                                        "span",
+                                        {
+                                          class: {
+                                            makeWorkVisible: _vm.showWork1,
+                                            increaseHoverArea: _vm.hoverWork1
+                                          }
+                                        },
+                                        [_vm._v("1")]
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "row",
+                                  staticStyle: { padding: "0 0 20px 35px" }
+                                },
+                                [
+                                  _vm.hoverWork1
+                                    ? _c(
+                                        "span",
+                                        { staticClass: "testBorder" },
+                                        [
+                                          _c(
+                                            "h5",
+                                            { staticClass: "work-desc-slide" },
+                                            [
+                                              _vm._v(
+                                                "La Camila Coffee Co Website"
+                                              )
+                                            ]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "h6",
+                                            { staticClass: "work-desc-slide" },
+                                            [
+                                              _vm._v(
+                                                "An e-commerce website I designed and developed to increase the exposure of an international company which specializes in growing and processing coffee in an environmentally conscious manner."
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    : _vm._e()
+                                ]
+                              )
+                            ]
                           )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        { staticClass: "work-links", attrs: { href: "" } },
-                        [
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.showWork2
+                      ? _c("span", [
                           _c(
-                            "span",
+                            "div",
                             {
-                              class: {
-                                makeWorkVisible: _vm.showWork2,
-                                makeWorkInvisible: _vm.showWork2 == false
+                              staticStyle: {
+                                display: "inline-block",
+                                "margin-right": "30px"
                               },
                               on: {
                                 mouseover: function($event) {
-                                  return _vm.updateWork2()
+                                  _vm.hoverWork2 = true
+                                  _vm.updateWork2()
+                                },
+                                click: function($event) {
+                                  _vm.hoverWork2 = true
+                                  _vm.updateWork2()
                                 },
                                 mouseleave: function($event) {
-                                  return _vm.updateWork2()
+                                  _vm.hoverWork2 = false
+                                  _vm.updateWork2()
                                 }
                               }
                             },
-                            [_vm._v("2")]
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "row",
+                                  staticStyle: { padding: "0 0 20px 35px" }
+                                },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "work-links testBorder",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c(
+                                        "span",
+                                        {
+                                          class: {
+                                            makeWorkVisible: _vm.showWork2,
+                                            increaseHoverArea: _vm.hoverWork2
+                                          }
+                                        },
+                                        [_vm._v("2")]
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "row",
+                                  staticStyle: { padding: "0 0 20px 35px" }
+                                },
+                                [
+                                  _vm.hoverWork2
+                                    ? _c("span", [
+                                        _c(
+                                          "h5",
+                                          { staticClass: "work-desc-slide" },
+                                          [_vm._v("Clicker Start Up Game")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "h6",
+                                          { staticClass: "work-desc-slide" },
+                                          [
+                                            _vm._v(
+                                              "An online web game created to maximize user retention by providing fun and engaging gameplay. An homage to Cookie Clicker."
+                                            )
+                                          ]
+                                        )
+                                      ])
+                                    : _vm._e()
+                                ]
+                              )
+                            ]
                           )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        { staticClass: "work-links", attrs: { href: "" } },
-                        [
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.showWork3
+                      ? _c("span", [
                           _c(
-                            "span",
+                            "div",
                             {
-                              class: {
-                                makeWorkVisible: _vm.showWork3,
-                                makeWorkInvisible: _vm.showWork3 == false
+                              staticStyle: {
+                                display: "inline-block",
+                                "margin-right": "30px"
                               },
                               on: {
                                 mouseover: function($event) {
-                                  return _vm.updateWork3()
+                                  _vm.hoverWork3 = true
+                                  _vm.updateWork3()
+                                },
+                                click: function($event) {
+                                  _vm.hoverWork3 = true
+                                  _vm.updateWork3()
                                 },
                                 mouseleave: function($event) {
-                                  return _vm.updateWork3()
+                                  _vm.hoverWork3 = false
+                                  _vm.updateWork3()
                                 }
                               }
                             },
-                            [_vm._v("3")]
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "row",
+                                  staticStyle: { padding: "0 0 20px 35px" }
+                                },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "work-links testBorder",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c(
+                                        "span",
+                                        {
+                                          class: {
+                                            makeWorkVisible: _vm.showWork3,
+                                            increaseHoverArea: _vm.hoverWork3
+                                          }
+                                        },
+                                        [_vm._v("3")]
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "row",
+                                  staticStyle: { padding: "0 0 20px 35px" }
+                                },
+                                [
+                                  _vm.hoverWork3
+                                    ? _c("span", [
+                                        _c(
+                                          "h5",
+                                          { staticClass: "work-desc-slide" },
+                                          [_vm._v("Portfolio")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "h6",
+                                          { staticClass: "work-desc-slide" },
+                                          [
+                                            _vm._v(
+                                              "My online portfolio you are currently visiting!"
+                                            )
+                                          ]
+                                        )
+                                      ])
+                                    : _vm._e()
+                                ]
+                              )
+                            ]
                           )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        {
-                          staticClass: "work-links",
-                          staticStyle: { "padding-right": "0" },
-                          attrs: { href: "" }
-                        },
-                        [
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.showWork4
+                      ? _c("span", [
                           _c(
-                            "span",
+                            "div",
                             {
-                              class: {
-                                makeWorkVisible: _vm.showWork4,
-                                makeWorkInvisible: _vm.showWork4 == false
-                              },
+                              staticStyle: { display: "inline-block" },
                               on: {
                                 mouseover: function($event) {
-                                  return _vm.updateWork4()
+                                  _vm.hoverWork4 = true
+                                  _vm.updateWork4()
+                                },
+                                click: function($event) {
+                                  _vm.hoverWork4 = true
+                                  _vm.updateWork4()
                                 },
                                 mouseleave: function($event) {
-                                  return _vm.updateWork4()
+                                  _vm.hoverWork4 = false
+                                  _vm.updateWork4()
                                 }
                               }
                             },
-                            [_vm._v("4")]
+                            [
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "row",
+                                  staticStyle: { padding: "0 0 20px 35px" }
+                                },
+                                [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "work-links testBorder",
+                                      attrs: { href: "#" }
+                                    },
+                                    [
+                                      _c(
+                                        "span",
+                                        {
+                                          class: {
+                                            makeWorkVisible: _vm.showWork4,
+                                            increaseHoverArea: _vm.hoverWork4
+                                          }
+                                        },
+                                        [_vm._v("4")]
+                                      )
+                                    ]
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "row",
+                                  staticStyle: { padding: "0 0 20px 35px" }
+                                },
+                                [
+                                  _vm.hoverWork4
+                                    ? _c("span", [
+                                        _c(
+                                          "h5",
+                                          { staticClass: "work-desc-slide" },
+                                          [_vm._v("Detecting Galaxies")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "h6",
+                                          { staticClass: "work-desc-slide" },
+                                          [
+                                            _vm._v(
+                                              "My Computer Science graduating thesis."
+                                            )
+                                          ]
+                                        )
+                                      ])
+                                    : _vm._e()
+                                ]
+                              )
+                            ]
                           )
-                        ]
-                      )
-                    ]
-                  )
-                ]
-              )
+                        ])
+                      : _vm._e()
+                  ])
+                ])
+              ])
             ])
           ]
         )
@@ -37981,12 +38330,15 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "span",
-      { staticClass: "col up-slide", staticStyle: { "padding-left": "20px" } },
+      {
+        staticClass: "col-xl up-slide",
+        staticStyle: { "padding-left": "20px" }
+      },
       [
         _c("span", { staticClass: "row" }, [
           _c(
             "h1",
-            { staticStyle: { "padding-left": "15px", "font-size": "80px" } },
+            { staticStyle: { "padding-left": "15px", "font-size": "70px" } },
             [_vm._v("My Portfolio")]
           )
         ]),
@@ -38006,6 +38358,40 @@ var staticRenderFns = [
     )
   }
 ]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/WorkLink.vue?vue&type=template&id=4943c296&":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/WorkLink.vue?vue&type=template&id=4943c296& ***!
+  \***********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      on: {
+        click: function($event) {
+          return _vm.childMethod()
+        }
+      }
+    },
+    [_vm._v("\n    something\n")]
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -50202,6 +50588,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 Vue.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]);
 Vue.component('welcome', __webpack_require__(/*! ./components/Welcome.vue */ "./resources/js/components/Welcome.vue")["default"]);
 Vue.component('navbar', __webpack_require__(/*! ./components/Navbar.vue */ "./resources/js/components/Navbar.vue")["default"]);
+Vue.component('worklink', __webpack_require__(/*! ./components/WorkLink.vue */ "./resources/js/components/WorkLink.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -50217,6 +50604,9 @@ window.onload = function () {
   });
   var navbar = new Vue({
     el: '#navbar'
+  });
+  var worklink = new Vue({
+    el: '#worklink'
   });
 };
 
@@ -50469,6 +50859,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Welcome_vue_vue_type_template_id_51777872___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Welcome_vue_vue_type_template_id_51777872___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/WorkLink.vue":
+/*!**********************************************!*\
+  !*** ./resources/js/components/WorkLink.vue ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _WorkLink_vue_vue_type_template_id_4943c296___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./WorkLink.vue?vue&type=template&id=4943c296& */ "./resources/js/components/WorkLink.vue?vue&type=template&id=4943c296&");
+/* harmony import */ var _WorkLink_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./WorkLink.vue?vue&type=script&lang=js& */ "./resources/js/components/WorkLink.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _WorkLink_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _WorkLink_vue_vue_type_template_id_4943c296___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _WorkLink_vue_vue_type_template_id_4943c296___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/WorkLink.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/WorkLink.vue?vue&type=script&lang=js&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/WorkLink.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_WorkLink_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./WorkLink.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/WorkLink.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_WorkLink_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/WorkLink.vue?vue&type=template&id=4943c296&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/WorkLink.vue?vue&type=template&id=4943c296& ***!
+  \*****************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_WorkLink_vue_vue_type_template_id_4943c296___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./WorkLink.vue?vue&type=template&id=4943c296& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/WorkLink.vue?vue&type=template&id=4943c296&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_WorkLink_vue_vue_type_template_id_4943c296___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_WorkLink_vue_vue_type_template_id_4943c296___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
