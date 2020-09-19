@@ -2019,22 +2019,98 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Welcome Component mounted.');
   },
-  updated: function updated() {
-    console.log("updated");
+  updated: function updated() {// console.log("updated");
   },
   data: function data() {
     return {
-      fadeIn: true
+      fadeIn: true,
+      hoverWork1: false,
+      hoverWork2: false,
+      hoverWork3: false,
+      hoverWork4: false,
+      showWork1: true,
+      showWork2: true,
+      showWork3: true,
+      showWork4: true
     };
   },
   methods: {
     fade: function fade() {
       this.fadeIn = !this.fadeIn;
-      console.log(this.fadeIn);
+    },
+    updateWork1: function updateWork1() {
+      // allows the hovered element to stay visible while hiding the others
+      this.hoverWork1 = !this.hoverWork1;
+
+      if (this.hoverWork1 == true) {
+        this.showWork2 = false;
+        this.showWork3 = false;
+        this.showWork4 = false;
+      } else {
+        this.showWork2 = true;
+        this.showWork3 = true;
+        this.showWork4 = true;
+      }
+    },
+    updateWork2: function updateWork2() {
+      this.hoverWork2 = !this.hoverWork2;
+
+      if (this.hoverWork2 == true) {
+        this.showWork1 = false;
+        this.showWork3 = false;
+        this.showWork4 = false;
+      } else {
+        this.showWork1 = true;
+        this.showWork3 = true;
+        this.showWork4 = true;
+      }
+    },
+    updateWork3: function updateWork3() {
+      this.hoverWork3 = !this.hoverWork3;
+
+      if (this.hoverWork3 == true) {
+        this.showWork1 = false;
+        this.showWork2 = false;
+        this.showWork4 = false;
+      } else {
+        this.showWork1 = true;
+        this.showWork2 = true;
+        this.showWork4 = true;
+      }
+    },
+    updateWork4: function updateWork4() {
+      this.hoverWork4 = !this.hoverWork4;
+
+      if (this.hoverWork4 == true) {
+        this.showWork1 = false;
+        this.showWork2 = false;
+        this.showWork3 = false;
+      } else {
+        this.showWork1 = true;
+        this.showWork2 = true;
+        this.showWork3 = true;
+      }
     }
   }
 });
@@ -37769,7 +37845,131 @@ var render = function() {
       [
         _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
         _vm._v(" "),
-        _vm._m(0)
+        _c(
+          "div",
+          { staticClass: "container", staticStyle: { "padding-top": "18%" } },
+          [
+            _c("span", { staticClass: "row" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _c(
+                "span",
+                { staticClass: "col", staticStyle: { padding: "25px" } },
+                [
+                  _c(
+                    "div",
+                    { staticClass: "float-right", attrs: { id: "left-slide" } },
+                    [
+                      _c(
+                        "a",
+                        { staticClass: "work-links", attrs: { href: "" } },
+                        [
+                          _c(
+                            "span",
+                            {
+                              class: {
+                                makeWorkVisible: _vm.showWork1,
+                                makeWorkInvisible: _vm.showWork1 == false
+                              },
+                              on: {
+                                mouseover: function($event) {
+                                  return _vm.updateWork1()
+                                },
+                                mouseleave: function($event) {
+                                  return _vm.updateWork1()
+                                }
+                              }
+                            },
+                            [_vm._v("1")]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "work-links", attrs: { href: "" } },
+                        [
+                          _c(
+                            "span",
+                            {
+                              class: {
+                                makeWorkVisible: _vm.showWork2,
+                                makeWorkInvisible: _vm.showWork2 == false
+                              },
+                              on: {
+                                mouseover: function($event) {
+                                  return _vm.updateWork2()
+                                },
+                                mouseleave: function($event) {
+                                  return _vm.updateWork2()
+                                }
+                              }
+                            },
+                            [_vm._v("2")]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        { staticClass: "work-links", attrs: { href: "" } },
+                        [
+                          _c(
+                            "span",
+                            {
+                              class: {
+                                makeWorkVisible: _vm.showWork3,
+                                makeWorkInvisible: _vm.showWork3 == false
+                              },
+                              on: {
+                                mouseover: function($event) {
+                                  return _vm.updateWork3()
+                                },
+                                mouseleave: function($event) {
+                                  return _vm.updateWork3()
+                                }
+                              }
+                            },
+                            [_vm._v("3")]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        {
+                          staticClass: "work-links",
+                          staticStyle: { "padding-right": "0" },
+                          attrs: { href: "" }
+                        },
+                        [
+                          _c(
+                            "span",
+                            {
+                              class: {
+                                makeWorkVisible: _vm.showWork4,
+                                makeWorkInvisible: _vm.showWork4 == false
+                              },
+                              on: {
+                                mouseover: function($event) {
+                                  return _vm.updateWork4()
+                                },
+                                mouseleave: function($event) {
+                                  return _vm.updateWork4()
+                                }
+                              }
+                            },
+                            [_vm._v("4")]
+                          )
+                        ]
+                      )
+                    ]
+                  )
+                ]
+              )
+            ])
+          ]
+        )
       ]
     )
   ])
@@ -37780,65 +37980,27 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c(
-      "div",
-      { staticClass: "container", staticStyle: { "padding-top": "18%" } },
+      "span",
+      { staticClass: "col up-slide", staticStyle: { "padding-left": "20px" } },
       [
         _c("span", { staticClass: "row" }, [
           _c(
-            "span",
-            {
-              staticClass: "col up-slide",
-              staticStyle: { "padding-left": "20px" }
-            },
+            "h1",
+            { staticStyle: { "padding-left": "15px", "font-size": "80px" } },
+            [_vm._v("My Portfolio")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("span", { staticClass: "row" }, [
+          _c(
+            "ul",
+            { staticStyle: { "list-style": "none", "padding-left": "20px" } },
             [
-              _c("span", { staticClass: "row" }, [
-                _c(
-                  "h1",
-                  {
-                    staticStyle: { "padding-left": "15px", "font-size": "80px" }
-                  },
-                  [_vm._v("My Portfolio")]
-                )
-              ]),
+              _c("li", [_c("h3", [_vm._v("Full Stack Developer")])]),
               _vm._v(" "),
-              _c("span", { staticClass: "row" }, [
-                _c(
-                  "ul",
-                  {
-                    staticStyle: {
-                      "list-style": "none",
-                      "padding-left": "20px"
-                    }
-                  },
-                  [
-                    _c("li", [_c("h3", [_vm._v("Full Stack Developer")])]),
-                    _vm._v(" "),
-                    _c("li", [_c("h3", [_vm._v("Web Developer")])])
-                  ]
-                )
-              ])
+              _c("li", [_c("h3", [_vm._v("Web Developer")])])
             ]
-          ),
-          _vm._v(" "),
-          _c("span", { staticClass: "col", staticStyle: { padding: "25px" } }, [
-            _c("div", { attrs: { id: "left-slide" } }, [
-              _c("a", { staticClass: "work-links", attrs: { href: "" } }, [
-                _vm._v("1")
-              ]),
-              _vm._v(" "),
-              _c("a", { staticClass: "work-links", attrs: { href: "" } }, [
-                _vm._v("2")
-              ]),
-              _vm._v(" "),
-              _c("a", { staticClass: "work-links", attrs: { href: "" } }, [
-                _vm._v("3")
-              ]),
-              _vm._v(" "),
-              _c("a", { staticClass: "work-links", attrs: { href: "" } }, [
-                _vm._v("4")
-              ])
-            ])
-          ])
+          )
         ])
       ]
     )

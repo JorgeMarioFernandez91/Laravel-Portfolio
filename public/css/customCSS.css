@@ -1,7 +1,8 @@
 .makeInvisible {
     opacity: 0
 }
-  
+
+/* when the website loads we have a black curatin raise */
 #curtain {  
     /* This section calls the slideInFromLeft animation we defined above */
     animation-name: raiseCurtain;
@@ -23,6 +24,7 @@
     }
 }
 
+/* shows the elements after the curtain lifts */
 .makeVisible {
     animation-delay: 1.5s;  /* waits until curtain is up */
     opacity: 0;             /* initial opacity */
@@ -43,12 +45,12 @@
 	}
 }
 
+/* after curtain raises lets elements move up the screen */
 .up-slide {
     animation-delay: 1.5s;  /* waits until curtain is up */
     animation-name: slideUp;
     animation-duration: 3s;
     -webkit-animation-fill-mode: forwards; /* keeps animation at final state rather than boomeranging back! */
-
 }
 
 @keyframes slideUp {
@@ -60,13 +62,12 @@
 	}
 }
 
+/* after curtain raises work links slide in the from the right */
 #left-slide {
     animation-delay: 2s;  /* waits until curtain is up */
     animation-name: slideIn;
     animation-duration: 2.5s;
-
     -webkit-animation-fill-mode: forwards; /* keeps animation at final state rather than boomeranging back! */
-
 }
 
 @keyframes slideIn {
@@ -79,11 +80,29 @@
     }
 }
 
+/* removes the formatting for <a></a> elements */
 a.work-links {
     text-decoration: none;
     color: black;
     font-size: 25px;
     /* padding-right: 50px; */
     padding: 50px;
+}
+
+/* for testing purposes */
+.testHover {
+    color: red;
+}
+
+/* makes work links visible while adding animation */
+.makeWorkVisible {
+    opacity: 1;
+    animation-duration: 3s;
+    animation-name: fadeInOpacity;
+}
+
+/* makes work links invisible */
+.makeWorkInvisible {
+    opacity: 0
 }
   
