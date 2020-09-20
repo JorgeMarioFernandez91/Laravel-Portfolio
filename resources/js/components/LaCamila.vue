@@ -1,8 +1,14 @@
 <template>
-    <div class="container">
-        
-        La Camila!!
-        
+    <div id="curtain">        
+        <div v-bind:class="[fadeIn == true ? 'makeVisible': 'makeInvisible' ]">
+
+            <div id="navbar">
+                <navbar></navbar>
+            </div>
+
+            la camila page
+
+        </div>
     </div>
 </template>
 

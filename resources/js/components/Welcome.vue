@@ -1,6 +1,6 @@
 <template>
     <div id="curtain">        
-        <div v-bind:class="[fadeIn == true ? 'makeVisible': 'makeInvisible' ]">
+        <div class="makeVisible">
 
             <div id="navbar">
                 <navbar></navbar>
@@ -36,7 +36,7 @@
                                             @mouseleave="hoverWork1 = false; updateWork1()"
                                             style="display: inline-block; margin-right: 30px;">
                                             <div class="row" style="padding: 0 0 20px 35px;">
-                                                <a href="#" class="work-links testBorder" > 
+                                                <a href="/lacamila" class="work-links testBorder" > 
                                                     <span    
                                                         v-bind:class="{'makeWorkVisible': showWork1, 'increaseHoverArea': hoverWork1}">1</span>  
                                                 </a >
@@ -132,7 +132,6 @@
             // console.log("updated");
         },
         data: () => ({
-            fadeIn: true,
             hoverWork1: false,
             hoverWork2: false,
             hoverWork3: false,
@@ -144,14 +143,9 @@
             showWork4: true,
         }),
         methods: {
-            fade(){
-                this.fadeIn = !this.fadeIn;
-            },
-            doSomething(){
-                console.log("clicked something!!!");
-            },
+            
             updateWork1(){ // allows the hovered element to stay visible while hiding the others
-                console.log("something");
+                // console.log("something");
                 if (this.hoverWork1 == true){
                     this.showWork2 = false;
                     this.showWork3 = false;
