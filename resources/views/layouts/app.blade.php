@@ -16,10 +16,11 @@
         
         
     </head>
-    <body class="">
+    <body >
 
-        <div id="welcome" >
-            <welcome></welcome>
+        <div id="app" >
+            @yield('welcome')
+            @yield('lacamila')
         </div>
 
         <script src="{{ asset('js/app.js') }}" defer></script>

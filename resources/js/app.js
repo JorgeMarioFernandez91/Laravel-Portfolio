@@ -27,6 +27,8 @@ Vue.component('navbar', require('./components/Navbar.vue').default);
 
 Vue.component('worklink', require('./components/WorkLink.vue').default);
 
+Vue.component('lacamila', require('./components/LaCamila.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -40,17 +42,22 @@ Vue.component('worklink', require('./components/WorkLink.vue').default);
 
 
 window.onload = function () {
-    const welcome = new Vue({
-        el: '#welcome',
+    const app = new Vue({
+        el: '#app',
     });
 
-    const navbar = new Vue({
-        el: '#navbar',
-    });
 
-    const worklink = new Vue({
-        el: '#worklink',
-    });
+    // const welcome = new Vue({
+    //     el: '#welcome',
+    // });
+
+    // const navbar = new Vue({
+    //     el: '#navbar',
+    // });
+
+    // const worklink = new Vue({
+    //     el: '#worklink',
+    // });
 }
 
 
