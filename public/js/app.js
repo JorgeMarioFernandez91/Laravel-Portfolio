@@ -2103,12 +2103,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {// console.log('Welcome Component mounted.')
   },
@@ -2136,6 +2130,8 @@ __webpack_require__.r(__webpack_exports__);
     },
     updateWork1: function updateWork1() {
       // allows the hovered element to stay visible while hiding the others
+      console.log("something");
+
       if (this.hoverWork1 == true) {
         this.showWork2 = false;
         this.showWork3 = false;
@@ -2199,17 +2195,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "WorkLink",
-  props: ['workNum', 'workTitle', 'workDesc'],
+  props: {
+    workNum: {
+      type: String
+    },
+    workTitle: {
+      type: String
+    },
+    workDesc: {
+      type: String
+    },
+    hoverWork: {
+      type: Boolean
+    }
+  },
   mounted: function mounted() {
     console.log('Worklink Component mounted.');
   },
   data: function data() {
     return {
       fadeIn: true,
-      hoverWork: false,
       showWork: true
     };
   },
@@ -37961,6 +37968,13 @@ var render = function() {
               _c("span", { staticClass: "col-lg" }, [
                 _c("span", { staticClass: "row " }, [
                   _c("div", { staticClass: "left-slide " }, [
+                    _c(
+                      "span",
+                      { attrs: { id: "worklink" } },
+                      [_c("worklink")],
+                      1
+                    ),
+                    _vm._v(" "),
                     _vm.showWork1
                       ? _c("span", [
                           _c(
@@ -38379,17 +38393,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    {
-      on: {
-        click: function($event) {
-          return _vm.childMethod()
-        }
-      }
-    },
-    [_vm._v("\n    something\n")]
-  )
+  return _c("div")
 }
 var staticRenderFns = []
 render._withStripped = true

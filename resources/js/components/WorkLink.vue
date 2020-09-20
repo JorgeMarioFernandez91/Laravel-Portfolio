@@ -1,6 +1,5 @@
 <template>
-    <div @click="childMethod()">
-        something
+    <div >
     </div>
     
 </template>
@@ -8,14 +7,26 @@
 <script>
     export default {
         name: "WorkLink",
-        props: ['workNum', 'workTitle', 'workDesc'],
+        props: {
+            workNum: {
+                type: String
+            },
+            workTitle: {
+                type: String
+            },
+            workDesc: {
+                type: String
+            },
+            hoverWork: {
+                type: Boolean
+            }
+        },
         mounted() {
             console.log('Worklink Component mounted.')
         },
         data: () => ({
             fadeIn: true,
             
-            hoverWork: false,
             showWork: true,
         }),
         methods: {

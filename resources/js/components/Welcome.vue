@@ -26,15 +26,9 @@
                         <span class="row ">
                             <div class="left-slide ">
 
-                                <!-- <span id="worklink">
-                                    <worklink
-                                        workNum="worklink"
-                                        workTitle="Some title"
-                                        workDesc="Some desc"
-                                        @click="childMethod()">
-                                        
-                                    </worklink>
-                                </span> -->
+                                <span id="worklink" >
+                                        <worklink />
+                                </span>
 
                                 <span v-if="showWork1"> 
                                     <div    @mouseover="hoverWork1 = true; updateWork1()"
@@ -157,7 +151,7 @@
                 console.log("clicked something!!!");
             },
             updateWork1(){ // allows the hovered element to stay visible while hiding the others
-            
+                console.log("something");
                 if (this.hoverWork1 == true){
                     this.showWork2 = false;
                     this.showWork3 = false;
