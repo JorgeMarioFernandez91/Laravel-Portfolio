@@ -1955,9 +1955,67 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('La Camila Component mounted.');
+  },
+  data: function data() {
+    return {
+      arrowGrow: false
+    };
   }
 });
 
@@ -37885,15 +37943,157 @@ var render = function() {
   return _c("div", { attrs: { id: "curtain" } }, [
     _c(
       "div",
-      { class: [_vm.fadeIn == true ? "makeVisible" : "makeInvisible"] },
+      { staticClass: "makeVisible", staticStyle: { height: "100vh" } },
       [
         _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
-        _vm._v("\n\n        la camila page\n\n    ")
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "container", staticStyle: { "padding-top": "5%" } },
+          [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col " }),
+              _vm._v(" "),
+              _c("div", { staticClass: "col", attrs: { align: "center" } }, [
+                _c(
+                  "a",
+                  {
+                    staticStyle: { "text-decoration": "none", color: "black" },
+                    attrs: { href: "#lacamila-more" },
+                    on: {
+                      mouseover: function($event) {
+                        _vm.arrowGrow = true
+                      },
+                      mouseleave: function($event) {
+                        _vm.arrowGrow = false
+                      }
+                    }
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "bi bi-chevron-double-down",
+                        class: {
+                          "arrow-grow": _vm.arrowGrow,
+                          "arrow-style": _vm.arrowGrow == false
+                        },
+                        attrs: {
+                          viewBox: "0 0 16 16",
+                          fill: "currentColor",
+                          xmlns: "http://www.w3.org/2000/svg"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col " })
+            ])
+          ]
+        )
       ]
-    )
+    ),
+    _vm._v(" "),
+    _vm._m(2)
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "container", staticStyle: { "padding-top": "18%" } },
+      [
+        _c("span", { staticClass: "row text-center" }, [
+          _c("div", { staticClass: "col text-center" }, [
+            _c("h1", { staticStyle: { "font-size": "70px" } }, [
+              _vm._v("La Camila E-Commerce Website")
+            ])
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "container", staticStyle: { "padding-top": "5%" } },
+      [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col " }),
+          _vm._v(" "),
+          _c("div", { staticClass: "col " }, [
+            _c("span", {}, [
+              _c("h5", { staticStyle: { "text-align": "center" } }, [
+                _vm._v("PHP")
+              ]),
+              _vm._v(" "),
+              _c("h5", { staticStyle: { "text-align": "center" } }, [
+                _vm._v("JavaScript")
+              ]),
+              _vm._v(" "),
+              _c("h5", { staticStyle: { "text-align": "center" } }, [
+                _vm._v("HTML/CSS")
+              ]),
+              _vm._v(" "),
+              _c("h5", { staticStyle: { "text-align": "center" } }, [
+                _vm._v("Bootstrap")
+              ]),
+              _vm._v(" "),
+              _c("h5", { staticStyle: { "text-align": "center" } }, [
+                _vm._v("MySQL")
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col " })
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticStyle: { height: "100vh" }, attrs: { id: "lacamila-more" } },
+      [
+        _c("div", { staticClass: "row" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" })
+      ]
+    )
+  }
+]
 render._withStripped = true
 
 
@@ -38063,7 +38263,7 @@ var render = function() {
                                 _c(
                                   "a",
                                   {
-                                    staticClass: "work-links testBorder",
+                                    staticClass: "work-links ",
                                     attrs: { href: "/lacamila" }
                                   },
                                   [
@@ -38090,7 +38290,7 @@ var render = function() {
                               },
                               [
                                 _vm.hoverWork1
-                                  ? _c("span", { staticClass: "testBorder" }, [
+                                  ? _c("span", {}, [
                                       _c(
                                         "h5",
                                         { staticClass: "work-desc-slide" },
@@ -38150,7 +38350,7 @@ var render = function() {
                                 _c(
                                   "a",
                                   {
-                                    staticClass: "work-links testBorder",
+                                    staticClass: "work-links ",
                                     attrs: { href: "#" }
                                   },
                                   [
@@ -38237,7 +38437,7 @@ var render = function() {
                                 _c(
                                   "a",
                                   {
-                                    staticClass: "work-links testBorder",
+                                    staticClass: "work-links ",
                                     attrs: { href: "#" }
                                   },
                                   [
@@ -38321,7 +38521,7 @@ var render = function() {
                                 _c(
                                   "a",
                                   {
-                                    staticClass: "work-links testBorder",
+                                    staticClass: "work-links ",
                                     attrs: { href: "#" }
                                   },
                                   [

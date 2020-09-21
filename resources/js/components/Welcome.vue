@@ -8,7 +8,7 @@
 
             <div class="container" style="padding-top: 18%">
                 <span class="row">
-                    <!-- <span class="col-1 testBorder "></span> -->
+                    <!-- <span class="col-1  "></span> -->
                     <!-- my portfolio and titles -->
                     <span class="col-xl up-slide" style="padding-left: 20px" >
                         <span class="row">
@@ -36,13 +36,13 @@
                                             @mouseleave="hoverWork1 = false; updateWork1()"
                                             style="display: inline-block; margin-right: 30px;">
                                             <div class="row" style="padding: 0 0 20px 35px;">
-                                                <a href="/lacamila" class="work-links testBorder" > 
+                                                <a href="/lacamila" class="work-links " > 
                                                     <span    
                                                         v-bind:class="{'makeWorkVisible': showWork1, 'increaseHoverArea': hoverWork1}">1</span>  
                                                 </a >
                                             </div>
                                             <div class="row" style="padding: 0 0 20px 35px;">
-                                                <span v-if="hoverWork1" class="testBorder"> 
+                                                <span v-if="hoverWork1" class=""> 
                                                     <h5 class="work-desc-slide">La Camila Coffee Co Website</h5>
                                                     <h6 class="work-desc-slide">An e-commerce website I designed and developed to increase the exposure of an international company which specializes in growing and processing coffee in an environmentally conscious manner.</h6> 
                                                 </span> 
@@ -56,7 +56,7 @@
                                             @mouseleave="hoverWork2 = false; updateWork2()"
                                             style="display: inline-block; margin-right: 30px;">
                                             <div class="row" style="padding: 0 0 20px 35px;">
-                                                <a href="#" class="work-links testBorder" > 
+                                                <a href="#" class="work-links " > 
                                                     <span    
                                                         v-bind:class="{'makeWorkVisible': showWork2, 'increaseHoverArea': hoverWork2}">2</span>  
                                                 </a >
@@ -76,7 +76,7 @@
                                             @mouseleave="hoverWork3 = false; updateWork3()"
                                             style="display: inline-block; margin-right: 30px;">
                                             <div class="row" style="padding: 0 0 20px 35px;">
-                                                <a href="#" class="work-links testBorder" > 
+                                                <a href="#" class="work-links " > 
                                                     <span    
                                                         v-bind:class="{'makeWorkVisible': showWork3, 'increaseHoverArea': hoverWork3}">3</span>  
                                                 </a >
@@ -96,7 +96,7 @@
                                             @mouseleave="hoverWork4 = false; updateWork4()"
                                             style="display: inline-block;">
                                             <div class="row" style="padding: 0 0 20px 35px;">
-                                                <a href="#" class="work-links testBorder" > 
+                                                <a href="#" class="work-links " > 
                                                     <span    
                                                         v-bind:class="{'makeWorkVisible': showWork4, 'increaseHoverArea': hoverWork4}">4</span>  
                                                 </a >
@@ -115,7 +115,7 @@
                         </span>
                         
                     </span>
-                    <!-- <span class="col-xl-1 testBorder "></span> -->
+                    <!-- <span class="col-xl-1  "></span> -->
                 </span>
             </div>
 
