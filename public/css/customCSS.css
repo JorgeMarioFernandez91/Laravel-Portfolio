@@ -166,3 +166,33 @@ a.work-links {
     border-color: coral;
 }
   
+.img-align {
+    max-width: 1200px; 
+    width: 100%; 
+    height: auto;
+    margin: auto;    
+    display: block;
+}
+
+/* fade in on scroll section */
+body, html, h1 {
+    /* margin: 0;
+    padding: 0; */
+}
+
+section {
+    height: 100vh;
+}
+
+.tag {
+    opacity: 0;
+    /* transform: translate(0, 10vh); */
+    transition: all 5s; 
+}
+
+.tag.visible {
+    opacity: 1;
+    /* transform: translate(0, 0); */
+}
+
+.carousel-wrapper { -webkit-transform: translate3d(0, 0, 0);}

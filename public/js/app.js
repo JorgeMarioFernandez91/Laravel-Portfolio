@@ -2008,6 +2008,36 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('La Camila Component mounted.');
@@ -38087,9 +38117,85 @@ var staticRenderFns = [
       "div",
       { staticStyle: { height: "100vh" }, attrs: { id: "lacamila-more" } },
       [
-        _c("div", { staticClass: "row" }),
+        _c("div", { staticClass: "container" }, [
+          _c(
+            "div",
+            { staticClass: "row", staticStyle: { "padding-top": "5%" } },
+            [
+              _c("div", { staticClass: "col-5 tag" }, [
+                _c("h3", [_vm._v("La Camila Coffee Co.")]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("h5", [
+                  _vm._v(
+                    "\n                        This is a Colombian prides itself in growing and processing \n                        coffee in an environmentally sustainable manner. \n                    "
+                  ),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(
+                    "\n                        This website is designed with a modern look in mind. This allows a \n                        traditional practice such as farming coffee to be virtually present \n                        in today's e-markets.\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticStyle: { color: "black" },
+                    attrs: { href: "https://trilladoraytostadoralacamila.com/" }
+                  },
+                  [_vm._v("https://trilladoraytostadoralacamila.com")]
+                )
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
+            [
+              _c("div", { staticClass: "col " }, [
+                _c("img", {
+                  staticClass: "img-align",
+                  attrs: {
+                    src: "/images/lacamila-welcome-page.PNG",
+                    alt: "image"
+                  }
+                })
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
+            [
+              _c("div", { staticClass: "col " }, [
+                _c("img", {
+                  staticClass: "img-align",
+                  attrs: { src: "/images/lacamila-services.PNG", alt: "image" }
+                })
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
+            [
+              _c("div", { staticClass: "col " }, [
+                _c("img", {
+                  staticClass: "img-align",
+                  attrs: { src: "/images/lacamila-products.PNG", alt: "image" }
+                })
+              ])
+            ]
+          )
+        ]),
         _vm._v(" "),
-        _c("div", { staticClass: "row" })
+        _c("br"),
+        _c("br")
       ]
     )
   }
@@ -50850,16 +50956,24 @@ Vue.component('lacamila', __webpack_require__(/*! ./components/LaCamila.vue */ "
 window.onload = function () {
   var app = new Vue({
     el: '#app'
-  }); // const welcome = new Vue({
-  //     el: '#welcome',
-  // });
-  // const navbar = new Vue({
-  //     el: '#navbar',
-  // });
-  // const worklink = new Vue({
-  //     el: '#worklink',
-  // });
+  });
 };
+
+$(document).on("scroll", function () {
+  var pageTop = $(document).scrollTop();
+  var pageBottom = pageTop + $(window).height();
+  var tags = $(".tag");
+
+  for (var i = 0; i < tags.length; i++) {
+    var tag = tags[i];
+
+    if ($(tag).position().top < pageBottom) {
+      $(tag).addClass("visible");
+    } else {
+      $(tag).removeClass("visible");
+    }
+  }
+});
 
 /***/ }),
 

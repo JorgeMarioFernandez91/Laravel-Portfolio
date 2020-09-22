@@ -36,6 +36,7 @@
                     <div class="col ">
                     </div>
                     <div class="col" align="center">
+                        <!-- @click make #lacamila-more fade in -->
                         <a href="#lacamila-more" style="text-decoration: none; color: black;" @mouseover="arrowGrow = true" @mouseleave="arrowGrow = false">
                             <svg v-bind:class="{'arrow-grow': arrowGrow, 'arrow-style': (arrowGrow == false)}" 
                                 viewBox="0 0 16 16" class="bi bi-chevron-double-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -51,17 +52,46 @@
             </div>  
 
         </div>
-        <div id="lacamila-more" style="height: 100vh">
-            
-            <div class="row">
-                <!-- information and links -->
+        <div id="lacamila-more" style="height: 100vh" >
+            <div class="container" >
+                <div class="row" style="padding-top: 5%;">
+                    <div class="col-5 tag" >
+                        <!-- information and links -->
+                        <h3>La Camila Coffee Co.</h3>
+                        <br>
+                        <h5>
+                            This is a Colombian prides itself in growing and processing 
+                            coffee in an environmentally sustainable manner. 
+                        <br>
+                        <br>
+                            This website is designed with a modern look in mind. This allows a 
+                            traditional practice such as farming coffee to be virtually present 
+                            in today's e-markets.
+                        </h5>
+                        <a href="https://trilladoraytostadoralacamila.com/" style="color: black;">https://trilladoraytostadoralacamila.com</a>
+                    </div>
+                    
+                </div>
+                <div class="row tag" style="padding-top: 2%;">
+                    <!-- photos -->
+                    <div class="col ">
+                        <img class="img-align" src="/images/lacamila-welcome-page.PNG" alt="image">
+                    </div>
+                </div>
+                <div class="row tag" style="padding-top: 2%;">
+                    <div class="col ">
+                        <img class="img-align" src="/images/lacamila-services.PNG" alt="image">
+                    </div>
+                </div>
+                <div class="row tag" style="padding-top: 2%;">
+                    <div class="col ">
+                        <img class="img-align" src="/images/lacamila-products.PNG" alt="image">
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <!-- photos -->
-            </div>
-
-
+            <br><br>
         </div>
+        
     </div>
 </template>
 
