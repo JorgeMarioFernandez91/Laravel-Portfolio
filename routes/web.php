@@ -33,4 +33,18 @@ Route::get('/thesis', function () {
     return view('thesis');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/resume', function () {
+    return view('resume');
+});
+
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+
 

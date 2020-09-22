@@ -24,6 +24,9 @@
             @yield('clickerstartupgame')
             @yield('portfolio')
             @yield('thesis')
+            @yield('about')
+            @yield('resume')
+            @yield('contact')
         </div>
 
         <script src="{{ asset('js/app.js') }}" defer></script>

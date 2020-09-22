@@ -35,6 +35,12 @@ Vue.component('portfolio', require('./components/Portfolio.vue').default);
 
 Vue.component('thesis', require('./components/Thesis.vue').default);
 
+Vue.component('about', require('./components/About.vue').default);
+
+Vue.component('resume', require('./components/Resume.vue').default);
+
+Vue.component('contact', require('./components/Contact.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
