@@ -2037,7 +2037,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('La Camila Component mounted.');
@@ -38127,15 +38126,15 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("br"),
                 _vm._v(" "),
-                _c("h5", [
+                _c("h5", { staticStyle: { "text-align": "justify" } }, [
                   _vm._v(
-                    "\n                        This is a Colombian prides itself in growing and processing \n                        coffee in an environmentally sustainable manner. \n                    "
+                    "\n                        A Colombian company that prides itself in growing and processing \n                        quality coffee products in an environmentally sustainable manner. \n                    "
                   ),
                   _c("br"),
                   _vm._v(" "),
                   _c("br"),
                   _vm._v(
-                    "\n                        This website is designed with a modern look in mind. This allows a \n                        traditional practice such as farming coffee to be virtually present \n                        in today's e-markets.\n                    "
+                    "\n                        This website was designed from the ground up to have a modern and responsive layout that looks great on all devices. \n                        This allows the traditional practice of growing coffee to be present and successful in today's e-markets.\n                    "
                   )
                 ]),
                 _vm._v(" "),

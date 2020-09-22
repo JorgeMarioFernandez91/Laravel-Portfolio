@@ -59,14 +59,13 @@
                         <!-- information and links -->
                         <h3>La Camila Coffee Co.</h3>
                         <br>
-                        <h5>
-                            This is a Colombian prides itself in growing and processing 
-                            coffee in an environmentally sustainable manner. 
+                        <h5 style="text-align:justify;">
+                            A Colombian company that prides itself in growing and processing 
+                            quality coffee products in an environmentally sustainable manner. 
                         <br>
                         <br>
-                            This website is designed with a modern look in mind. This allows a 
-                            traditional practice such as farming coffee to be virtually present 
-                            in today's e-markets.
+                            This website was designed from the ground up to have a modern and responsive layout that looks great on all devices. 
+                            This allows the traditional practice of growing coffee to be present and successful in today's e-markets.
                         </h5>
                         <a href="https://trilladoraytostadoralacamila.com/" style="color: black;">https://trilladoraytostadoralacamila.com</a>
                     </div>
