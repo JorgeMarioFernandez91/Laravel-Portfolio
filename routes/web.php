@@ -20,3 +20,8 @@ Route::get('/', function () {
 Route::get('/lacamila', function () {
     return view('lacamila');
 });
+
+Route::get('/clickerstartupgame', function () {
+    return view('clickerstartupgame');
+});
+

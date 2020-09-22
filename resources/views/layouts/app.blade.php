@@ -21,6 +21,7 @@
         <div id="app" >
             @yield('welcome')
             @yield('lacamila')
+            @yield('clickerstartupgame')
         </div>
 
         <script src="{{ asset('js/app.js') }}" defer></script>

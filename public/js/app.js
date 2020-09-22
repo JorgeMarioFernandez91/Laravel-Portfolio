@@ -1899,6 +1899,123 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ClickerStartupGame.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ClickerStartupGame.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    console.log('Cookie Clicker Component mounted.');
+  },
+  data: function data() {
+    return {
+      arrowGrow: false
+    };
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
@@ -37907,6 +38024,262 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ClickerStartupGame.vue?vue&type=template&id=89004576&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ClickerStartupGame.vue?vue&type=template&id=89004576& ***!
+  \*********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { attrs: { id: "curtain" } }, [
+    _c(
+      "div",
+      { staticClass: "makeVisible", staticStyle: { height: "100vh" } },
+      [
+        _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "container", staticStyle: { "padding-top": "5%" } },
+          [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col " }),
+              _vm._v(" "),
+              _c("div", { staticClass: "col", attrs: { align: "center" } }, [
+                _c(
+                  "a",
+                  {
+                    staticStyle: { "text-decoration": "none", color: "black" },
+                    attrs: { href: "#startupclicker-more" },
+                    on: {
+                      mouseover: function($event) {
+                        _vm.arrowGrow = true
+                      },
+                      mouseleave: function($event) {
+                        _vm.arrowGrow = false
+                      }
+                    }
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "bi bi-chevron-double-down",
+                        class: {
+                          "arrow-grow": _vm.arrowGrow,
+                          "arrow-style": _vm.arrowGrow == false
+                        },
+                        attrs: {
+                          viewBox: "0 0 16 16",
+                          fill: "currentColor",
+                          xmlns: "http://www.w3.org/2000/svg"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col " })
+            ])
+          ]
+        )
+      ]
+    ),
+    _vm._v(" "),
+    _vm._m(2)
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "container", staticStyle: { "padding-top": "18%" } },
+      [
+        _c("span", { staticClass: "row text-center" }, [
+          _c("div", { staticClass: "col text-center" }, [
+            _c("h1", { staticStyle: { "font-size": "70px" } }, [
+              _vm._v("Clicker Startup Game")
+            ])
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "container", staticStyle: { "padding-top": "5%" } },
+      [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col " }),
+          _vm._v(" "),
+          _c("div", { staticClass: "col " }, [
+            _c("span", {}, [
+              _c("h5", { staticStyle: { "text-align": "center" } }, [
+                _vm._v("React")
+              ]),
+              _vm._v(" "),
+              _c("h5", { staticStyle: { "text-align": "center" } }, [
+                _vm._v("JavaScript")
+              ]),
+              _vm._v(" "),
+              _c("h5", { staticStyle: { "text-align": "center" } }, [
+                _vm._v("HTML/CSS")
+              ]),
+              _vm._v(" "),
+              _c("h5", { staticStyle: { "text-align": "center" } }, [
+                _vm._v("Bootstrap")
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col " })
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticStyle: { height: "100vh" },
+        attrs: { id: "startupclicker-more" }
+      },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c(
+            "div",
+            { staticClass: "row", staticStyle: { "padding-top": "5%" } },
+            [
+              _c("div", { staticClass: "col-5 tag" }, [
+                _c("h3", [_vm._v("Clicker Startup Game")]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("h5", { staticStyle: { "text-align": "justify" } }, [
+                  _vm._v(
+                    "\n                        Using React.js to manage numerous states, this web app pays tribute to the popular Cookie Clicker web game, \n                        but with a modern tech start-up twist. \n                    "
+                  ),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(
+                    "\n                        By clicking the computer and hiring more employees to do the clicking, players can unlock perks to quickly make \n                        their tech startup the fastest growing company in Silicon Valley.\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticStyle: { color: "black" },
+                    attrs: { href: "https://cookieclickerstartup.netlify.app/" }
+                  },
+                  [_vm._v("https://cookieclickerstartup.netlify.app")]
+                )
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
+            [
+              _c("div", { staticClass: "col " }, [
+                _c("img", {
+                  staticClass: "img-align",
+                  attrs: {
+                    src: "/images/clickerstartup-intro-message.PNG",
+                    alt: "image"
+                  }
+                })
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
+            [
+              _c("div", { staticClass: "col " }, [
+                _c("img", {
+                  staticClass: "img-align",
+                  attrs: {
+                    src: "/images/clickerstartup-gameplay.PNG",
+                    alt: "image"
+                  }
+                })
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
+            [
+              _c("div", { staticClass: "col " }, [
+                _c("img", {
+                  staticClass: "img-align",
+                  attrs: {
+                    src: "/images/clickerstartup-gameplay-more.PNG",
+                    alt: "image"
+                  }
+                })
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _c("br")
+      ]
+    )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&":
 /*!*******************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e& ***!
@@ -38456,7 +38829,7 @@ var render = function() {
                                   "a",
                                   {
                                     staticClass: "work-links ",
-                                    attrs: { href: "#" }
+                                    attrs: { href: "/clickerstartupgame" }
                                   },
                                   [
                                     _c(
@@ -50943,6 +51316,7 @@ Vue.component('welcome', __webpack_require__(/*! ./components/Welcome.vue */ "./
 Vue.component('navbar', __webpack_require__(/*! ./components/Navbar.vue */ "./resources/js/components/Navbar.vue")["default"]);
 Vue.component('worklink', __webpack_require__(/*! ./components/WorkLink.vue */ "./resources/js/components/WorkLink.vue")["default"]);
 Vue.component('lacamila', __webpack_require__(/*! ./components/LaCamila.vue */ "./resources/js/components/LaCamila.vue")["default"]);
+Vue.component('clickerstartupgame', __webpack_require__(/*! ./components/ClickerStartupGame.vue */ "./resources/js/components/ClickerStartupGame.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -51018,6 +51392,75 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/ClickerStartupGame.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/components/ClickerStartupGame.vue ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ClickerStartupGame_vue_vue_type_template_id_89004576___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ClickerStartupGame.vue?vue&type=template&id=89004576& */ "./resources/js/components/ClickerStartupGame.vue?vue&type=template&id=89004576&");
+/* harmony import */ var _ClickerStartupGame_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ClickerStartupGame.vue?vue&type=script&lang=js& */ "./resources/js/components/ClickerStartupGame.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ClickerStartupGame_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ClickerStartupGame_vue_vue_type_template_id_89004576___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ClickerStartupGame_vue_vue_type_template_id_89004576___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ClickerStartupGame.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ClickerStartupGame.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/ClickerStartupGame.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ClickerStartupGame_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ClickerStartupGame.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ClickerStartupGame.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ClickerStartupGame_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ClickerStartupGame.vue?vue&type=template&id=89004576&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/ClickerStartupGame.vue?vue&type=template&id=89004576& ***!
+  \***************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ClickerStartupGame_vue_vue_type_template_id_89004576___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ClickerStartupGame.vue?vue&type=template&id=89004576& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ClickerStartupGame.vue?vue&type=template&id=89004576&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ClickerStartupGame_vue_vue_type_template_id_89004576___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ClickerStartupGame_vue_vue_type_template_id_89004576___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 

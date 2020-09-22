@@ -56,7 +56,7 @@
                                             @mouseleave="hoverWork2 = false; updateWork2()"
                                             style="display: inline-block; margin-right: 30px;">
                                             <div class="row" style="padding: 0 0 20px 35px;">
-                                                <a href="#" class="work-links " > 
+                                                <a href="/clickerstartupgame" class="work-links " > 
                                                     <span    
                                                         v-bind:class="{'makeWorkVisible': showWork2, 'increaseHoverArea': hoverWork2}">2</span>  
                                                 </a >
