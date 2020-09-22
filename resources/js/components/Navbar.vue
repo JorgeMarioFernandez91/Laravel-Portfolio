@@ -9,7 +9,7 @@
                 <div class="navbar-nav">
                     <!-- <a class="nav-item nav-link active" href="#">Jorge Mario Fernandez<span class="sr-only">(current)</span></a> -->
                     <a class="nav-item nav-link " href="#">About</a>
-                    <a class="nav-item nav-link" href="#">Work</a>
+                    <a class="nav-item nav-link" href="/lacamila">Work</a>
                     <a class="nav-item nav-link" href="#">Resume</a>
                     <a class="nav-item nav-link" href="#">Contact</a>
                 </div>

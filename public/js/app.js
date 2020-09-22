@@ -2003,13 +2003,33 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Cookie Clicker Component mounted.');
   },
   data: function data() {
     return {
-      arrowGrow: false
+      arrowGrow1: false,
+      arrowGrow2: false,
+      arrowGrow3: false
     };
   }
 });
@@ -2154,13 +2174,33 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('La Camila Component mounted.');
   },
   data: function data() {
     return {
-      arrowGrow: false
+      arrowGrow1: false,
+      arrowGrow2: false,
+      arrowGrow3: false
     };
   }
 });
@@ -2308,13 +2348,33 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Portfolio Component mounted.');
   },
   data: function data() {
     return {
-      arrowGrow: false
+      arrowGrow1: false,
+      arrowGrow2: false,
+      arrowGrow3: false
     };
   }
 });
@@ -2426,13 +2486,33 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Thesis Component mounted.');
   },
   data: function data() {
     return {
-      arrowGrow: false
+      arrowGrow1: false,
+      arrowGrow2: false,
+      arrowGrow3: false
     };
   }
 });
@@ -38281,29 +38361,24 @@ var render = function() {
       [
         _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
         _vm._v(" "),
-        _vm._m(0),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
         _c(
           "div",
-          { staticClass: "container", staticStyle: { "padding-top": "5%" } },
+          { staticClass: "container", staticStyle: { "padding-top": "10%" } },
           [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col " }),
-              _vm._v(" "),
-              _c("div", { staticClass: "col", attrs: { align: "center" } }, [
+            _c("span", { staticClass: "row text-center" }, [
+              _c("div", { staticClass: "col-1" }, [
                 _c(
                   "a",
                   {
+                    staticClass: "vertical-center",
                     staticStyle: { "text-decoration": "none", color: "black" },
-                    attrs: { href: "#startupclicker-more" },
+                    attrs: { href: "/lacamila" },
                     on: {
                       mouseover: function($event) {
-                        _vm.arrowGrow = true
+                        _vm.arrowGrow1 = true
                       },
                       mouseleave: function($event) {
-                        _vm.arrowGrow = false
+                        _vm.arrowGrow1 = false
                       }
                     }
                   },
@@ -38313,9 +38388,130 @@ var render = function() {
                       {
                         staticClass: "bi bi-chevron-double-down",
                         class: {
-                          "arrow-grow": _vm.arrowGrow,
-                          "arrow-style": _vm.arrowGrow == false
+                          "arrow-grow": _vm.arrowGrow1,
+                          "arrow-style": _vm.arrowGrow1 == false
                         },
+                        attrs: {
+                          viewBox: "0 0 16 16",
+                          fill: "currentColor",
+                          xmlns: "http://www.w3.org/2000/svg"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _vm._m(0),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-1" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "vertical-center",
+                    staticStyle: { "text-decoration": "none", color: "black" },
+                    attrs: { href: "/portfolio" },
+                    on: {
+                      mouseover: function($event) {
+                        _vm.arrowGrow2 = true
+                      },
+                      mouseleave: function($event) {
+                        _vm.arrowGrow2 = false
+                      }
+                    }
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "bi bi-chevron-double-down",
+                        class: {
+                          "arrow-grow": _vm.arrowGrow2,
+                          "arrow-style": _vm.arrowGrow2 == false
+                        },
+                        attrs: {
+                          viewBox: "0 0 16 16",
+                          fill: "currentColor",
+                          xmlns: "http://www.w3.org/2000/svg"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                )
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "container", staticStyle: { "padding-top": "10%" } },
+          [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col " }),
+              _vm._v(" "),
+              _c("div", { staticClass: "col", attrs: { align: "center" } }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "vertical-center",
+                    staticStyle: { "text-decoration": "none", color: "black" },
+                    attrs: { href: "#startupclicker-more" },
+                    on: {
+                      mouseover: function($event) {
+                        _vm.arrowGrow3 = true
+                      },
+                      mouseleave: function($event) {
+                        _vm.arrowGrow3 = false
+                      }
+                    }
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "bi bi-chevron-double-down",
+                        class: {
+                          "arrow-grow": _vm.arrowGrow3,
+                          "arrow-style": _vm.arrowGrow3 == false
+                        },
+                        staticStyle: { width: "30%" },
                         attrs: {
                           viewBox: "0 0 16 16",
                           fill: "currentColor",
@@ -38359,19 +38555,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "container", staticStyle: { "padding-top": "18%" } },
-      [
-        _c("span", { staticClass: "row text-center" }, [
-          _c("div", { staticClass: "col text-center" }, [
-            _c("h1", { staticStyle: { "font-size": "70px" } }, [
-              _vm._v("Clicker Startup Game")
-            ])
-          ])
-        ])
-      ]
-    )
+    return _c("div", { staticClass: "col text-center" }, [
+      _c("h1", { staticClass: "work-title-size;" }, [
+        _vm._v("Clicker Startup Game")
+      ])
+    ])
   },
   function() {
     var _vm = this
@@ -38425,7 +38613,7 @@ var staticRenderFns = [
             "div",
             { staticClass: "row", staticStyle: { "padding-top": "5%" } },
             [
-              _c("div", { staticClass: "col-5 tag" }, [
+              _c("div", { staticClass: "col tag" }, [
                 _c("h3", [_vm._v("Clicker Startup Game")]),
                 _vm._v(" "),
                 _c("br"),
@@ -38584,29 +38772,24 @@ var render = function() {
       [
         _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
         _vm._v(" "),
-        _vm._m(0),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
         _c(
           "div",
-          { staticClass: "container", staticStyle: { "padding-top": "5%" } },
+          { staticClass: "container", staticStyle: { "padding-top": "10%" } },
           [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col " }),
-              _vm._v(" "),
-              _c("div", { staticClass: "col", attrs: { align: "center" } }, [
+            _c("span", { staticClass: "row text-center" }, [
+              _c("div", { staticClass: "col-1" }, [
                 _c(
                   "a",
                   {
+                    staticClass: "vertical-center",
                     staticStyle: { "text-decoration": "none", color: "black" },
-                    attrs: { href: "#lacamila-more" },
+                    attrs: { href: "/thesis" },
                     on: {
                       mouseover: function($event) {
-                        _vm.arrowGrow = true
+                        _vm.arrowGrow1 = true
                       },
                       mouseleave: function($event) {
-                        _vm.arrowGrow = false
+                        _vm.arrowGrow1 = false
                       }
                     }
                   },
@@ -38616,9 +38799,130 @@ var render = function() {
                       {
                         staticClass: "bi bi-chevron-double-down",
                         class: {
-                          "arrow-grow": _vm.arrowGrow,
-                          "arrow-style": _vm.arrowGrow == false
+                          "arrow-grow": _vm.arrowGrow1,
+                          "arrow-style": _vm.arrowGrow1 == false
                         },
+                        attrs: {
+                          viewBox: "0 0 16 16",
+                          fill: "currentColor",
+                          xmlns: "http://www.w3.org/2000/svg"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _vm._m(0),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-1" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "vertical-center",
+                    staticStyle: { "text-decoration": "none", color: "black" },
+                    attrs: { href: "/clickerstartupgame" },
+                    on: {
+                      mouseover: function($event) {
+                        _vm.arrowGrow2 = true
+                      },
+                      mouseleave: function($event) {
+                        _vm.arrowGrow2 = false
+                      }
+                    }
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "bi bi-chevron-double-down",
+                        class: {
+                          "arrow-grow": _vm.arrowGrow2,
+                          "arrow-style": _vm.arrowGrow2 == false
+                        },
+                        attrs: {
+                          viewBox: "0 0 16 16",
+                          fill: "currentColor",
+                          xmlns: "http://www.w3.org/2000/svg"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                )
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "container", staticStyle: { "padding-top": "10%" } },
+          [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col " }),
+              _vm._v(" "),
+              _c("div", { staticClass: "col", attrs: { align: "center" } }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "vertical-center",
+                    staticStyle: { "text-decoration": "none", color: "black" },
+                    attrs: { href: "#lacamila-more" },
+                    on: {
+                      mouseover: function($event) {
+                        _vm.arrowGrow3 = true
+                      },
+                      mouseleave: function($event) {
+                        _vm.arrowGrow3 = false
+                      }
+                    }
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "bi bi-chevron-double-down",
+                        class: {
+                          "arrow-grow": _vm.arrowGrow3,
+                          "arrow-style": _vm.arrowGrow3 == false
+                        },
+                        staticStyle: { width: "30%" },
                         attrs: {
                           viewBox: "0 0 16 16",
                           fill: "currentColor",
@@ -38662,19 +38966,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "container", staticStyle: { "padding-top": "18%" } },
-      [
-        _c("span", { staticClass: "row text-center" }, [
-          _c("div", { staticClass: "col text-center" }, [
-            _c("h1", { staticStyle: { "font-size": "70px" } }, [
-              _vm._v("La Camila E-Commerce Website")
-            ])
-          ])
-        ])
-      ]
-    )
+    return _c("div", { staticClass: "col text-center" }, [
+      _c("h1", { staticClass: "work-title-size;" }, [
+        _vm._v("La Camila E-Commerce Website")
+      ])
+    ])
   },
   function() {
     var _vm = this
@@ -38729,7 +39025,7 @@ var staticRenderFns = [
             "div",
             { staticClass: "row", staticStyle: { "padding-top": "5%" } },
             [
-              _c("div", { staticClass: "col-5 tag" }, [
+              _c("div", { staticClass: "col tag" }, [
                 _c("h3", [_vm._v("La Camila Coffee Co.")]),
                 _vm._v(" "),
                 _c("br"),
@@ -38876,7 +39172,10 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c(
                   "a",
-                  { staticClass: "nav-item nav-link", attrs: { href: "#" } },
+                  {
+                    staticClass: "nav-item nav-link",
+                    attrs: { href: "/lacamila" }
+                  },
                   [_vm._v("Work")]
                 ),
                 _vm._v(" "),
@@ -38927,29 +39226,24 @@ var render = function() {
       [
         _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
         _vm._v(" "),
-        _vm._m(0),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
         _c(
           "div",
-          { staticClass: "container", staticStyle: { "padding-top": "5%" } },
+          { staticClass: "container", staticStyle: { "padding-top": "10%" } },
           [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col " }),
-              _vm._v(" "),
-              _c("div", { staticClass: "col", attrs: { align: "center" } }, [
+            _c("span", { staticClass: "row text-center" }, [
+              _c("div", { staticClass: "col-1" }, [
                 _c(
                   "a",
                   {
+                    staticClass: "vertical-center",
                     staticStyle: { "text-decoration": "none", color: "black" },
-                    attrs: { href: "#portfolio-more" },
+                    attrs: { href: "/clickerstartupgame" },
                     on: {
                       mouseover: function($event) {
-                        _vm.arrowGrow = true
+                        _vm.arrowGrow1 = true
                       },
                       mouseleave: function($event) {
-                        _vm.arrowGrow = false
+                        _vm.arrowGrow1 = false
                       }
                     }
                   },
@@ -38959,9 +39253,130 @@ var render = function() {
                       {
                         staticClass: "bi bi-chevron-double-down",
                         class: {
-                          "arrow-grow": _vm.arrowGrow,
-                          "arrow-style": _vm.arrowGrow == false
+                          "arrow-grow": _vm.arrowGrow1,
+                          "arrow-style": _vm.arrowGrow1 == false
                         },
+                        attrs: {
+                          viewBox: "0 0 16 16",
+                          fill: "currentColor",
+                          xmlns: "http://www.w3.org/2000/svg"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _vm._m(0),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-1" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "vertical-center",
+                    staticStyle: { "text-decoration": "none", color: "black" },
+                    attrs: { href: "/thesis" },
+                    on: {
+                      mouseover: function($event) {
+                        _vm.arrowGrow2 = true
+                      },
+                      mouseleave: function($event) {
+                        _vm.arrowGrow2 = false
+                      }
+                    }
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "bi bi-chevron-double-down",
+                        class: {
+                          "arrow-grow": _vm.arrowGrow2,
+                          "arrow-style": _vm.arrowGrow2 == false
+                        },
+                        attrs: {
+                          viewBox: "0 0 16 16",
+                          fill: "currentColor",
+                          xmlns: "http://www.w3.org/2000/svg"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                )
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "container", staticStyle: { "padding-top": "10%" } },
+          [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col " }),
+              _vm._v(" "),
+              _c("div", { staticClass: "col", attrs: { align: "center" } }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "vertical-center",
+                    staticStyle: { "text-decoration": "none", color: "black" },
+                    attrs: { href: "#portfolio-more" },
+                    on: {
+                      mouseover: function($event) {
+                        _vm.arrowGrow3 = true
+                      },
+                      mouseleave: function($event) {
+                        _vm.arrowGrow3 = false
+                      }
+                    }
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "bi bi-chevron-double-down",
+                        class: {
+                          "arrow-grow": _vm.arrowGrow3,
+                          "arrow-style": _vm.arrowGrow3 == false
+                        },
+                        staticStyle: { width: "30%" },
                         attrs: {
                           viewBox: "0 0 16 16",
                           fill: "currentColor",
@@ -39005,19 +39420,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "container", staticStyle: { "padding-top": "18%" } },
-      [
-        _c("span", { staticClass: "row text-center" }, [
-          _c("div", { staticClass: "col text-center" }, [
-            _c("h1", { staticStyle: { "font-size": "70px" } }, [
-              _vm._v("Portfolio")
-            ])
-          ])
-        ])
-      ]
-    )
+    return _c("div", { staticClass: "col text-center" }, [
+      _c("h1", { staticClass: "work-title-size;" }, [_vm._v("Portfolio")])
+    ])
   },
   function() {
     var _vm = this
@@ -39072,7 +39477,7 @@ var staticRenderFns = [
             "div",
             { staticClass: "row", staticStyle: { "padding-top": "5%" } },
             [
-              _c("div", { staticClass: "col-5 tag" }, [
+              _c("div", { staticClass: "col tag" }, [
                 _c("h3", [_vm._v("Portfolio")]),
                 _vm._v(" "),
                 _c("br"),
@@ -39175,29 +39580,24 @@ var render = function() {
       [
         _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
         _vm._v(" "),
-        _vm._m(0),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
         _c(
           "div",
-          { staticClass: "container", staticStyle: { "padding-top": "5%" } },
+          { staticClass: "container", staticStyle: { "padding-top": "10%" } },
           [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col " }),
-              _vm._v(" "),
-              _c("div", { staticClass: "col", attrs: { align: "center" } }, [
+            _c("span", { staticClass: "row text-center" }, [
+              _c("div", { staticClass: "col-1" }, [
                 _c(
                   "a",
                   {
+                    staticClass: "vertical-center",
                     staticStyle: { "text-decoration": "none", color: "black" },
-                    attrs: { href: "#thesis-more" },
+                    attrs: { href: "/portfolio" },
                     on: {
                       mouseover: function($event) {
-                        _vm.arrowGrow = true
+                        _vm.arrowGrow1 = true
                       },
                       mouseleave: function($event) {
-                        _vm.arrowGrow = false
+                        _vm.arrowGrow1 = false
                       }
                     }
                   },
@@ -39207,9 +39607,130 @@ var render = function() {
                       {
                         staticClass: "bi bi-chevron-double-down",
                         class: {
-                          "arrow-grow": _vm.arrowGrow,
-                          "arrow-style": _vm.arrowGrow == false
+                          "arrow-grow": _vm.arrowGrow1,
+                          "arrow-style": _vm.arrowGrow1 == false
                         },
+                        attrs: {
+                          viewBox: "0 0 16 16",
+                          fill: "currentColor",
+                          xmlns: "http://www.w3.org/2000/svg"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _vm._m(0),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-1" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "vertical-center",
+                    staticStyle: { "text-decoration": "none", color: "black" },
+                    attrs: { href: "/lacamila" },
+                    on: {
+                      mouseover: function($event) {
+                        _vm.arrowGrow2 = true
+                      },
+                      mouseleave: function($event) {
+                        _vm.arrowGrow2 = false
+                      }
+                    }
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "bi bi-chevron-double-down",
+                        class: {
+                          "arrow-grow": _vm.arrowGrow2,
+                          "arrow-style": _vm.arrowGrow2 == false
+                        },
+                        attrs: {
+                          viewBox: "0 0 16 16",
+                          fill: "currentColor",
+                          xmlns: "http://www.w3.org/2000/svg"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("path", {
+                          attrs: {
+                            "fill-rule": "evenodd",
+                            d:
+                              "M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                )
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "container", staticStyle: { "padding-top": "10%" } },
+          [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col " }),
+              _vm._v(" "),
+              _c("div", { staticClass: "col", attrs: { align: "center" } }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "vertical-center",
+                    staticStyle: { "text-decoration": "none", color: "black" },
+                    attrs: { href: "#thesis-more" },
+                    on: {
+                      mouseover: function($event) {
+                        _vm.arrowGrow3 = true
+                      },
+                      mouseleave: function($event) {
+                        _vm.arrowGrow3 = false
+                      }
+                    }
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "bi bi-chevron-double-down",
+                        class: {
+                          "arrow-grow": _vm.arrowGrow3,
+                          "arrow-style": _vm.arrowGrow3 == false
+                        },
+                        staticStyle: { width: "30%" },
                         attrs: {
                           viewBox: "0 0 16 16",
                           fill: "currentColor",
@@ -39253,19 +39774,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "container", staticStyle: { "padding-top": "18%" } },
-      [
-        _c("span", { staticClass: "row text-center" }, [
-          _c("div", { staticClass: "col text-center" }, [
-            _c("h1", { staticStyle: { "font-size": "70px" } }, [
-              _vm._v("Detecting Simulated Galaxies")
-            ])
-          ])
-        ])
-      ]
-    )
+    return _c("div", { staticClass: "col text-center" }, [
+      _c("h1", { staticClass: "work-title-size;" }, [
+        _vm._v("Detecting Simulated Galaxies")
+      ])
+    ])
   },
   function() {
     var _vm = this
@@ -39316,7 +39829,7 @@ var staticRenderFns = [
             "div",
             { staticClass: "row", staticStyle: { "padding-top": "5%" } },
             [
-              _c("div", { staticClass: "col-5 tag" }, [
+              _c("div", { staticClass: "col tag" }, [
                 _c("h3", [_vm._v("Detecting Simulated Galaxies")]),
                 _vm._v(" "),
                 _c("br"),

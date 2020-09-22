@@ -84,10 +84,14 @@ html {
     }
 }
 
-.arrow-grow {
+.arrow-style {
     width: 3em;
     height: 3em;
+    width: 100%;
+    height: auto;
+}
 
+.arrow-grow {
     animation-name: growArrow;
 	animation-iteration-count: 1;
     animation-duration: 1s;
@@ -105,9 +109,14 @@ html {
 	}
 }
 
-.arrow-style {
-    width: 3em;
-    height: 3em;
+.work-title-size {
+    font-size: 70px;
+}
+
+@media only screen and (max-width: 500px){
+    .work-title-size{
+        font-size: 40px;
+    }
 }
 
 @keyframes slideIn {
@@ -173,6 +182,15 @@ a.work-links {
     margin: auto;    
     display: block;
 }
+
+.vertical-center {
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  }
 
 /* fade in on scroll section */
 body, html, h1 {
