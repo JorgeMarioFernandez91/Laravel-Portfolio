@@ -76,7 +76,7 @@
                                             @mouseleave="hoverWork3 = false; updateWork3()"
                                             style="display: inline-block; margin-right: 30px;">
                                             <div class="row" style="padding: 0 0 20px 35px;">
-                                                <a href="#" class="work-links " > 
+                                                <a href="/portfolio" class="work-links " > 
                                                     <span    
                                                         v-bind:class="{'makeWorkVisible': showWork3, 'increaseHoverArea': hoverWork3}">3</span>  
                                                 </a >
@@ -96,7 +96,7 @@
                                             @mouseleave="hoverWork4 = false; updateWork4()"
                                             style="display: inline-block;">
                                             <div class="row" style="padding: 0 0 20px 35px;">
-                                                <a href="#" class="work-links " > 
+                                                <a href="/thesis" class="work-links " > 
                                                     <span    
                                                         v-bind:class="{'makeWorkVisible': showWork4, 'increaseHoverArea': hoverWork4}">4</span>  
                                                 </a >

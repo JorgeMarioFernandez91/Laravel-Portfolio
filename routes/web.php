@@ -25,3 +25,12 @@ Route::get('/clickerstartupgame', function () {
     return view('clickerstartupgame');
 });
 
+Route::get('/portfolio', function () {
+    return view('portfolio');
+});
+
+Route::get('/thesis', function () {
+    return view('thesis');
+});
+
+

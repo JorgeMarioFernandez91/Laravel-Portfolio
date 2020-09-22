@@ -31,6 +31,9 @@ Vue.component('lacamila', require('./components/LaCamila.vue').default);
 
 Vue.component('clickerstartupgame', require('./components/ClickerStartupGame.vue').default);
 
+Vue.component('portfolio', require('./components/Portfolio.vue').default);
+
+Vue.component('thesis', require('./components/Thesis.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
