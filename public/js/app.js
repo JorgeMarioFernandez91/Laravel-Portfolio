@@ -39911,14 +39911,18 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "" } }, [
-    _c("div", { staticStyle: { height: "100vh" } }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
-        _vm._v(" "),
-        _vm._m(0)
-      ])
-    ])
+  return _c("div", { attrs: { id: "curtain" } }, [
+    _c(
+      "div",
+      { staticClass: "makeVisible", staticStyle: { height: "100vh" } },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
+          _vm._v(" "),
+          _vm._m(0)
+        ])
+      ]
+    )
   ])
 }
 var staticRenderFns = [
@@ -39930,7 +39934,7 @@ var staticRenderFns = [
       "div",
       {
         staticClass: "row",
-        staticStyle: { "padding-top": "10%", "padding-left": "30px" }
+        staticStyle: { "padding-top": "8%", "padding-left": "30px" }
       },
       [
         _c("div", { staticClass: "col" }, [

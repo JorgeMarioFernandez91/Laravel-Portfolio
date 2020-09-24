@@ -1,13 +1,13 @@
 <template>
-    <div id="">
-        <div class="" style="height: 100vh">
+    <div id="curtain">
+        <div class="makeVisible" style="height: 100vh">
             <div class="container">
 
                 <div id="navbar">
                     <navbar></navbar>
                 </div>
                 
-                <div class="row" style="padding-top: 10%; padding-left: 30px;">
+                <div class="row" style="padding-top: 8%; padding-left: 30px;">
                     <div class="col" >
                         <h1>Education</h1>
 
