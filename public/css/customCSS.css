@@ -140,8 +140,9 @@ html {
 a.work-links {
     text-decoration: none;
     color: black;
-    padding: 40px 70px 0px 0px;
-    display: inline-block;
+    /* padding: 40px 70px 0px 0px; */
+    /* margin-right: 50px; */
+    /* display: inline-block; */
     font-size: 30px;
 }
 
@@ -163,7 +164,13 @@ a.work-links {
 }
 
 .increaseHoverArea {
-    padding-right: 400px;
+    padding-right: 250px;
+    /* padding-left: 20px; */
+}
+
+.increaseHoverAreaFor4 {
+    padding-right: 370px;
+    /* padding-left: 20px; */
 }
 
 .testBorder {
@@ -197,7 +204,7 @@ a.work-links {
 }
 
 .horizontal-center {
-    
+
 }
 
 /* fade in on scroll section */

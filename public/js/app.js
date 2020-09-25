@@ -2813,12 +2813,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {// console.log('Welcome Component mounted.')
   },
-  updated: function updated() {// console.log("updated");
-  },
+  updated: function updated() {},
   data: function data() {
     return {
       hoverWork1: false,
@@ -2834,7 +2832,6 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     updateWork1: function updateWork1() {
       // allows the hovered element to stay visible while hiding the others
-      // console.log("something");
       if (this.hoverWork1 == true) {
         this.showWork2 = false;
         this.showWork3 = false;
@@ -40435,14 +40432,16 @@ var render = function() {
                           {
                             staticStyle: {
                               display: "inline-block",
-                              "margin-right": "30px"
+                              "padding-left": "25px",
+                              "padding-right": "25px",
+                              "margin-right": "50px"
                             },
                             on: {
-                              mouseover: function($event) {
+                              click: function($event) {
                                 _vm.hoverWork1 = true
                                 _vm.updateWork1()
                               },
-                              click: function($event) {
+                              mouseover: function($event) {
                                 _vm.hoverWork1 = true
                                 _vm.updateWork1()
                               },
@@ -40454,60 +40453,44 @@ var render = function() {
                           },
                           [
                             _c(
-                              "div",
+                              "a",
                               {
-                                staticClass: "row",
-                                staticStyle: { padding: "0 0 20px 35px" }
+                                staticClass: "work-links",
+                                class: {
+                                  makeWorkVisible: _vm.showWork1,
+                                  increaseHoverArea: _vm.hoverWork1
+                                },
+                                attrs: { href: "/lacamila" }
                               },
                               [
+                                _vm._v(
+                                  "1\n                                                \n                                                "
+                                ),
                                 _c(
-                                  "a",
+                                  "div",
                                   {
-                                    staticClass: "work-links ",
-                                    attrs: { href: "/lacamila" }
+                                    staticClass: "row ",
+                                    staticStyle: {
+                                      padding: "0 0 20px 0",
+                                      "margin-left": "0"
+                                    }
                                   },
                                   [
-                                    _c(
-                                      "span",
-                                      {
-                                        class: {
-                                          makeWorkVisible: _vm.showWork1,
-                                          increaseHoverArea: _vm.hoverWork1
-                                        }
-                                      },
-                                      [_vm._v("1")]
-                                    )
+                                    _vm.hoverWork1
+                                      ? _c("span", [
+                                          _c(
+                                            "h5",
+                                            { staticClass: "work-desc-slide " },
+                                            [
+                                              _vm._v(
+                                                "La Camila Coffee Co Website"
+                                              )
+                                            ]
+                                          )
+                                        ])
+                                      : _vm._e()
                                   ]
                                 )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass: "row",
-                                staticStyle: { padding: "0 0 20px 35px" }
-                              },
-                              [
-                                _vm.hoverWork1
-                                  ? _c("span", {}, [
-                                      _c(
-                                        "h5",
-                                        { staticClass: "work-desc-slide" },
-                                        [_vm._v("La Camila Coffee Co Website")]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "h6",
-                                        { staticClass: "work-desc-slide" },
-                                        [
-                                          _vm._v(
-                                            "An e-commerce website I designed and developed to increase the exposure of an international company which specializes in growing and processing coffee in an environmentally conscious manner."
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  : _vm._e()
                               ]
                             )
                           ]
@@ -40522,14 +40505,16 @@ var render = function() {
                           {
                             staticStyle: {
                               display: "inline-block",
-                              "margin-right": "30px"
+                              "padding-left": "25px",
+                              "padding-right": "25px",
+                              "margin-right": "50px"
                             },
                             on: {
-                              mouseover: function($event) {
+                              click: function($event) {
                                 _vm.hoverWork2 = true
                                 _vm.updateWork2()
                               },
-                              click: function($event) {
+                              mouseover: function($event) {
                                 _vm.hoverWork2 = true
                                 _vm.updateWork2()
                               },
@@ -40541,60 +40526,40 @@ var render = function() {
                           },
                           [
                             _c(
-                              "div",
+                              "a",
                               {
-                                staticClass: "row",
-                                staticStyle: { padding: "0 0 20px 35px" }
+                                staticClass: "work-links",
+                                class: {
+                                  makeWorkVisible: _vm.showWork2,
+                                  increaseHoverArea: _vm.hoverWork2
+                                },
+                                attrs: { href: "/clickerstartupgame" }
                               },
                               [
+                                _vm._v(
+                                  "2\n                                                \n                                                "
+                                ),
                                 _c(
-                                  "a",
+                                  "div",
                                   {
-                                    staticClass: "work-links ",
-                                    attrs: { href: "/clickerstartupgame" }
+                                    staticClass: "row",
+                                    staticStyle: {
+                                      padding: "0 0 20px 0",
+                                      "margin-left": "0"
+                                    }
                                   },
                                   [
-                                    _c(
-                                      "span",
-                                      {
-                                        class: {
-                                          makeWorkVisible: _vm.showWork2,
-                                          increaseHoverArea: _vm.hoverWork2
-                                        }
-                                      },
-                                      [_vm._v("2")]
-                                    )
+                                    _vm.hoverWork2
+                                      ? _c("span", [
+                                          _c(
+                                            "h5",
+                                            { staticClass: "work-desc-slide" },
+                                            [_vm._v("Clicker Start Up Game")]
+                                          )
+                                        ])
+                                      : _vm._e()
                                   ]
                                 )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass: "row",
-                                staticStyle: { padding: "0 0 20px 35px" }
-                              },
-                              [
-                                _vm.hoverWork2
-                                  ? _c("span", [
-                                      _c(
-                                        "h5",
-                                        { staticClass: "work-desc-slide" },
-                                        [_vm._v("Clicker Start Up Game")]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "h6",
-                                        { staticClass: "work-desc-slide" },
-                                        [
-                                          _vm._v(
-                                            "An online web game created to maximize user retention by providing fun and engaging gameplay. An homage to Cookie Clicker."
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  : _vm._e()
                               ]
                             )
                           ]
@@ -40609,14 +40574,16 @@ var render = function() {
                           {
                             staticStyle: {
                               display: "inline-block",
-                              "margin-right": "30px"
+                              "padding-left": "25px",
+                              "padding-right": "25px",
+                              "margin-right": "50px"
                             },
                             on: {
-                              mouseover: function($event) {
+                              click: function($event) {
                                 _vm.hoverWork3 = true
                                 _vm.updateWork3()
                               },
-                              click: function($event) {
+                              mouseover: function($event) {
                                 _vm.hoverWork3 = true
                                 _vm.updateWork3()
                               },
@@ -40628,60 +40595,40 @@ var render = function() {
                           },
                           [
                             _c(
-                              "div",
+                              "a",
                               {
-                                staticClass: "row",
-                                staticStyle: { padding: "0 0 20px 35px" }
+                                staticClass: "work-links",
+                                class: {
+                                  makeWorkVisible: _vm.showWork3,
+                                  increaseHoverArea: _vm.hoverWork3
+                                },
+                                attrs: { href: "/portfolio" }
                               },
                               [
+                                _vm._v(
+                                  "3\n                                                \n                                                "
+                                ),
                                 _c(
-                                  "a",
+                                  "div",
                                   {
-                                    staticClass: "work-links ",
-                                    attrs: { href: "/portfolio" }
+                                    staticClass: "row",
+                                    staticStyle: {
+                                      padding: "0 0 20px 0",
+                                      "margin-left": "0"
+                                    }
                                   },
                                   [
-                                    _c(
-                                      "span",
-                                      {
-                                        class: {
-                                          makeWorkVisible: _vm.showWork3,
-                                          increaseHoverArea: _vm.hoverWork3
-                                        }
-                                      },
-                                      [_vm._v("3")]
-                                    )
+                                    _vm.hoverWork3
+                                      ? _c("span", [
+                                          _c(
+                                            "h5",
+                                            { staticClass: "work-desc-slide" },
+                                            [_vm._v("Portfolio")]
+                                          )
+                                        ])
+                                      : _vm._e()
                                   ]
                                 )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass: "row",
-                                staticStyle: { padding: "0 0 20px 35px" }
-                              },
-                              [
-                                _vm.hoverWork3
-                                  ? _c("span", [
-                                      _c(
-                                        "h5",
-                                        { staticClass: "work-desc-slide" },
-                                        [_vm._v("Portfolio")]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "h6",
-                                        { staticClass: "work-desc-slide" },
-                                        [
-                                          _vm._v(
-                                            "My online portfolio you are currently visiting!"
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  : _vm._e()
                               ]
                             )
                           ]
@@ -40694,13 +40641,18 @@ var render = function() {
                         _c(
                           "div",
                           {
-                            staticStyle: { display: "inline-block" },
+                            staticStyle: {
+                              display: "inline-block",
+                              "padding-left": "25px",
+                              "padding-right": "25px",
+                              "margin-right": "50px"
+                            },
                             on: {
-                              mouseover: function($event) {
+                              click: function($event) {
                                 _vm.hoverWork4 = true
                                 _vm.updateWork4()
                               },
-                              click: function($event) {
+                              mouseover: function($event) {
                                 _vm.hoverWork4 = true
                                 _vm.updateWork4()
                               },
@@ -40712,60 +40664,40 @@ var render = function() {
                           },
                           [
                             _c(
-                              "div",
+                              "a",
                               {
-                                staticClass: "row",
-                                staticStyle: { padding: "0 0 20px 35px" }
+                                staticClass: "work-links ",
+                                class: {
+                                  makeWorkVisible: _vm.showWork4,
+                                  increaseHoverAreaFor4: _vm.hoverWork4
+                                },
+                                attrs: { href: "/thesis" }
                               },
                               [
+                                _vm._v(
+                                  "4\n                                                \n                                                "
+                                ),
                                 _c(
-                                  "a",
+                                  "div",
                                   {
-                                    staticClass: "work-links ",
-                                    attrs: { href: "/thesis" }
+                                    staticClass: "row",
+                                    staticStyle: {
+                                      padding: "0 0 50px 0",
+                                      "margin-left": "0"
+                                    }
                                   },
                                   [
-                                    _c(
-                                      "span",
-                                      {
-                                        class: {
-                                          makeWorkVisible: _vm.showWork4,
-                                          increaseHoverArea: _vm.hoverWork4
-                                        }
-                                      },
-                                      [_vm._v("4")]
-                                    )
+                                    _vm.hoverWork4
+                                      ? _c("span", [
+                                          _c(
+                                            "h5",
+                                            { staticClass: "work-desc-slide " },
+                                            [_vm._v("Thesis")]
+                                          )
+                                        ])
+                                      : _vm._e()
                                   ]
                                 )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass: "row",
-                                staticStyle: { padding: "0 0 20px 35px" }
-                              },
-                              [
-                                _vm.hoverWork4
-                                  ? _c("span", [
-                                      _c(
-                                        "h5",
-                                        { staticClass: "work-desc-slide" },
-                                        [_vm._v("Detecting Galaxies")]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "h6",
-                                        { staticClass: "work-desc-slide" },
-                                        [
-                                          _vm._v(
-                                            "My Computer Science graduating thesis."
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  : _vm._e()
                               ]
                             )
                           ]

@@ -8,7 +8,6 @@
 
             <div class="container" style="padding-top: 18%">
                 <span class="row">
-                    <!-- <span class="col-1  "></span> -->
                     <!-- my portfolio and titles -->
                     <span class="col-xl up-slide" style="padding-left: 20px" >
                         <span class="row">
@@ -31,94 +30,94 @@
                                 </span>
 
                                 <span v-if="showWork1"> 
-                                    <div    @mouseover="hoverWork1 = true; updateWork1()"
-                                            @click="hoverWork1 = true; updateWork1()" 
+                                    <div    @click="hoverWork1 = true; updateWork1()" 
+                                            @mouseover="hoverWork1 = true; updateWork1()" 
                                             @mouseleave="hoverWork1 = false; updateWork1()"
-                                            style="display: inline-block; margin-right: 30px;">
-                                            <div class="row" style="padding: 0 0 20px 35px;">
-                                                <a href="/lacamila" class="work-links " > 
-                                                    <span    
-                                                        v-bind:class="{'makeWorkVisible': showWork1, 'increaseHoverArea': hoverWork1}">1</span>  
-                                                </a >
-                                            </div>
-                                            <div class="row" style="padding: 0 0 20px 35px;">
-                                                <span v-if="hoverWork1" class=""> 
-                                                    <h5 class="work-desc-slide">La Camila Coffee Co Website</h5>
-                                                    <h6 class="work-desc-slide">An e-commerce website I designed and developed to increase the exposure of an international company which specializes in growing and processing coffee in an environmentally conscious manner.</h6> 
-                                                </span> 
-                                            </div>
+                                            style="display: inline-block; padding-left: 25px; padding-right: 25px; margin-right: 50px;" 
+                                            class="">
+                                                <a  
+                                                    href="/lacamila" 
+                                                    class="work-links" 
+                                                    v-bind:class="{'makeWorkVisible': showWork1, 'increaseHoverArea': hoverWork1}">1
+                                                    
+                                                    <div class="row " style="padding: 0 0 20px 0; margin-left: 0;">
+                                                        <span v-if="hoverWork1"> 
+                                                            <h5 class="work-desc-slide ">La Camila Coffee Co Website</h5>
+                                                            <!-- <h6 class="work-desc-slide">An e-commerce website I designed and developed to increase the exposure of an international company which specializes in growing and processing coffee in an environmentally conscious manner.</h6>  -->
+                                                        </span> 
+                                                    </div>
+                                                </a>
                                     </div>                          
                                 </span>
-                                
+
                                 <span v-if="showWork2"> 
-                                    <div    @mouseover="hoverWork2 = true; updateWork2()"
-                                            @click="hoverWork2 = true; updateWork2()" 
+                                    <div    @click="hoverWork2 = true; updateWork2()" 
+                                            @mouseover="hoverWork2 = true; updateWork2()" 
                                             @mouseleave="hoverWork2 = false; updateWork2()"
-                                            style="display: inline-block; margin-right: 30px;">
-                                            <div class="row" style="padding: 0 0 20px 35px;">
-                                                <a href="/clickerstartupgame" class="work-links " > 
-                                                    <span    
-                                                        v-bind:class="{'makeWorkVisible': showWork2, 'increaseHoverArea': hoverWork2}">2</span>  
-                                                </a >
-                                            </div>
-                                            <div class="row" style="padding: 0 0 20px 35px;">
-                                                <span v-if="hoverWork2"> 
-                                                    <h5 class="work-desc-slide">Clicker Start Up Game</h5>
-                                                    <h6 class="work-desc-slide">An online web game created to maximize user retention by providing fun and engaging gameplay. An homage to Cookie Clicker.</h6> 
-                                                </span> 
-                                            </div>
+                                            style="display: inline-block; padding-left: 25px; padding-right: 25px; margin-right: 50px;" 
+                                            class="">
+                                                <a  
+                                                    href="/clickerstartupgame" 
+                                                    class="work-links" 
+                                                    v-bind:class="{'makeWorkVisible': showWork2, 'increaseHoverArea': hoverWork2}">2
+                                                    
+                                                    <div class="row" style="padding: 0 0 20px 0; margin-left: 0;">
+                                                        <span v-if="hoverWork2"> 
+                                                            <h5 class="work-desc-slide">Clicker Start Up Game</h5>
+                                                            <!-- <h6 class="work-desc-slide">An online web game created to maximize user retention by providing fun and engaging gameplay. An homage to Cookie Clicker.</h6>  -->
+                                                        </span> 
+                                                    </div>
+                                                </a>
                                     </div>                          
                                 </span>
                                 
                                 <span v-if="showWork3"> 
-                                    <div    @mouseover="hoverWork3 = true; updateWork3()"
-                                            @click="hoverWork3 = true; updateWork3()" 
+                                    <div    @click="hoverWork3 = true; updateWork3()" 
+                                            @mouseover="hoverWork3 = true; updateWork3()" 
                                             @mouseleave="hoverWork3 = false; updateWork3()"
-                                            style="display: inline-block; margin-right: 30px;">
-                                            <div class="row" style="padding: 0 0 20px 35px;">
-                                                <a href="/portfolio" class="work-links " > 
-                                                    <span    
-                                                        v-bind:class="{'makeWorkVisible': showWork3, 'increaseHoverArea': hoverWork3}">3</span>  
-                                                </a >
-                                            </div>
-                                            <div class="row" style="padding: 0 0 20px 35px;">
-                                                <span v-if="hoverWork3"> 
-                                                    <h5 class="work-desc-slide">Portfolio</h5>
-                                                    <h6 class="work-desc-slide">My online portfolio you are currently visiting!</h6> 
-                                                </span> 
-                                            </div>
+                                            style="display: inline-block; padding-left: 25px; padding-right: 25px; margin-right: 50px;" 
+                                            class="">
+                                                <a  
+                                                    href="/portfolio" 
+                                                    class="work-links" 
+                                                    v-bind:class="{'makeWorkVisible': showWork3, 'increaseHoverArea': hoverWork3}">3
+                                                    
+                                                    <div class="row" style="padding: 0 0 20px 0; margin-left: 0;">
+                                                        <span v-if="hoverWork3"> 
+                                                            <h5 class="work-desc-slide">Portfolio</h5>
+                                                            <!-- <h6 class="work-desc-slide">My online portfolio you are currently visiting!</h6>  -->
+                                                        </span> 
+                                                    </div>
+                                                </a>
                                     </div>                          
                                 </span>
                                 
                                 <span v-if="showWork4"> 
-                                    <div    @mouseover="hoverWork4 = true; updateWork4()"
-                                            @click="hoverWork4 = true; updateWork4()" 
+                                    <div    @click="hoverWork4 = true; updateWork4()" 
+                                            @mouseover="hoverWork4 = true; updateWork4()" 
                                             @mouseleave="hoverWork4 = false; updateWork4()"
-                                            style="display: inline-block;">
-                                            <div class="row" style="padding: 0 0 20px 35px;">
-                                                <a href="/thesis" class="work-links " > 
-                                                    <span    
-                                                        v-bind:class="{'makeWorkVisible': showWork4, 'increaseHoverArea': hoverWork4}">4</span>  
-                                                </a >
-                                            </div>
-                                            <div class="row" style="padding: 0 0 20px 35px;">
-                                                <span v-if="hoverWork4"> 
-                                                    <h5 class="work-desc-slide">Detecting Galaxies</h5>
-                                                    <h6 class="work-desc-slide">My Computer Science graduating thesis.</h6> 
-                                                </span> 
-                                            </div>
+                                            style="display: inline-block; padding-left: 25px; padding-right: 25px; margin-right: 50px;" 
+                                            class="">
+                                                <a  
+                                                    href="/thesis" 
+                                                    class="work-links " 
+                                                    v-bind:class="{'makeWorkVisible': showWork4, 'increaseHoverAreaFor4': hoverWork4}"
+                                                    >4
+                                                    
+                                                    <div class="row" style="padding: 0 0 50px 0; margin-left: 0; ">
+                                                        <span v-if="hoverWork4"> 
+                                                            <h5 class="work-desc-slide ">Thesis</h5>
+                                                            <!-- <h6 class="work-desc-slide">My Computer Science graduating thesis.</h6>  -->
+                                                        </span> 
+                                                    </div>
+                                                </a>
                                     </div>                          
                                 </span>
-                                
                             </div>
-
                         </span>
-                        
                     </span>
-                    <!-- <span class="col-xl-1  "></span> -->
                 </span>
             </div>
-
         </div>
     </div>
 </template>
@@ -129,7 +128,6 @@
             // console.log('Welcome Component mounted.')
         },
         updated(){
-            // console.log("updated");
         },
         data: () => ({
             hoverWork1: false,
@@ -145,7 +143,6 @@
         methods: {
             
             updateWork1(){ // allows the hovered element to stay visible while hiding the others
-                // console.log("something");
                 if (this.hoverWork1 == true){
                     this.showWork2 = false;
                     this.showWork3 = false;
@@ -196,7 +193,6 @@
                     this.showWork3 = true;
                 }
             },
-            
         }
     }
 </script>
