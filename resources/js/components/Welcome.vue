@@ -11,10 +11,10 @@
                     <!-- my portfolio and titles -->
                     <span class="col-xl up-slide" style="padding-left: 20px" >
                         <span class="row">
-                            <h1  style="padding-left: 15px; font-size: 70px">My Portfolio</h1>
+                            <h1 style="padding-left: 15px; font-size: 70px">My Portfolio</h1>
                         </span>
                         <span class="row">
-                            <ul  style="list-style: none; padding-left: 20px;">
+                            <ul style="list-style: none; padding-left: 20px;">
                                 <li> <h3>Full Stack Developer</h3> </li>
                                 <li> <h3>Web Developer</h3> </li>
                             </ul>
@@ -25,94 +25,62 @@
                         <span class="row ">
                             <div class="left-slide ">
 
-                                <span id="worklink" >
-                                        <worklink />
+                                <span v-if="showWork1">
+                                    <div    id="worklink" 
+                                            @click="updateWork('hoverWork1', true)"
+                                            @mouseover="updateWork('hoverWork1', true)" 
+                                            @mouseleave="updateWork('hoverWork1', false)"
+                                            class="work-spacing">
+                                            <worklink   :hoverWork="hoverWork1"
+                                                        :showWork="showWork1"
+                                                        href="/lacamila"
+                                                        num="1"
+                                                        title="La Camila Coffee Co Website" />
+                                    </div>
                                 </span>
 
-                                <span v-if="showWork1"> 
-                                    <div    @click="hoverWork1 = true; updateWork1()" 
-                                            @mouseover="hoverWork1 = true; updateWork1()" 
-                                            @mouseleave="hoverWork1 = false; updateWork1()"
-                                            style="display: inline-block; padding-left: 25px; padding-right: 25px; margin-right: 50px;" 
-                                            class="">
-                                                <a  
-                                                    href="/lacamila" 
-                                                    class="work-links" 
-                                                    v-bind:class="{'makeWorkVisible': showWork1, 'increaseHoverArea': hoverWork1}">1
-                                                    
-                                                    <div class="row " style="padding: 0 0 20px 0; margin-left: 0;">
-                                                        <span v-if="hoverWork1"> 
-                                                            <h5 class="work-desc-slide ">La Camila Coffee Co Website</h5>
-                                                            <!-- <h6 class="work-desc-slide">An e-commerce website I designed and developed to increase the exposure of an international company which specializes in growing and processing coffee in an environmentally conscious manner.</h6>  -->
-                                                        </span> 
-                                                    </div>
-                                                </a>
-                                    </div>                          
+                                <span v-if="showWork2">
+                                    <div    id="worklink" 
+                                            @click="updateWork('hoverWork2', true)"
+                                            @mouseover="updateWork('hoverWork2', true)" 
+                                            @mouseleave="updateWork('hoverWork2', false)"
+                                            class="work-spacing">
+                                            <worklink   :hoverWork="hoverWork2"
+                                                        :showWork="showWork2"
+                                                        href="/clickerstartupgame"
+                                                        num="2"
+                                                        title="Clicker Start Up Game" />
+                                    </div>
                                 </span>
 
-                                <span v-if="showWork2"> 
-                                    <div    @click="hoverWork2 = true; updateWork2()" 
-                                            @mouseover="hoverWork2 = true; updateWork2()" 
-                                            @mouseleave="hoverWork2 = false; updateWork2()"
-                                            style="display: inline-block; padding-left: 25px; padding-right: 25px; margin-right: 50px;" 
-                                            class="">
-                                                <a  
-                                                    href="/clickerstartupgame" 
-                                                    class="work-links" 
-                                                    v-bind:class="{'makeWorkVisible': showWork2, 'increaseHoverArea': hoverWork2}">2
-                                                    
-                                                    <div class="row" style="padding: 0 0 20px 0; margin-left: 0;">
-                                                        <span v-if="hoverWork2"> 
-                                                            <h5 class="work-desc-slide">Clicker Start Up Game</h5>
-                                                            <!-- <h6 class="work-desc-slide">An online web game created to maximize user retention by providing fun and engaging gameplay. An homage to Cookie Clicker.</h6>  -->
-                                                        </span> 
-                                                    </div>
-                                                </a>
-                                    </div>                          
+                                <span v-if="showWork3">
+                                    <div    id="worklink" 
+                                            @click="updateWork('hoverWork3', true)"
+                                            @mouseover="updateWork('hoverWork3', true)" 
+                                            @mouseleave="updateWork('hoverWork3', false)"
+                                            class="work-spacing">
+                                            <worklink   :hoverWork="hoverWork3"
+                                                        :showWork="showWork3"
+                                                        href="/portfolio"
+                                                        num="3"
+                                                        title="Portfolio" />
+                                    </div>
+                                </span>
+
+                                <span v-if="showWork4">
+                                    <div    id="worklink" 
+                                            @click="updateWork('hoverWork4', true)"
+                                            @mouseover="updateWork('hoverWork4', true)" 
+                                            @mouseleave="updateWork('hoverWork4', false)"
+                                            class="work-spacing">
+                                            <worklink   :hoverWork="hoverWork4"
+                                                        :showWork="showWork4"
+                                                        href="/thesis"
+                                                        num="4"
+                                                        title="Thesis" />
+                                    </div>
                                 </span>
                                 
-                                <span v-if="showWork3"> 
-                                    <div    @click="hoverWork3 = true; updateWork3()" 
-                                            @mouseover="hoverWork3 = true; updateWork3()" 
-                                            @mouseleave="hoverWork3 = false; updateWork3()"
-                                            style="display: inline-block; padding-left: 25px; padding-right: 25px; margin-right: 50px;" 
-                                            class="">
-                                                <a  
-                                                    href="/portfolio" 
-                                                    class="work-links" 
-                                                    v-bind:class="{'makeWorkVisible': showWork3, 'increaseHoverArea': hoverWork3}">3
-                                                    
-                                                    <div class="row" style="padding: 0 0 20px 0; margin-left: 0;">
-                                                        <span v-if="hoverWork3"> 
-                                                            <h5 class="work-desc-slide">Portfolio</h5>
-                                                            <!-- <h6 class="work-desc-slide">My online portfolio you are currently visiting!</h6>  -->
-                                                        </span> 
-                                                    </div>
-                                                </a>
-                                    </div>                          
-                                </span>
-                                
-                                <span v-if="showWork4"> 
-                                    <div    @click="hoverWork4 = true; updateWork4()" 
-                                            @mouseover="hoverWork4 = true; updateWork4()" 
-                                            @mouseleave="hoverWork4 = false; updateWork4()"
-                                            style="display: inline-block; padding-left: 25px; padding-right: 25px; margin-right: 50px;" 
-                                            class="">
-                                                <a  
-                                                    href="/thesis" 
-                                                    class="work-links " 
-                                                    v-bind:class="{'makeWorkVisible': showWork4, 'increaseHoverAreaFor4': hoverWork4}"
-                                                    >4
-                                                    
-                                                    <div class="row" style="padding: 0 0 50px 0; margin-left: 0; ">
-                                                        <span v-if="hoverWork4"> 
-                                                            <h5 class="work-desc-slide ">Thesis</h5>
-                                                            <!-- <h6 class="work-desc-slide">My Computer Science graduating thesis.</h6>  -->
-                                                        </span> 
-                                                    </div>
-                                                </a>
-                                    </div>                          
-                                </span>
                             </div>
                         </span>
                     </span>
@@ -141,56 +109,61 @@
             showWork4: true,
         }),
         methods: {
-            
-            updateWork1(){ // allows the hovered element to stay visible while hiding the others
-                if (this.hoverWork1 == true){
-                    this.showWork2 = false;
-                    this.showWork3 = false;
-                    this.showWork4 = false;
-                }
-                else {
-                    this.showWork2 = true;
-                    this.showWork3 = true;
-                    this.showWork4 = true;
-                }
-            },
-            updateWork2(){
-            
-                if (this.hoverWork2 == true){
-                    this.showWork1 = false;
-                    this.showWork3 = false;
-                    this.showWork4 = false;
-                }
-                else {
-                    this.showWork1 = true;
-                    this.showWork3 = true;
-                    this.showWork4 = true;
-                }
-            },
-            updateWork3(){
-            
-                if (this.hoverWork3 == true){
-                    this.showWork1 = false;
-                    this.showWork2 = false;
-                    this.showWork4 = false;
-                }
-                else {
-                    this.showWork1 = true;
-                    this.showWork2 = true;
-                    this.showWork4 = true;
-                }
-            },
-            updateWork4(){
-            
-                if (this.hoverWork4 == true){
-                    this.showWork1 = false;
-                    this.showWork2 = false;
-                    this.showWork3 = false;
-                }
-                else {
-                    this.showWork1 = true;
-                    this.showWork2 = true;
-                    this.showWork3 = true;
+
+            updateWork(name, boolResult){
+
+                if (name == 'hoverWork1'){
+                    if (boolResult == true){
+                        this.hoverWork1 = true;
+                        this.showWork2 = false;
+                        this.showWork3 = false;
+                        this.showWork4 = false;
+                    }
+                    else{
+                        this.hoverWork1 = false;
+                        this.showWork2 = true;
+                        this.showWork3 = true;
+                        this.showWork4 = true;
+                    }
+                } else if (name == 'hoverWork2'){
+                    if (boolResult == true){
+                        this.hoverWork2 = true;
+                        this.showWork1 = false;
+                        this.showWork3 = false;
+                        this.showWork4 = false;
+                    }
+                    else{
+                        this.hoverWork2 = false;
+                        this.showWork1 = true;
+                        this.showWork3 = true;
+                        this.showWork4 = true;
+                    }
+                } else if (name == 'hoverWork3'){
+                    if (boolResult == true){
+                        this.hoverWork3 = true;
+                        this.showWork1 = false;
+                        this.showWork2 = false;
+                        this.showWork4 = false;
+                    }
+                    else{
+                        this.hoverWork3 = false;
+                        this.showWork1 = true;
+                        this.showWork2 = true;
+                        this.showWork4 = true;
+                    }
+                } else if (name == 'hoverWork4'){
+                    if (boolResult == true){
+                        this.hoverWork4 = true;
+                        this.showWork1 = false;
+                        this.showWork2 = false;
+                        this.showWork3 = false;
+                    }
+                    else{
+                        this.hoverWork4 = false;
+                        this.showWork1 = true;
+                        this.showWork2 = true;
+                        this.showWork3 = true;
+                    }
                 }
             },
         }

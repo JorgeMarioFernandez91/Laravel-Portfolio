@@ -203,8 +203,16 @@ a.work-links {
     transform: translate(-50%, -50%);
 }
 
-.horizontal-center {
+.work-spacing {
+    display: inline-block; 
+    padding-left: 25px; 
+    padding-right: 25px; 
+    margin-right: 50px;
+}
 
+.desc-spacing {
+    padding: 0 0 20px 0; 
+    margin-left: 0;
 }
 
 /* fade in on scroll section */
@@ -223,3 +231,12 @@ section {
 }
 
 .carousel-wrapper { -webkit-transform: translate3d(0, 0, 0);}
+
+
+/* img fade gradient */
+    
+img.fade-grandient {
+    position:absolute; top:0; left:0; width:250px; height:250px; 
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
