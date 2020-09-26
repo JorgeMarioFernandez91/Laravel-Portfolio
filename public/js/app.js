@@ -2283,6 +2283,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('La Camila Component mounted.');
@@ -2781,6 +2786,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {// console.log('Welcome Component mounted.')
   },
@@ -2894,6 +2903,149 @@ __webpack_require__.r(__webpack_exports__);
     return {};
   },
   methods: {}
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/WorkPage.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/WorkPage.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    console.log('La Camila Component mounted.');
+  },
+  data: function data() {
+    return {
+      arrowGrow1: false,
+      arrowGrow2: false,
+      arrowGrow3: false
+    };
+  }
 });
 
 /***/ }),
@@ -39060,199 +39212,208 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "curtain" } }, [
-    _c(
-      "div",
-      { staticClass: "makeVisible", staticStyle: { height: "100vh" } },
-      [
-        _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "container", staticStyle: { "padding-top": "10%" } },
-          [
-            _c("span", { staticClass: "row text-center" }, [
-              _c("div", { staticClass: "col-1" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "vertical-center",
-                    staticStyle: { "text-decoration": "none", color: "black" },
-                    attrs: { href: "/thesis" },
-                    on: {
-                      mouseover: function($event) {
-                        _vm.arrowGrow1 = true
+    _c("div", { staticClass: "makeVisible" }, [
+      _c("div", { staticClass: "fade-gradient" }, [
+        _c("div", { staticStyle: { height: "100vh" } }, [
+          _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "container", staticStyle: { "padding-top": "10%" } },
+            [
+              _c("span", { staticClass: "row text-center" }, [
+                _c("div", { staticClass: "col-1" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "vertical-center",
+                      staticStyle: {
+                        "text-decoration": "none",
+                        color: "black"
                       },
-                      mouseleave: function($event) {
-                        _vm.arrowGrow1 = false
-                      }
-                    }
-                  },
-                  [
-                    _c(
-                      "svg",
-                      {
-                        staticClass: "bi bi-chevron-double-down",
-                        class: {
-                          "arrow-grow": _vm.arrowGrow1,
-                          "arrow-style": _vm.arrowGrow1 == false
+                      attrs: { href: "/thesis" },
+                      on: {
+                        mouseover: function($event) {
+                          _vm.arrowGrow1 = true
                         },
-                        attrs: {
-                          viewBox: "0 0 16 16",
-                          fill: "currentColor",
-                          xmlns: "http://www.w3.org/2000/svg"
+                        mouseleave: function($event) {
+                          _vm.arrowGrow1 = false
                         }
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _vm._m(0),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-1" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "vertical-center",
-                    staticStyle: { "text-decoration": "none", color: "black" },
-                    attrs: { href: "/clickerstartupgame" },
-                    on: {
-                      mouseover: function($event) {
-                        _vm.arrowGrow2 = true
-                      },
-                      mouseleave: function($event) {
-                        _vm.arrowGrow2 = false
                       }
-                    }
-                  },
-                  [
-                    _c(
-                      "svg",
-                      {
-                        staticClass: "bi bi-chevron-double-down",
-                        class: {
-                          "arrow-grow": _vm.arrowGrow2,
-                          "arrow-style": _vm.arrowGrow2 == false
+                    },
+                    [
+                      _c(
+                        "svg",
+                        {
+                          staticClass: "bi bi-chevron-double-down",
+                          class: {
+                            "arrow-grow": _vm.arrowGrow1,
+                            "arrow-style": _vm.arrowGrow1 == false
+                          },
+                          attrs: {
+                            viewBox: "0 0 16 16",
+                            fill: "currentColor",
+                            xmlns: "http://www.w3.org/2000/svg"
+                          }
                         },
-                        attrs: {
-                          viewBox: "0 0 16 16",
-                          fill: "currentColor",
-                          xmlns: "http://www.w3.org/2000/svg"
-                        }
+                        [
+                          _c("path", {
+                            attrs: {
+                              "fill-rule": "evenodd",
+                              d:
+                                "M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("path", {
+                            attrs: {
+                              "fill-rule": "evenodd",
+                              d:
+                                "M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                            }
+                          })
+                        ]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _vm._m(0),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-1" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "vertical-center",
+                      staticStyle: {
+                        "text-decoration": "none",
+                        color: "black"
                       },
-                      [
-                        _c("path", {
+                      attrs: { href: "/clickerstartupgame" },
+                      on: {
+                        mouseover: function($event) {
+                          _vm.arrowGrow2 = true
+                        },
+                        mouseleave: function($event) {
+                          _vm.arrowGrow2 = false
+                        }
+                      }
+                    },
+                    [
+                      _c(
+                        "svg",
+                        {
+                          staticClass: "bi bi-chevron-double-down",
+                          class: {
+                            "arrow-grow": _vm.arrowGrow2,
+                            "arrow-style": _vm.arrowGrow2 == false
+                          },
                           attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
+                            viewBox: "0 0 16 16",
+                            fill: "currentColor",
+                            xmlns: "http://www.w3.org/2000/svg"
                           }
-                        }),
-                        _vm._v(" "),
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                )
+                        },
+                        [
+                          _c("path", {
+                            attrs: {
+                              "fill-rule": "evenodd",
+                              d:
+                                "M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("path", {
+                            attrs: {
+                              "fill-rule": "evenodd",
+                              d:
+                                "M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
+                            }
+                          })
+                        ]
+                      )
+                    ]
+                  )
+                ])
               ])
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "container", staticStyle: { "padding-top": "10%" } },
-          [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col " }),
-              _vm._v(" "),
-              _c("div", { staticClass: "col", attrs: { align: "center" } }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "vertical-center",
-                    staticStyle: { "text-decoration": "none", color: "black" },
-                    attrs: { href: "#lacamila-more" },
-                    on: {
-                      mouseover: function($event) {
-                        _vm.arrowGrow3 = true
+            ]
+          ),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "container", staticStyle: { "padding-top": "10%" } },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col " }),
+                _vm._v(" "),
+                _c("div", { staticClass: "col", attrs: { align: "center" } }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "vertical-center",
+                      staticStyle: {
+                        "text-decoration": "none",
+                        color: "black"
                       },
-                      mouseleave: function($event) {
-                        _vm.arrowGrow3 = false
-                      }
-                    }
-                  },
-                  [
-                    _c(
-                      "svg",
-                      {
-                        staticClass: "bi bi-chevron-double-down",
-                        class: {
-                          "arrow-grow": _vm.arrowGrow3,
-                          "arrow-style": _vm.arrowGrow3 == false
+                      attrs: { href: "#lacamila-more" },
+                      on: {
+                        mouseover: function($event) {
+                          _vm.arrowGrow3 = true
                         },
-                        staticStyle: { width: "30%" },
-                        attrs: {
-                          viewBox: "0 0 16 16",
-                          fill: "currentColor",
-                          xmlns: "http://www.w3.org/2000/svg"
+                        mouseleave: function($event) {
+                          _vm.arrowGrow3 = false
                         }
-                      },
-                      [
-                        _c("path", {
+                      }
+                    },
+                    [
+                      _c(
+                        "svg",
+                        {
+                          staticClass: "bi bi-chevron-double-down",
+                          class: {
+                            "arrow-grow": _vm.arrowGrow3,
+                            "arrow-style": _vm.arrowGrow3 == false
+                          },
+                          staticStyle: { width: "30%" },
                           attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                            viewBox: "0 0 16 16",
+                            fill: "currentColor",
+                            xmlns: "http://www.w3.org/2000/svg"
                           }
-                        }),
-                        _vm._v(" "),
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col " })
-            ])
-          ]
-        )
-      ]
-    ),
-    _vm._v(" "),
-    _vm._m(2)
+                        },
+                        [
+                          _c("path", {
+                            attrs: {
+                              "fill-rule": "evenodd",
+                              d:
+                                "M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("path", {
+                            attrs: {
+                              "fill-rule": "evenodd",
+                              d:
+                                "M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                            }
+                          })
+                        ]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col " })
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _vm._m(2)
+      ])
+    ])
   ])
 }
 var staticRenderFns = [
@@ -39310,91 +39471,87 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticStyle: { height: "100vh" }, attrs: { id: "lacamila-more" } },
-      [
-        _c("div", { staticClass: "container" }, [
-          _c(
-            "div",
-            { staticClass: "row", staticStyle: { "padding-top": "5%" } },
-            [
-              _c("div", { staticClass: "col tag" }, [
-                _c("h3", [_vm._v("La Camila Coffee Co.")]),
-                _vm._v(" "),
+    return _c("div", { attrs: { id: "lacamila-more" } }, [
+      _c("div", { staticClass: "container" }, [
+        _c(
+          "div",
+          { staticClass: "row", staticStyle: { "padding-top": "5%" } },
+          [
+            _c("div", { staticClass: "col tag" }, [
+              _c("h3", [_vm._v("La Camila Coffee Co.")]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("h5", { staticStyle: { "text-align": "justify" } }, [
+                _vm._v(
+                  "\n                                A Colombian company that prides itself in growing and processing \n                                quality coffee products in an environmentally sustainable manner. \n                            "
+                ),
                 _c("br"),
                 _vm._v(" "),
-                _c("h5", { staticStyle: { "text-align": "justify" } }, [
-                  _vm._v(
-                    "\n                        A Colombian company that prides itself in growing and processing \n                        quality coffee products in an environmentally sustainable manner. \n                    "
-                  ),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(
-                    "\n                        This website was designed from the ground up to have a modern and responsive layout that looks great on all devices. \n                        This allows the traditional practice of growing coffee to be present and successful in today's e-markets.\n                    "
-                  )
-                ]),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticStyle: { color: "black" },
-                    attrs: { href: "https://trilladoraytostadoralacamila.com/" }
-                  },
-                  [_vm._v("https://trilladoraytostadoralacamila.com")]
+                _c("br"),
+                _vm._v(
+                  "\n                                This website was designed from the ground up to have a modern and responsive layout that looks great on all devices. \n                                This allows the traditional practice of growing coffee to be present and successful in today's e-markets.\n                            "
                 )
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
-            [
-              _c("div", { staticClass: "col " }, [
-                _c("img", {
-                  staticClass: "img-align",
-                  attrs: {
-                    src: "/images/lacamila-welcome-page.PNG",
-                    alt: "image"
-                  }
-                })
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
-            [
-              _c("div", { staticClass: "col " }, [
-                _c("img", {
-                  staticClass: "img-align",
-                  attrs: { src: "/images/lacamila-services.PNG", alt: "image" }
-                })
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
-            [
-              _c("div", { staticClass: "col " }, [
-                _c("img", {
-                  staticClass: "img-align",
-                  attrs: { src: "/images/lacamila-products.PNG", alt: "image" }
-                })
-              ])
-            ]
-          )
-        ]),
+              ]),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticStyle: { color: "black" },
+                  attrs: { href: "https://trilladoraytostadoralacamila.com/" }
+                },
+                [_vm._v("https://trilladoraytostadoralacamila.com")]
+              )
+            ])
+          ]
+        ),
         _vm._v(" "),
-        _c("br"),
-        _c("br")
-      ]
-    )
+        _c(
+          "div",
+          { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
+          [
+            _c("div", { staticClass: "col " }, [
+              _c("img", {
+                staticClass: "img-align",
+                attrs: {
+                  src: "/images/lacamila-welcome-page.PNG",
+                  alt: "image"
+                }
+              })
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
+          [
+            _c("div", { staticClass: "col " }, [
+              _c("img", {
+                staticClass: "img-align",
+                attrs: { src: "/images/lacamila-services.PNG", alt: "image" }
+              })
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
+          [
+            _c("div", { staticClass: "col " }, [
+              _c("img", {
+                staticClass: "img-align",
+                attrs: { src: "/images/lacamila-products.PNG", alt: "image" }
+              })
+            ])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("br"),
+      _c("br")
+    ])
   }
 ]
 render._withStripped = true
@@ -39426,78 +39583,74 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container" }, [
-      _c(
-        "nav",
-        { staticClass: "navbar navbar-expand-lg navbar-light bg-light" },
-        [
-          _c("a", { staticClass: "navbar-brand", attrs: { href: "/" } }, [
-            _vm._v("Jorge Mario Fernandez")
-          ]),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass: "navbar-toggler",
-              attrs: {
-                type: "button",
-                "data-toggle": "collapse",
-                "data-target": "#navbarNavAltMarkup",
-                "aria-controls": "navbarNavAltMarkup",
-                "aria-expanded": "false",
-                "aria-label": "Toggle navigation"
-              }
-            },
-            [_c("span", { staticClass: "navbar-toggler-icon" })]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "collapse navbar-collapse justify-content-end",
-              attrs: { id: "navbarNavAltMarkup" }
-            },
-            [
-              _c("div", { staticClass: "navbar-nav" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "nav-item nav-link ",
-                    attrs: { href: "/about" }
-                  },
-                  [_vm._v("About")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "nav-item nav-link",
-                    attrs: { href: "/lacamila" }
-                  },
-                  [_vm._v("Work")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "nav-item nav-link",
-                    attrs: { href: "/resume" }
-                  },
-                  [_vm._v("Resume")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "nav-item nav-link",
-                    attrs: { href: "/contact" }
-                  },
-                  [_vm._v("Contact")]
-                )
-              ])
-            ]
-          )
-        ]
-      )
+      _c("nav", { staticClass: "navbar navbar-expand-lg navbar-light" }, [
+        _c("a", { staticClass: "navbar-brand", attrs: { href: "/" } }, [
+          _vm._v("Jorge Mario Fernandez")
+        ]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "navbar-toggler",
+            attrs: {
+              type: "button",
+              "data-toggle": "collapse",
+              "data-target": "#navbarNavAltMarkup",
+              "aria-controls": "navbarNavAltMarkup",
+              "aria-expanded": "false",
+              "aria-label": "Toggle navigation"
+            }
+          },
+          [_c("span", { staticClass: "navbar-toggler-icon" })]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "collapse navbar-collapse justify-content-end",
+            attrs: { id: "navbarNavAltMarkup" }
+          },
+          [
+            _c("div", { staticClass: "navbar-nav" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "nav-item nav-link ",
+                  attrs: { href: "/about" }
+                },
+                [_vm._v("About")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "nav-item nav-link",
+                  attrs: { href: "/lacamila" }
+                },
+                [_vm._v("Work")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "nav-item nav-link",
+                  attrs: { href: "/resume" }
+                },
+                [_vm._v("Resume")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "nav-item nav-link",
+                  attrs: { href: "/contact" }
+                },
+                [_vm._v("Contact")]
+              )
+            ])
+          ]
+        )
+      ])
     ])
   }
 ]
@@ -40374,161 +40527,170 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "curtain" } }, [
     _c("div", { staticClass: "makeVisible" }, [
-      _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
-      _vm._v(" "),
       _c(
         "div",
-        { staticClass: "container", staticStyle: { "padding-top": "18%" } },
+        {
+          staticClass: "fade-gradient",
+          staticStyle: { "min-height": "100vh" }
+        },
         [
-          _c("span", { staticClass: "row" }, [
-            _vm._m(0),
-            _vm._v(" "),
-            _c("span", { staticClass: "col-lg" }, [
-              _c("span", { staticClass: "row " }, [
-                _c("div", { staticClass: "left-slide " }, [
-                  _vm.showWork1
-                    ? _c("span", [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "work-spacing",
-                            attrs: { id: "worklink" },
-                            on: {
-                              click: function($event) {
-                                return _vm.updateWork("hoverWork1", true)
+          _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "container", staticStyle: { "padding-top": "18%" } },
+            [
+              _c("span", { staticClass: "row" }, [
+                _vm._m(0),
+                _vm._v(" "),
+                _c("span", { staticClass: "col-lg" }, [
+                  _c("span", { staticClass: "row " }, [
+                    _c("div", { staticClass: "left-slide " }, [
+                      _vm.showWork1
+                        ? _c("span", [
+                            _c(
+                              "div",
+                              {
+                                staticClass: "work-spacing",
+                                attrs: { id: "worklink" },
+                                on: {
+                                  click: function($event) {
+                                    return _vm.updateWork("hoverWork1", true)
+                                  },
+                                  mouseover: function($event) {
+                                    return _vm.updateWork("hoverWork1", true)
+                                  },
+                                  mouseleave: function($event) {
+                                    return _vm.updateWork("hoverWork1", false)
+                                  }
+                                }
                               },
-                              mouseover: function($event) {
-                                return _vm.updateWork("hoverWork1", true)
+                              [
+                                _c("worklink", {
+                                  attrs: {
+                                    hoverWork: _vm.hoverWork1,
+                                    showWork: _vm.showWork1,
+                                    href: "/lacamila",
+                                    num: "1",
+                                    title: "La Camila Coffee Co Website"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.showWork2
+                        ? _c("span", [
+                            _c(
+                              "div",
+                              {
+                                staticClass: "work-spacing",
+                                attrs: { id: "worklink" },
+                                on: {
+                                  click: function($event) {
+                                    return _vm.updateWork("hoverWork2", true)
+                                  },
+                                  mouseover: function($event) {
+                                    return _vm.updateWork("hoverWork2", true)
+                                  },
+                                  mouseleave: function($event) {
+                                    return _vm.updateWork("hoverWork2", false)
+                                  }
+                                }
                               },
-                              mouseleave: function($event) {
-                                return _vm.updateWork("hoverWork1", false)
-                              }
-                            }
-                          },
-                          [
-                            _c("worklink", {
-                              attrs: {
-                                hoverWork: _vm.hoverWork1,
-                                showWork: _vm.showWork1,
-                                href: "/lacamila",
-                                num: "1",
-                                title: "La Camila Coffee Co Website"
-                              }
-                            })
-                          ],
-                          1
-                        )
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.showWork2
-                    ? _c("span", [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "work-spacing",
-                            attrs: { id: "worklink" },
-                            on: {
-                              click: function($event) {
-                                return _vm.updateWork("hoverWork2", true)
+                              [
+                                _c("worklink", {
+                                  attrs: {
+                                    hoverWork: _vm.hoverWork2,
+                                    showWork: _vm.showWork2,
+                                    href: "/clickerstartupgame",
+                                    num: "2",
+                                    title: "Clicker Start Up Game"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.showWork3
+                        ? _c("span", [
+                            _c(
+                              "div",
+                              {
+                                staticClass: "work-spacing",
+                                attrs: { id: "worklink" },
+                                on: {
+                                  click: function($event) {
+                                    return _vm.updateWork("hoverWork3", true)
+                                  },
+                                  mouseover: function($event) {
+                                    return _vm.updateWork("hoverWork3", true)
+                                  },
+                                  mouseleave: function($event) {
+                                    return _vm.updateWork("hoverWork3", false)
+                                  }
+                                }
                               },
-                              mouseover: function($event) {
-                                return _vm.updateWork("hoverWork2", true)
+                              [
+                                _c("worklink", {
+                                  attrs: {
+                                    hoverWork: _vm.hoverWork3,
+                                    showWork: _vm.showWork3,
+                                    href: "/portfolio",
+                                    num: "3",
+                                    title: "Portfolio"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.showWork4
+                        ? _c("span", [
+                            _c(
+                              "div",
+                              {
+                                staticClass: "work-spacing",
+                                attrs: { id: "worklink" },
+                                on: {
+                                  click: function($event) {
+                                    return _vm.updateWork("hoverWork4", true)
+                                  },
+                                  mouseover: function($event) {
+                                    return _vm.updateWork("hoverWork4", true)
+                                  },
+                                  mouseleave: function($event) {
+                                    return _vm.updateWork("hoverWork4", false)
+                                  }
+                                }
                               },
-                              mouseleave: function($event) {
-                                return _vm.updateWork("hoverWork2", false)
-                              }
-                            }
-                          },
-                          [
-                            _c("worklink", {
-                              attrs: {
-                                hoverWork: _vm.hoverWork2,
-                                showWork: _vm.showWork2,
-                                href: "/clickerstartupgame",
-                                num: "2",
-                                title: "Clicker Start Up Game"
-                              }
-                            })
-                          ],
-                          1
-                        )
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.showWork3
-                    ? _c("span", [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "work-spacing",
-                            attrs: { id: "worklink" },
-                            on: {
-                              click: function($event) {
-                                return _vm.updateWork("hoverWork3", true)
-                              },
-                              mouseover: function($event) {
-                                return _vm.updateWork("hoverWork3", true)
-                              },
-                              mouseleave: function($event) {
-                                return _vm.updateWork("hoverWork3", false)
-                              }
-                            }
-                          },
-                          [
-                            _c("worklink", {
-                              attrs: {
-                                hoverWork: _vm.hoverWork3,
-                                showWork: _vm.showWork3,
-                                href: "/portfolio",
-                                num: "3",
-                                title: "Portfolio"
-                              }
-                            })
-                          ],
-                          1
-                        )
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm.showWork4
-                    ? _c("span", [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "work-spacing",
-                            attrs: { id: "worklink" },
-                            on: {
-                              click: function($event) {
-                                return _vm.updateWork("hoverWork4", true)
-                              },
-                              mouseover: function($event) {
-                                return _vm.updateWork("hoverWork4", true)
-                              },
-                              mouseleave: function($event) {
-                                return _vm.updateWork("hoverWork4", false)
-                              }
-                            }
-                          },
-                          [
-                            _c("worklink", {
-                              attrs: {
-                                hoverWork: _vm.hoverWork4,
-                                showWork: _vm.showWork4,
-                                href: "/thesis",
-                                num: "4",
-                                title: "Thesis"
-                              }
-                            })
-                          ],
-                          1
-                        )
-                      ])
-                    : _vm._e()
+                              [
+                                _c("worklink", {
+                                  attrs: {
+                                    hoverWork: _vm.hoverWork4,
+                                    showWork: _vm.showWork4,
+                                    href: "/thesis",
+                                    num: "4",
+                                    title: "Thesis"
+                                  }
+                                })
+                              ],
+                              1
+                            )
+                          ])
+                        : _vm._e()
+                    ])
+                  ])
                 ])
               ])
-            ])
-          ])
+            ]
+          )
         ]
       )
     ])
@@ -40623,6 +40785,370 @@ var render = function() {
   )
 }
 var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/WorkPage.vue?vue&type=template&id=355022ab&":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/WorkPage.vue?vue&type=template&id=355022ab& ***!
+  \***********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { attrs: { id: "curtain" } }, [
+    _c("div", { staticClass: "makeVisible" }, [
+      _c("div", { staticClass: "fade-gradient" }, [
+        _c("div", { staticStyle: { height: "100vh" } }, [
+          _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "container", staticStyle: { "padding-top": "10%" } },
+            [
+              _c("span", { staticClass: "row text-center" }, [
+                _c("div", { staticClass: "col-1" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "vertical-center",
+                      staticStyle: {
+                        "text-decoration": "none",
+                        color: "black"
+                      },
+                      attrs: { href: "/thesis" },
+                      on: {
+                        mouseover: function($event) {
+                          _vm.arrowGrow1 = true
+                        },
+                        mouseleave: function($event) {
+                          _vm.arrowGrow1 = false
+                        }
+                      }
+                    },
+                    [
+                      _c(
+                        "svg",
+                        {
+                          staticClass: "bi bi-chevron-double-down",
+                          class: {
+                            "arrow-grow": _vm.arrowGrow1,
+                            "arrow-style": _vm.arrowGrow1 == false
+                          },
+                          attrs: {
+                            viewBox: "0 0 16 16",
+                            fill: "currentColor",
+                            xmlns: "http://www.w3.org/2000/svg"
+                          }
+                        },
+                        [
+                          _c("path", {
+                            attrs: {
+                              "fill-rule": "evenodd",
+                              d:
+                                "M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("path", {
+                            attrs: {
+                              "fill-rule": "evenodd",
+                              d:
+                                "M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                            }
+                          })
+                        ]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _vm._m(0),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-1" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "vertical-center",
+                      staticStyle: {
+                        "text-decoration": "none",
+                        color: "black"
+                      },
+                      attrs: { href: "/clickerstartupgame" },
+                      on: {
+                        mouseover: function($event) {
+                          _vm.arrowGrow2 = true
+                        },
+                        mouseleave: function($event) {
+                          _vm.arrowGrow2 = false
+                        }
+                      }
+                    },
+                    [
+                      _c(
+                        "svg",
+                        {
+                          staticClass: "bi bi-chevron-double-down",
+                          class: {
+                            "arrow-grow": _vm.arrowGrow2,
+                            "arrow-style": _vm.arrowGrow2 == false
+                          },
+                          attrs: {
+                            viewBox: "0 0 16 16",
+                            fill: "currentColor",
+                            xmlns: "http://www.w3.org/2000/svg"
+                          }
+                        },
+                        [
+                          _c("path", {
+                            attrs: {
+                              "fill-rule": "evenodd",
+                              d:
+                                "M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("path", {
+                            attrs: {
+                              "fill-rule": "evenodd",
+                              d:
+                                "M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
+                            }
+                          })
+                        ]
+                      )
+                    ]
+                  )
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "container", staticStyle: { "padding-top": "10%" } },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col " }),
+                _vm._v(" "),
+                _c("div", { staticClass: "col", attrs: { align: "center" } }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "vertical-center",
+                      staticStyle: {
+                        "text-decoration": "none",
+                        color: "black"
+                      },
+                      attrs: { href: "#lacamila-more" },
+                      on: {
+                        mouseover: function($event) {
+                          _vm.arrowGrow3 = true
+                        },
+                        mouseleave: function($event) {
+                          _vm.arrowGrow3 = false
+                        }
+                      }
+                    },
+                    [
+                      _c(
+                        "svg",
+                        {
+                          staticClass: "bi bi-chevron-double-down",
+                          class: {
+                            "arrow-grow": _vm.arrowGrow3,
+                            "arrow-style": _vm.arrowGrow3 == false
+                          },
+                          staticStyle: { width: "30%" },
+                          attrs: {
+                            viewBox: "0 0 16 16",
+                            fill: "currentColor",
+                            xmlns: "http://www.w3.org/2000/svg"
+                          }
+                        },
+                        [
+                          _c("path", {
+                            attrs: {
+                              "fill-rule": "evenodd",
+                              d:
+                                "M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("path", {
+                            attrs: {
+                              "fill-rule": "evenodd",
+                              d:
+                                "M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                            }
+                          })
+                        ]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col " })
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _vm._m(2)
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col text-center" }, [
+      _c("h1", { staticClass: "work-title-size;" }, [
+        _vm._v("La Camila E-Commerce Website")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "container", staticStyle: { "padding-top": "5%" } },
+      [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col " }),
+          _vm._v(" "),
+          _c("div", { staticClass: "col " }, [
+            _c("span", {}, [
+              _c("h5", { staticStyle: { "text-align": "center" } }, [
+                _vm._v("PHP")
+              ]),
+              _vm._v(" "),
+              _c("h5", { staticStyle: { "text-align": "center" } }, [
+                _vm._v("JavaScript")
+              ]),
+              _vm._v(" "),
+              _c("h5", { staticStyle: { "text-align": "center" } }, [
+                _vm._v("HTML/CSS")
+              ]),
+              _vm._v(" "),
+              _c("h5", { staticStyle: { "text-align": "center" } }, [
+                _vm._v("Bootstrap")
+              ]),
+              _vm._v(" "),
+              _c("h5", { staticStyle: { "text-align": "center" } }, [
+                _vm._v("MySQL")
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col " })
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "lacamila-more" } }, [
+      _c("div", { staticClass: "container" }, [
+        _c(
+          "div",
+          { staticClass: "row", staticStyle: { "padding-top": "5%" } },
+          [
+            _c("div", { staticClass: "col tag" }, [
+              _c("h3", [_vm._v("La Camila Coffee Co.")]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("h5", { staticStyle: { "text-align": "justify" } }, [
+                _vm._v(
+                  "\n                                A Colombian company that prides itself in growing and processing \n                                quality coffee products in an environmentally sustainable manner. \n                            "
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n                                This website was designed from the ground up to have a modern and responsive layout that looks great on all devices. \n                                This allows the traditional practice of growing coffee to be present and successful in today's e-markets.\n                            "
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticStyle: { color: "black" },
+                  attrs: { href: "https://trilladoraytostadoralacamila.com/" }
+                },
+                [_vm._v("https://trilladoraytostadoralacamila.com")]
+              )
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
+          [
+            _c("div", { staticClass: "col " }, [
+              _c("img", {
+                staticClass: "img-align",
+                attrs: {
+                  src: "/images/lacamila-welcome-page.PNG",
+                  alt: "image"
+                }
+              })
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
+          [
+            _c("div", { staticClass: "col " }, [
+              _c("img", {
+                staticClass: "img-align",
+                attrs: { src: "/images/lacamila-services.PNG", alt: "image" }
+              })
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
+          [
+            _c("div", { staticClass: "col " }, [
+              _c("img", {
+                staticClass: "img-align",
+                attrs: { src: "/images/lacamila-products.PNG", alt: "image" }
+              })
+            ])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("br"),
+      _c("br")
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -52827,6 +53353,7 @@ Vue.component('thesis', __webpack_require__(/*! ./components/Thesis.vue */ "./re
 Vue.component('about', __webpack_require__(/*! ./components/About.vue */ "./resources/js/components/About.vue")["default"]);
 Vue.component('resume', __webpack_require__(/*! ./components/Resume.vue */ "./resources/js/components/Resume.vue")["default"]);
 Vue.component('contact', __webpack_require__(/*! ./components/Contact.vue */ "./resources/js/components/Contact.vue")["default"]);
+Vue.component('workpage', __webpack_require__(/*! ./components/WorkPage.vue */ "./resources/js/components/WorkPage.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -53659,6 +54186,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_WorkLink_vue_vue_type_template_id_4943c296___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_WorkLink_vue_vue_type_template_id_4943c296___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/WorkPage.vue":
+/*!**********************************************!*\
+  !*** ./resources/js/components/WorkPage.vue ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _WorkPage_vue_vue_type_template_id_355022ab___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./WorkPage.vue?vue&type=template&id=355022ab& */ "./resources/js/components/WorkPage.vue?vue&type=template&id=355022ab&");
+/* harmony import */ var _WorkPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./WorkPage.vue?vue&type=script&lang=js& */ "./resources/js/components/WorkPage.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _WorkPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _WorkPage_vue_vue_type_template_id_355022ab___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _WorkPage_vue_vue_type_template_id_355022ab___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/WorkPage.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/WorkPage.vue?vue&type=script&lang=js&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/WorkPage.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_WorkPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./WorkPage.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/WorkPage.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_WorkPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/WorkPage.vue?vue&type=template&id=355022ab&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/WorkPage.vue?vue&type=template&id=355022ab& ***!
+  \*****************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_WorkPage_vue_vue_type_template_id_355022ab___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./WorkPage.vue?vue&type=template&id=355022ab& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/WorkPage.vue?vue&type=template&id=355022ab&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_WorkPage_vue_vue_type_template_id_355022ab___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_WorkPage_vue_vue_type_template_id_355022ab___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

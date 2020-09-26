@@ -235,8 +235,29 @@ section {
 
 /* img fade gradient */
     
-img.fade-grandient {
-    position:absolute; top:0; left:0; width:250px; height:250px; 
-    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+div.fade-gradient {
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    display: block;
+    
+    
+
+    background: linear-gradient(
+        to top, 
+        rgba(255, 255, 255, 0) 0, 
+        rgba(255, 255, 255, 1) 40%, 
+        /* rgba(255, 255, 255, 1) 80%,  */
+        rgba(255, 255, 255, 1) 100%), 
+        url(https://images.unsplash.com/photo-1455612693675-112974d4880b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+        /* url(https://images.unsplash.com/photo-1571106875244-21abe17e2c71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1921&q=80)  */
+ 
+        no-repeat;
+
+    background-size: cover;
+
+    min-width: 100%;
+    min-height: 100%;
+    background-attachment: fixed;
+        
 }
