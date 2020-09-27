@@ -81,7 +81,7 @@
                                 <br>
                                     {{ paraChild[1] }}
                                 </h5>
-                                <a :href="hrefCurrWork" style="color: black;">{{ hrefCurrWork }}</a>
+                                <a :href="hrefCurrWork" style="color: black;">{{ hrefName }}</a>
                             </div>
                             
                         </div>
@@ -120,6 +120,7 @@
             techChild: Array,
             infoTitle: String,
             paraChild: Array,
+            hrefName: String,
             hrefCurrWork: String,
             hrefPrevWork: String,
             hrefNextWork: String,

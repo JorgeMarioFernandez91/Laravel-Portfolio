@@ -1970,115 +1970,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    console.log('Cookie Clicker Component mounted.');
+    console.log('Clicker Start Up Component mounted.');
   },
   data: function data() {
     return {
       arrowGrow1: false,
       arrowGrow2: false,
-      arrowGrow3: false
+      arrowGrow3: false,
+      techParent: ["React", "JavaScript", "HTML/CSS", "Bootstrap"],
+      paraParent: ["Using React.js to manage numerous states, this web app pays tribute to the popular Cookie Clicker web game, but with a modern tech start-up twist.", "By clicking the computer and hiring more employees to do the clicking, players can unlock perks to quickly make their tech startup the fastest growing company in Silicon Valley."],
+      imgParent: ["/images/clickerstartup-intro-message.PNG", "/images/clickerstartup-gameplay.PNG", "/images/clickerstartup-gameplay-more.PNG"]
     };
   }
 });
@@ -2182,8 +2085,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('La Camila Component mounted.');
@@ -2261,106 +2162,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Portfolio Component mounted.');
@@ -2369,7 +2170,10 @@ __webpack_require__.r(__webpack_exports__);
     return {
       arrowGrow1: false,
       arrowGrow2: false,
-      arrowGrow3: false
+      arrowGrow3: false,
+      techParent: ["Laravel", "Vue", "JavaScript", "HTML/CSS", "Bootstrap"],
+      paraParent: ["By using Laravel and Vue I designed and implemented this portfolio to have a minimalistic and modern aesthetic that looks great on all devices and showcases my work as a full stack and web developer.", "Users can browse the work that I've done, learn about me as a developer, and view my resume."],
+      imgParent: ["/images/portfolio-home.PNG", "/images/portfolio-home-hover.PNG", "/images/portfolio-work-ex.PNG"]
     };
   }
 });
@@ -2468,116 +2272,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    console.log('Thesis Component mounted.');
+    console.log('Detecting Sim Galaxies Component mounted.');
   },
   data: function data() {
     return {
       arrowGrow1: false,
       arrowGrow2: false,
-      arrowGrow3: false
+      arrowGrow3: false,
+      techParent: ["Python", "OpenCV", "Python Imaging Library", "SciPy"],
+      paraParent: ["The purpose of this thesis was to determine if simulated, computer generated images of galaxies, are comparable to images of real galaxies.", "Using computer vision I was able to develop a system that can, with high accuracy, determine if a simulated galaxy is a good representation of a real galaxy or not. This gives simulation scientists and astronomers in general a new method of testing their results."],
+      imgParent: ["/images/thesis-test-accuracies.PNG", "/images/thesis-skill-noskill-comparison.PNG", "/images/thesis-algorithms.PNG"]
     };
   }
 });
@@ -2936,6 +2642,7 @@ __webpack_require__.r(__webpack_exports__);
     techChild: Array,
     infoTitle: String,
     paraChild: Array,
+    hrefName: String,
     hrefCurrWork: String,
     hrefPrevWork: String,
     hrefNextWork: String,
@@ -38614,349 +38321,21 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "curtain" } }, [
-    _c(
-      "div",
-      { staticClass: "makeVisible", staticStyle: { height: "100vh" } },
-      [
-        _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "container", staticStyle: { "padding-top": "10%" } },
-          [
-            _c("span", { staticClass: "row text-center" }, [
-              _c("div", { staticClass: "col-1" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "vertical-center",
-                    staticStyle: { "text-decoration": "none", color: "black" },
-                    attrs: { href: "/lacamila" },
-                    on: {
-                      mouseover: function($event) {
-                        _vm.arrowGrow1 = true
-                      },
-                      mouseleave: function($event) {
-                        _vm.arrowGrow1 = false
-                      }
-                    }
-                  },
-                  [
-                    _c(
-                      "svg",
-                      {
-                        staticClass: "bi bi-chevron-double-down",
-                        class: {
-                          "arrow-grow": _vm.arrowGrow1,
-                          "arrow-style": _vm.arrowGrow1 == false
-                        },
-                        attrs: {
-                          viewBox: "0 0 16 16",
-                          fill: "currentColor",
-                          xmlns: "http://www.w3.org/2000/svg"
-                        }
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _vm._m(0),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-1" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "vertical-center",
-                    staticStyle: { "text-decoration": "none", color: "black" },
-                    attrs: { href: "/portfolio" },
-                    on: {
-                      mouseover: function($event) {
-                        _vm.arrowGrow2 = true
-                      },
-                      mouseleave: function($event) {
-                        _vm.arrowGrow2 = false
-                      }
-                    }
-                  },
-                  [
-                    _c(
-                      "svg",
-                      {
-                        staticClass: "bi bi-chevron-double-down",
-                        class: {
-                          "arrow-grow": _vm.arrowGrow2,
-                          "arrow-style": _vm.arrowGrow2 == false
-                        },
-                        attrs: {
-                          viewBox: "0 0 16 16",
-                          fill: "currentColor",
-                          xmlns: "http://www.w3.org/2000/svg"
-                        }
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                )
-              ])
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "container", staticStyle: { "padding-top": "10%" } },
-          [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col " }),
-              _vm._v(" "),
-              _c("div", { staticClass: "col", attrs: { align: "center" } }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "vertical-center",
-                    staticStyle: { "text-decoration": "none", color: "black" },
-                    attrs: { href: "#startupclicker-more" },
-                    on: {
-                      mouseover: function($event) {
-                        _vm.arrowGrow3 = true
-                      },
-                      mouseleave: function($event) {
-                        _vm.arrowGrow3 = false
-                      }
-                    }
-                  },
-                  [
-                    _c(
-                      "svg",
-                      {
-                        staticClass: "bi bi-chevron-double-down",
-                        class: {
-                          "arrow-grow": _vm.arrowGrow3,
-                          "arrow-style": _vm.arrowGrow3 == false
-                        },
-                        staticStyle: { width: "30%" },
-                        attrs: {
-                          viewBox: "0 0 16 16",
-                          fill: "currentColor",
-                          xmlns: "http://www.w3.org/2000/svg"
-                        }
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col " })
-            ])
-          ]
-        )
-      ]
-    ),
-    _vm._v(" "),
-    _vm._m(2)
-  ])
+  return _c("workpage", {
+    attrs: {
+      mainTitle: "Clicker Startup Game",
+      techChild: _vm.techParent,
+      infoTitle: "Clicker Startup Game",
+      paraChild: _vm.paraParent,
+      hrefName: "https://cookieclickerstartup.netlify.app",
+      hrefCurrWork: "https://cookieclickerstartup.netlify.app",
+      hrefPrevWork: "/lacamila",
+      hrefNextWork: "/portfolio",
+      imgChild: _vm.imgParent
+    }
+  })
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col text-center" }, [
-      _c("h1", { staticClass: "work-title-size;" }, [
-        _vm._v("Clicker Startup Game")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "container", staticStyle: { "padding-top": "5%" } },
-      [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col " }),
-          _vm._v(" "),
-          _c("div", { staticClass: "col " }, [
-            _c("span", {}, [
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("React")
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("JavaScript")
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("HTML/CSS")
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("Bootstrap")
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col " })
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticStyle: { height: "100vh" },
-        attrs: { id: "startupclicker-more" }
-      },
-      [
-        _c("div", { staticClass: "container" }, [
-          _c(
-            "div",
-            { staticClass: "row", staticStyle: { "padding-top": "5%" } },
-            [
-              _c("div", { staticClass: "col tag" }, [
-                _c("h3", [_vm._v("Clicker Startup Game")]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("h5", { staticStyle: { "text-align": "justify" } }, [
-                  _vm._v(
-                    "\n                        Using React.js to manage numerous states, this web app pays tribute to the popular Cookie Clicker web game, \n                        but with a modern tech start-up twist. \n                    "
-                  ),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(
-                    "\n                        By clicking the computer and hiring more employees to do the clicking, players can unlock perks to quickly make \n                        their tech startup the fastest growing company in Silicon Valley.\n                    "
-                  )
-                ]),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticStyle: { color: "black" },
-                    attrs: { href: "https://cookieclickerstartup.netlify.app/" }
-                  },
-                  [_vm._v("https://cookieclickerstartup.netlify.app")]
-                )
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
-            [
-              _c("div", { staticClass: "col " }, [
-                _c("img", {
-                  staticClass: "img-align",
-                  attrs: {
-                    src: "/images/clickerstartup-intro-message.PNG",
-                    alt: "image"
-                  }
-                })
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
-            [
-              _c("div", { staticClass: "col " }, [
-                _c("img", {
-                  staticClass: "img-align",
-                  attrs: {
-                    src: "/images/clickerstartup-gameplay.PNG",
-                    alt: "image"
-                  }
-                })
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
-            [
-              _c("div", { staticClass: "col " }, [
-                _c("img", {
-                  staticClass: "img-align",
-                  attrs: {
-                    src: "/images/clickerstartup-gameplay-more.PNG",
-                    alt: "image"
-                  }
-                })
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _c("br")
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -39119,6 +38498,7 @@ var render = function() {
       techChild: _vm.techParent,
       infoTitle: "La Camila Coffee Co.",
       paraChild: _vm.paraParent,
+      hrefName: "https://trilladoraytostadoralacamila.com/",
       hrefCurrWork: "https://trilladoraytostadoralacamila.com/",
       hrefPrevWork: "/thesis",
       hrefNextWork: "/clickerstartupgame",
@@ -39248,339 +38628,21 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "curtain" } }, [
-    _c(
-      "div",
-      { staticClass: "makeVisible", staticStyle: { height: "100vh" } },
-      [
-        _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "container", staticStyle: { "padding-top": "10%" } },
-          [
-            _c("span", { staticClass: "row text-center" }, [
-              _c("div", { staticClass: "col-1" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "vertical-center",
-                    staticStyle: { "text-decoration": "none", color: "black" },
-                    attrs: { href: "/clickerstartupgame" },
-                    on: {
-                      mouseover: function($event) {
-                        _vm.arrowGrow1 = true
-                      },
-                      mouseleave: function($event) {
-                        _vm.arrowGrow1 = false
-                      }
-                    }
-                  },
-                  [
-                    _c(
-                      "svg",
-                      {
-                        staticClass: "bi bi-chevron-double-down",
-                        class: {
-                          "arrow-grow": _vm.arrowGrow1,
-                          "arrow-style": _vm.arrowGrow1 == false
-                        },
-                        attrs: {
-                          viewBox: "0 0 16 16",
-                          fill: "currentColor",
-                          xmlns: "http://www.w3.org/2000/svg"
-                        }
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _vm._m(0),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-1" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "vertical-center",
-                    staticStyle: { "text-decoration": "none", color: "black" },
-                    attrs: { href: "/thesis" },
-                    on: {
-                      mouseover: function($event) {
-                        _vm.arrowGrow2 = true
-                      },
-                      mouseleave: function($event) {
-                        _vm.arrowGrow2 = false
-                      }
-                    }
-                  },
-                  [
-                    _c(
-                      "svg",
-                      {
-                        staticClass: "bi bi-chevron-double-down",
-                        class: {
-                          "arrow-grow": _vm.arrowGrow2,
-                          "arrow-style": _vm.arrowGrow2 == false
-                        },
-                        attrs: {
-                          viewBox: "0 0 16 16",
-                          fill: "currentColor",
-                          xmlns: "http://www.w3.org/2000/svg"
-                        }
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                )
-              ])
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "container", staticStyle: { "padding-top": "10%" } },
-          [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col " }),
-              _vm._v(" "),
-              _c("div", { staticClass: "col", attrs: { align: "center" } }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "vertical-center",
-                    staticStyle: { "text-decoration": "none", color: "black" },
-                    attrs: { href: "#portfolio-more" },
-                    on: {
-                      mouseover: function($event) {
-                        _vm.arrowGrow3 = true
-                      },
-                      mouseleave: function($event) {
-                        _vm.arrowGrow3 = false
-                      }
-                    }
-                  },
-                  [
-                    _c(
-                      "svg",
-                      {
-                        staticClass: "bi bi-chevron-double-down",
-                        class: {
-                          "arrow-grow": _vm.arrowGrow3,
-                          "arrow-style": _vm.arrowGrow3 == false
-                        },
-                        staticStyle: { width: "30%" },
-                        attrs: {
-                          viewBox: "0 0 16 16",
-                          fill: "currentColor",
-                          xmlns: "http://www.w3.org/2000/svg"
-                        }
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col " })
-            ])
-          ]
-        )
-      ]
-    ),
-    _vm._v(" "),
-    _vm._m(2)
-  ])
+  return _c("workpage", {
+    attrs: {
+      mainTitle: "Portfolio",
+      techChild: _vm.techParent,
+      infoTitle: "Portfolio",
+      paraChild: _vm.paraParent,
+      hrefName: "http://jorgemariofernandez.com",
+      hrefCurrWork: "http://jorgemariofernandez.com",
+      hrefPrevWork: "/clickerstartupgame",
+      hrefNextWork: "/thesis",
+      imgChild: _vm.imgParent
+    }
+  })
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col text-center" }, [
-      _c("h1", { staticClass: "work-title-size;" }, [_vm._v("Portfolio")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "container", staticStyle: { "padding-top": "5%" } },
-      [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col " }),
-          _vm._v(" "),
-          _c("div", { staticClass: "col " }, [
-            _c("span", {}, [
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("Laravel")
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("Vue.js")
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("JavaScript")
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("HTML/CSS")
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("Bootstrap")
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col " })
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticStyle: { height: "100vh" }, attrs: { id: "portfolio-more" } },
-      [
-        _c("div", { staticClass: "container" }, [
-          _c(
-            "div",
-            { staticClass: "row", staticStyle: { "padding-top": "5%" } },
-            [
-              _c("div", { staticClass: "col tag" }, [
-                _c("h3", [_vm._v("Portfolio")]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("h5", { staticStyle: { "text-align": "justify" } }, [
-                  _vm._v(
-                    "\n                        By using Laravel and Vue I designed and implemented this portfolio to have a minimalistic and modern aesthetic \n                        that looks great on all devices and showcases my work as a full stack and web developer. \n                    "
-                  ),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(
-                    "\n                        Users can browse the work that I've done, learn about me as a developer, and view my resume.\n                    "
-                  )
-                ]),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  { staticStyle: { color: "black" }, attrs: { href: "/" } },
-                  [_vm._v("http://jorgemariofernandez.com")]
-                )
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
-            [
-              _c("div", { staticClass: "col " }, [
-                _c("img", {
-                  staticClass: "img-align",
-                  attrs: { src: "/images/portfolio-home.PNG", alt: "image" }
-                })
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
-            [
-              _c("div", { staticClass: "col " }, [
-                _c("img", {
-                  staticClass: "img-align",
-                  attrs: {
-                    src: "/images/portfolio-home-hover.PNG",
-                    alt: "image"
-                  }
-                })
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
-            [
-              _c("div", { staticClass: "col " }, [
-                _c("img", {
-                  staticClass: "img-align",
-                  attrs: { src: "/images/portfolio-work-ex.PNG", alt: "image" }
-                })
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _c("br")
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -39737,346 +38799,22 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "curtain" } }, [
-    _c(
-      "div",
-      { staticClass: "makeVisible", staticStyle: { height: "100vh" } },
-      [
-        _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "container", staticStyle: { "padding-top": "10%" } },
-          [
-            _c("span", { staticClass: "row text-center" }, [
-              _c("div", { staticClass: "col-1" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "vertical-center",
-                    staticStyle: { "text-decoration": "none", color: "black" },
-                    attrs: { href: "/portfolio" },
-                    on: {
-                      mouseover: function($event) {
-                        _vm.arrowGrow1 = true
-                      },
-                      mouseleave: function($event) {
-                        _vm.arrowGrow1 = false
-                      }
-                    }
-                  },
-                  [
-                    _c(
-                      "svg",
-                      {
-                        staticClass: "bi bi-chevron-double-down",
-                        class: {
-                          "arrow-grow": _vm.arrowGrow1,
-                          "arrow-style": _vm.arrowGrow1 == false
-                        },
-                        attrs: {
-                          viewBox: "0 0 16 16",
-                          fill: "currentColor",
-                          xmlns: "http://www.w3.org/2000/svg"
-                        }
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _vm._m(0),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-1" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "vertical-center",
-                    staticStyle: { "text-decoration": "none", color: "black" },
-                    attrs: { href: "/lacamila" },
-                    on: {
-                      mouseover: function($event) {
-                        _vm.arrowGrow2 = true
-                      },
-                      mouseleave: function($event) {
-                        _vm.arrowGrow2 = false
-                      }
-                    }
-                  },
-                  [
-                    _c(
-                      "svg",
-                      {
-                        staticClass: "bi bi-chevron-double-down",
-                        class: {
-                          "arrow-grow": _vm.arrowGrow2,
-                          "arrow-style": _vm.arrowGrow2 == false
-                        },
-                        attrs: {
-                          viewBox: "0 0 16 16",
-                          fill: "currentColor",
-                          xmlns: "http://www.w3.org/2000/svg"
-                        }
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                )
-              ])
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "container", staticStyle: { "padding-top": "10%" } },
-          [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col " }),
-              _vm._v(" "),
-              _c("div", { staticClass: "col", attrs: { align: "center" } }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "vertical-center",
-                    staticStyle: { "text-decoration": "none", color: "black" },
-                    attrs: { href: "#thesis-more" },
-                    on: {
-                      mouseover: function($event) {
-                        _vm.arrowGrow3 = true
-                      },
-                      mouseleave: function($event) {
-                        _vm.arrowGrow3 = false
-                      }
-                    }
-                  },
-                  [
-                    _c(
-                      "svg",
-                      {
-                        staticClass: "bi bi-chevron-double-down",
-                        class: {
-                          "arrow-grow": _vm.arrowGrow3,
-                          "arrow-style": _vm.arrowGrow3 == false
-                        },
-                        staticStyle: { width: "30%" },
-                        attrs: {
-                          viewBox: "0 0 16 16",
-                          fill: "currentColor",
-                          xmlns: "http://www.w3.org/2000/svg"
-                        }
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("path", {
-                          attrs: {
-                            "fill-rule": "evenodd",
-                            d:
-                              "M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                          }
-                        })
-                      ]
-                    )
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col " })
-            ])
-          ]
-        )
-      ]
-    ),
-    _vm._v(" "),
-    _vm._m(2)
-  ])
+  return _c("workpage", {
+    attrs: {
+      mainTitle: "Detecting Simulated Galaxies",
+      techChild: _vm.techParent,
+      infoTitle: "Detecting Simulated Galaxies",
+      paraChild: _vm.paraParent,
+      hrefName: "One Drive Link",
+      hrefCurrWork:
+        "https://uwoca-my.sharepoint.com/personal/jferna29_uwo_ca/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjferna29%5Fuwo%5Fca%2FDocuments%2FFTR%20%5FJorgeFernandez%20%281%29%2Epdf&parent=%2Fpersonal%2Fjferna29%5Fuwo%5Fca%2FDocuments&originalPath=aHR0cHM6Ly91d29jYS1teS5zaGFyZXBvaW50LmNvbS86YjovZy9wZXJzb25hbC9qZmVybmEyOV91d29fY2EvRVdCNnl4ZmZjOUJKcVY2WmxTbmJ3WFFCMG5FcHZvRXpSX0tQd3B3emJOU2taQT9ydGltZT1hVVdpRXZ4aTJFZw",
+      hrefPrevWork: "/portfolio",
+      hrefNextWork: "/lacamila",
+      imgChild: _vm.imgParent
+    }
+  })
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col text-center" }, [
-      _c("h1", { staticClass: "work-title-size;" }, [
-        _vm._v("Detecting Simulated Galaxies")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "container", staticStyle: { "padding-top": "5%" } },
-      [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col " }),
-          _vm._v(" "),
-          _c("div", { staticClass: "col " }, [
-            _c("span", {}, [
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("Python")
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("OpenCV")
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("Python Imaging Library")
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("SciPy")
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col " })
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticStyle: { height: "100vh" }, attrs: { id: "thesis-more" } },
-      [
-        _c("div", { staticClass: "container" }, [
-          _c(
-            "div",
-            { staticClass: "row", staticStyle: { "padding-top": "5%" } },
-            [
-              _c("div", { staticClass: "col tag" }, [
-                _c("h3", [_vm._v("Detecting Simulated Galaxies")]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("h5", { staticStyle: { "text-align": "justify" } }, [
-                  _vm._v(
-                    "\n                        The purpose of this thesis was to determine if simulated, computer generated images of galaxies, are \n                        comparable to images of real galaxies.  \n                    "
-                  ),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(
-                    "\n                        Using computer vision I was able to develop a system that can, with high accuracy, determine if a \n                        simulated galaxy is a good representation of a real galaxy or not. This gives simulation scientists \n                        and astronomers in general a new method of testing their results.\n                    "
-                  )
-                ]),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticStyle: { color: "black" },
-                    attrs: {
-                      href:
-                        "https://uwoca-my.sharepoint.com/:b:/g/personal/jferna29_uwo_ca/EWB6yxffc9BJqV6ZlSnbwXQB0nEpvoEzR_KPwpwzbNSkZA?e=d0aJDd"
-                    }
-                  },
-                  [_vm._v("One Drive Link")]
-                )
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
-            [
-              _c("div", { staticClass: "col " }, [
-                _c("img", {
-                  staticClass: "img-align",
-                  attrs: {
-                    src: "/images/thesis-test-accuracies.PNG",
-                    alt: "image"
-                  }
-                })
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
-            [
-              _c("div", { staticClass: "col " }, [
-                _c("img", {
-                  staticClass: "img-align",
-                  attrs: {
-                    src: "/images/thesis-skill-noskill-comparison.PNG",
-                    alt: "image"
-                  }
-                })
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
-            [
-              _c("div", { staticClass: "col " }, [
-                _c("img", {
-                  staticClass: "img-align",
-                  attrs: { src: "/images/thesis-algorithms.PNG", alt: "image" }
-                })
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _c("br")
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -40652,7 +39390,7 @@ var render = function() {
                       staticStyle: { color: "black" },
                       attrs: { href: _vm.hrefCurrWork }
                     },
-                    [_vm._v(_vm._s(_vm.hrefCurrWork))]
+                    [_vm._v(_vm._s(_vm.hrefName))]
                   )
                 ])
               ]
