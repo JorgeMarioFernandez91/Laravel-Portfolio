@@ -12,7 +12,7 @@
                     <div class="container" style="padding-top: 10%;">
                         <span class="row text-center">
                             <div class="col-1">
-                                <a href="/thesis" class="vertical-center" style="text-decoration: none; color: black;" @mouseover="arrowGrow1 = true" @mouseleave="arrowGrow1 = false">
+                                <a :href="hrefPrevWork" class="vertical-center" style="text-decoration: none; color: black;" @mouseover="arrowGrow1 = true" @mouseleave="arrowGrow1 = false">
                                     <svg v-bind:class="{'arrow-grow': arrowGrow1, 'arrow-style': (arrowGrow1 == false)}" 
                                         viewBox="0 0 16 16" class="bi bi-chevron-double-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
@@ -21,10 +21,10 @@
                                 </a>
                             </div>
                             <div class="col text-center">
-                                <h1 class="work-title-size;">La Camila E-Commerce Website</h1>     
+                                <h1 class="work-title-size;">{{ mainTitle }}</h1>     
                             </div>
                             <div class="col-1">
-                                <a href="/clickerstartupgame" class="vertical-center" style="text-decoration: none; color: black;" @mouseover="arrowGrow2 = true" @mouseleave="arrowGrow2 = false">
+                                <a :href="hrefNextWork" class="vertical-center" style="text-decoration: none; color: black;" @mouseover="arrowGrow2 = true" @mouseleave="arrowGrow2 = false">
                                     <svg v-bind:class="{'arrow-grow': arrowGrow2, 'arrow-style': (arrowGrow2 == false)}" 
                                         viewBox="0 0 16 16" class="bi bi-chevron-double-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
@@ -39,13 +39,8 @@
                             <div class="col ">
                             </div>
                             <div class="col ">
-                                <span class="">
-                                    <h5 style="text-align: center">PHP</h5>    
-                                    <h5 style="text-align: center">JavaScript</h5>
-                                    <h5 style="text-align: center">HTML/CSS</h5>
-                                    <h5 style="text-align: center">Bootstrap</h5>
-                                    <h5 style="text-align: center">MySQL</h5>
-                                </span> 
+                                <h4 style="text-align: center; text-decoration: underline;">Technologies</h4>
+                                <h5 v-for="tech in techChild" :key="tech" style="text-align: center">{{ tech }}</h5>
                             </div>
                             <div class="col ">
                             </div>
@@ -57,7 +52,7 @@
                             </div>
                             <div class="col" align="center">
                                 <!-- @click make #lacamila-more fade in -->
-                                <a href="#lacamila-more" class="vertical-center" style="text-decoration: none; color: black; " @mouseover="arrowGrow3 = true" @mouseleave="arrowGrow3 = false">
+                                <a href="#info" class="vertical-center" style="text-decoration: none; color: black; " @mouseover="arrowGrow3 = true" @mouseleave="arrowGrow3 = false">
                                     <svg v-bind:class="{'arrow-grow': arrowGrow3, 'arrow-style': (arrowGrow3 == false)}" style="width: 30%;"  
                                         viewBox="0 0 16 16" class="bi bi-chevron-double-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
@@ -73,39 +68,37 @@
 
                 </div>
                 
-                <div id="lacamila-more" >
+                <div id="info" >
                     <div class="container" >
                         <div class="row" style="padding-top: 5%;">
                             <div class="col tag" >
                                 <!-- information and links -->
-                                <h3>La Camila Coffee Co.</h3>
+                                <h3>{{ infoTitle }}</h3>
                                 <br>
                                 <h5 style="text-align:justify;">
-                                    A Colombian company that prides itself in growing and processing 
-                                    quality coffee products in an environmentally sustainable manner. 
+                                    {{ paraChild[0] }}
                                 <br>
                                 <br>
-                                    This website was designed from the ground up to have a modern and responsive layout that looks great on all devices. 
-                                    This allows the traditional practice of growing coffee to be present and successful in today's e-markets.
+                                    {{ paraChild[1] }}
                                 </h5>
-                                <a href="https://trilladoraytostadoralacamila.com/" style="color: black;">https://trilladoraytostadoralacamila.com</a>
+                                <a :href="hrefCurrWork" style="color: black;">{{ hrefCurrWork }}</a>
                             </div>
                             
                         </div>
                         <div class="row tag" style="padding-top: 2%;">
                             <!-- photos -->
                             <div class="col ">
-                                <img class="img-align" src="/images/lacamila-welcome-page.PNG" alt="image">
+                                <img class="img-align" :src="imgChild[0]" alt="image">
                             </div>
                         </div>
                         <div class="row tag" style="padding-top: 2%;">
                             <div class="col ">
-                                <img class="img-align" src="/images/lacamila-services.PNG" alt="image">
+                                <img class="img-align" :src="imgChild[1]" alt="image">
                             </div>
                         </div>
                         <div class="row tag" style="padding-top: 2%;">
                             <div class="col ">
-                                <img class="img-align" src="/images/lacamila-products.PNG" alt="image">
+                                <img class="img-align" :src="imgChild[2]" alt="image">
                             </div>
                         </div>
                     </div>
@@ -120,7 +113,17 @@
 <script>
     export default {
         mounted() {
-            console.log('La Camila Component mounted.')
+            console.log('Work Page Component mounted.')
+        },
+        props: {
+            mainTitle: String,
+            techChild: Array,
+            infoTitle: String,
+            paraChild: Array,
+            hrefCurrWork: String,
+            hrefPrevWork: String,
+            hrefNextWork: String,
+            imgChild: Array,
         },
         data: () => ({
             arrowGrow1: false,

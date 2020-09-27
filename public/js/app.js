@@ -2184,110 +2184,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('La Camila Component mounted.');
@@ -2296,7 +2192,10 @@ __webpack_require__.r(__webpack_exports__);
     return {
       arrowGrow1: false,
       arrowGrow2: false,
-      arrowGrow3: false
+      arrowGrow3: false,
+      techParent: ["PHP", "JavaScript", "HTML/CSS", "Bootstrap", "MySQL"],
+      paraParent: ["A Colombian company that prides itself in growing and processing quality coffee products in an environmentally sustainable manner.", "This website was designed from the ground up to have a modern and responsive layout that looks great on all devices. This allows the traditional practice of growing coffee to be present and successful in today's e-markets."],
+      imgParent: ["/images/lacamila-welcome-page.PNG", "/images/lacamila-services.PNG", "/images/lacamila-products.PNG"]
     };
   }
 });
@@ -3028,16 +2927,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    console.log('La Camila Component mounted.');
+    console.log('Work Page Component mounted.');
+  },
+  props: {
+    mainTitle: String,
+    techChild: Array,
+    infoTitle: String,
+    paraChild: Array,
+    hrefCurrWork: String,
+    hrefPrevWork: String,
+    hrefNextWork: String,
+    imgChild: Array
   },
   data: function data() {
     return {
@@ -39211,349 +39113,20 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "curtain" } }, [
-    _c("div", { staticClass: "makeVisible" }, [
-      _c("div", { staticClass: "fade-gradient" }, [
-        _c("div", { staticStyle: { height: "100vh" } }, [
-          _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "container", staticStyle: { "padding-top": "10%" } },
-            [
-              _c("span", { staticClass: "row text-center" }, [
-                _c("div", { staticClass: "col-1" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "vertical-center",
-                      staticStyle: {
-                        "text-decoration": "none",
-                        color: "black"
-                      },
-                      attrs: { href: "/thesis" },
-                      on: {
-                        mouseover: function($event) {
-                          _vm.arrowGrow1 = true
-                        },
-                        mouseleave: function($event) {
-                          _vm.arrowGrow1 = false
-                        }
-                      }
-                    },
-                    [
-                      _c(
-                        "svg",
-                        {
-                          staticClass: "bi bi-chevron-double-down",
-                          class: {
-                            "arrow-grow": _vm.arrowGrow1,
-                            "arrow-style": _vm.arrowGrow1 == false
-                          },
-                          attrs: {
-                            viewBox: "0 0 16 16",
-                            fill: "currentColor",
-                            xmlns: "http://www.w3.org/2000/svg"
-                          }
-                        },
-                        [
-                          _c("path", {
-                            attrs: {
-                              "fill-rule": "evenodd",
-                              d:
-                                "M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("path", {
-                            attrs: {
-                              "fill-rule": "evenodd",
-                              d:
-                                "M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                            }
-                          })
-                        ]
-                      )
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _vm._m(0),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-1" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "vertical-center",
-                      staticStyle: {
-                        "text-decoration": "none",
-                        color: "black"
-                      },
-                      attrs: { href: "/clickerstartupgame" },
-                      on: {
-                        mouseover: function($event) {
-                          _vm.arrowGrow2 = true
-                        },
-                        mouseleave: function($event) {
-                          _vm.arrowGrow2 = false
-                        }
-                      }
-                    },
-                    [
-                      _c(
-                        "svg",
-                        {
-                          staticClass: "bi bi-chevron-double-down",
-                          class: {
-                            "arrow-grow": _vm.arrowGrow2,
-                            "arrow-style": _vm.arrowGrow2 == false
-                          },
-                          attrs: {
-                            viewBox: "0 0 16 16",
-                            fill: "currentColor",
-                            xmlns: "http://www.w3.org/2000/svg"
-                          }
-                        },
-                        [
-                          _c("path", {
-                            attrs: {
-                              "fill-rule": "evenodd",
-                              d:
-                                "M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("path", {
-                            attrs: {
-                              "fill-rule": "evenodd",
-                              d:
-                                "M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
-                            }
-                          })
-                        ]
-                      )
-                    ]
-                  )
-                ])
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _vm._m(1),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "container", staticStyle: { "padding-top": "10%" } },
-            [
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col " }),
-                _vm._v(" "),
-                _c("div", { staticClass: "col", attrs: { align: "center" } }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "vertical-center",
-                      staticStyle: {
-                        "text-decoration": "none",
-                        color: "black"
-                      },
-                      attrs: { href: "#lacamila-more" },
-                      on: {
-                        mouseover: function($event) {
-                          _vm.arrowGrow3 = true
-                        },
-                        mouseleave: function($event) {
-                          _vm.arrowGrow3 = false
-                        }
-                      }
-                    },
-                    [
-                      _c(
-                        "svg",
-                        {
-                          staticClass: "bi bi-chevron-double-down",
-                          class: {
-                            "arrow-grow": _vm.arrowGrow3,
-                            "arrow-style": _vm.arrowGrow3 == false
-                          },
-                          staticStyle: { width: "30%" },
-                          attrs: {
-                            viewBox: "0 0 16 16",
-                            fill: "currentColor",
-                            xmlns: "http://www.w3.org/2000/svg"
-                          }
-                        },
-                        [
-                          _c("path", {
-                            attrs: {
-                              "fill-rule": "evenodd",
-                              d:
-                                "M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("path", {
-                            attrs: {
-                              "fill-rule": "evenodd",
-                              d:
-                                "M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                            }
-                          })
-                        ]
-                      )
-                    ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col " })
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _vm._m(2)
-      ])
-    ])
-  ])
+  return _c("workpage", {
+    attrs: {
+      mainTitle: "La Camila E-Commerce Website",
+      techChild: _vm.techParent,
+      infoTitle: "La Camila Coffee Co.",
+      paraChild: _vm.paraParent,
+      hrefCurrWork: "https://trilladoraytostadoralacamila.com/",
+      hrefPrevWork: "/thesis",
+      hrefNextWork: "/clickerstartupgame",
+      imgChild: _vm.imgParent
+    }
+  })
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col text-center" }, [
-      _c("h1", { staticClass: "work-title-size;" }, [
-        _vm._v("La Camila E-Commerce Website")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "container", staticStyle: { "padding-top": "5%" } },
-      [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col " }),
-          _vm._v(" "),
-          _c("div", { staticClass: "col " }, [
-            _c("span", {}, [
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("PHP")
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("JavaScript")
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("HTML/CSS")
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("Bootstrap")
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("MySQL")
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col " })
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "lacamila-more" } }, [
-      _c("div", { staticClass: "container" }, [
-        _c(
-          "div",
-          { staticClass: "row", staticStyle: { "padding-top": "5%" } },
-          [
-            _c("div", { staticClass: "col tag" }, [
-              _c("h3", [_vm._v("La Camila Coffee Co.")]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "justify" } }, [
-                _vm._v(
-                  "\n                                A Colombian company that prides itself in growing and processing \n                                quality coffee products in an environmentally sustainable manner. \n                            "
-                ),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(
-                  "\n                                This website was designed from the ground up to have a modern and responsive layout that looks great on all devices. \n                                This allows the traditional practice of growing coffee to be present and successful in today's e-markets.\n                            "
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticStyle: { color: "black" },
-                  attrs: { href: "https://trilladoraytostadoralacamila.com/" }
-                },
-                [_vm._v("https://trilladoraytostadoralacamila.com")]
-              )
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
-          [
-            _c("div", { staticClass: "col " }, [
-              _c("img", {
-                staticClass: "img-align",
-                attrs: {
-                  src: "/images/lacamila-welcome-page.PNG",
-                  alt: "image"
-                }
-              })
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
-          [
-            _c("div", { staticClass: "col " }, [
-              _c("img", {
-                staticClass: "img-align",
-                attrs: { src: "/images/lacamila-services.PNG", alt: "image" }
-              })
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
-          [
-            _c("div", { staticClass: "col " }, [
-              _c("img", {
-                staticClass: "img-align",
-                attrs: { src: "/images/lacamila-products.PNG", alt: "image" }
-              })
-            ])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("br"),
-      _c("br")
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -40826,7 +40399,7 @@ var render = function() {
                         "text-decoration": "none",
                         color: "black"
                       },
-                      attrs: { href: "/thesis" },
+                      attrs: { href: _vm.hrefPrevWork },
                       on: {
                         mouseover: function($event) {
                           _vm.arrowGrow1 = true
@@ -40873,7 +40446,11 @@ var render = function() {
                   )
                 ]),
                 _vm._v(" "),
-                _vm._m(0),
+                _c("div", { staticClass: "col text-center" }, [
+                  _c("h1", { staticClass: "work-title-size;" }, [
+                    _vm._v(_vm._s(_vm.mainTitle))
+                  ])
+                ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "col-1" }, [
                   _c(
@@ -40884,7 +40461,7 @@ var render = function() {
                         "text-decoration": "none",
                         color: "black"
                       },
-                      attrs: { href: "/clickerstartupgame" },
+                      attrs: { href: _vm.hrefNextWork },
                       on: {
                         mouseover: function($event) {
                           _vm.arrowGrow2 = true
@@ -40934,7 +40511,43 @@ var render = function() {
             ]
           ),
           _vm._v(" "),
-          _vm._m(1),
+          _c(
+            "div",
+            { staticClass: "container", staticStyle: { "padding-top": "5%" } },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col " }),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "col " },
+                  [
+                    _c(
+                      "h4",
+                      {
+                        staticStyle: {
+                          "text-align": "center",
+                          "text-decoration": "underline"
+                        }
+                      },
+                      [_vm._v("Technologies")]
+                    ),
+                    _vm._v(" "),
+                    _vm._l(_vm.techChild, function(tech) {
+                      return _c(
+                        "h5",
+                        { key: tech, staticStyle: { "text-align": "center" } },
+                        [_vm._v(_vm._s(tech))]
+                      )
+                    })
+                  ],
+                  2
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "col " })
+              ])
+            ]
+          ),
           _vm._v(" "),
           _c(
             "div",
@@ -40952,7 +40565,7 @@ var render = function() {
                         "text-decoration": "none",
                         color: "black"
                       },
-                      attrs: { href: "#lacamila-more" },
+                      attrs: { href: "#info" },
                       on: {
                         mouseover: function($event) {
                           _vm.arrowGrow3 = true
@@ -41006,149 +40619,93 @@ var render = function() {
           )
         ]),
         _vm._v(" "),
-        _vm._m(2)
+        _c("div", { attrs: { id: "info" } }, [
+          _c("div", { staticClass: "container" }, [
+            _c(
+              "div",
+              { staticClass: "row", staticStyle: { "padding-top": "5%" } },
+              [
+                _c("div", { staticClass: "col tag" }, [
+                  _c("h3", [_vm._v(_vm._s(_vm.infoTitle))]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("h5", { staticStyle: { "text-align": "justify" } }, [
+                    _vm._v(
+                      "\n                                " +
+                        _vm._s(_vm.paraChild[0]) +
+                        "\n                            "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n                                " +
+                        _vm._s(_vm.paraChild[1]) +
+                        "\n                            "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticStyle: { color: "black" },
+                      attrs: { href: _vm.hrefCurrWork }
+                    },
+                    [_vm._v(_vm._s(_vm.hrefCurrWork))]
+                  )
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
+              [
+                _c("div", { staticClass: "col " }, [
+                  _c("img", {
+                    staticClass: "img-align",
+                    attrs: { src: _vm.imgChild[0], alt: "image" }
+                  })
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
+              [
+                _c("div", { staticClass: "col " }, [
+                  _c("img", {
+                    staticClass: "img-align",
+                    attrs: { src: _vm.imgChild[1], alt: "image" }
+                  })
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
+              [
+                _c("div", { staticClass: "col " }, [
+                  _c("img", {
+                    staticClass: "img-align",
+                    attrs: { src: _vm.imgChild[2], alt: "image" }
+                  })
+                ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _c("br")
+        ])
       ])
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col text-center" }, [
-      _c("h1", { staticClass: "work-title-size;" }, [
-        _vm._v("La Camila E-Commerce Website")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "container", staticStyle: { "padding-top": "5%" } },
-      [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col " }),
-          _vm._v(" "),
-          _c("div", { staticClass: "col " }, [
-            _c("span", {}, [
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("PHP")
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("JavaScript")
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("HTML/CSS")
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("Bootstrap")
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("MySQL")
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col " })
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "lacamila-more" } }, [
-      _c("div", { staticClass: "container" }, [
-        _c(
-          "div",
-          { staticClass: "row", staticStyle: { "padding-top": "5%" } },
-          [
-            _c("div", { staticClass: "col tag" }, [
-              _c("h3", [_vm._v("La Camila Coffee Co.")]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("h5", { staticStyle: { "text-align": "justify" } }, [
-                _vm._v(
-                  "\n                                A Colombian company that prides itself in growing and processing \n                                quality coffee products in an environmentally sustainable manner. \n                            "
-                ),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(
-                  "\n                                This website was designed from the ground up to have a modern and responsive layout that looks great on all devices. \n                                This allows the traditional practice of growing coffee to be present and successful in today's e-markets.\n                            "
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticStyle: { color: "black" },
-                  attrs: { href: "https://trilladoraytostadoralacamila.com/" }
-                },
-                [_vm._v("https://trilladoraytostadoralacamila.com")]
-              )
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
-          [
-            _c("div", { staticClass: "col " }, [
-              _c("img", {
-                staticClass: "img-align",
-                attrs: {
-                  src: "/images/lacamila-welcome-page.PNG",
-                  alt: "image"
-                }
-              })
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
-          [
-            _c("div", { staticClass: "col " }, [
-              _c("img", {
-                staticClass: "img-align",
-                attrs: { src: "/images/lacamila-services.PNG", alt: "image" }
-              })
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "row tag", staticStyle: { "padding-top": "2%" } },
-          [
-            _c("div", { staticClass: "col " }, [
-              _c("img", {
-                staticClass: "img-align",
-                attrs: { src: "/images/lacamila-products.PNG", alt: "image" }
-              })
-            ])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("br"),
-      _c("br")
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
