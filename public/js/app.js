@@ -2022,6 +2022,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Contact Component mounted.');
@@ -38365,9 +38371,7 @@ var render = function() {
         _c("div", { staticClass: "container" }, [
           _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
           _vm._v(" "),
-          _vm._m(0),
-          _vm._v(" "),
-          _vm._m(1)
+          _vm._m(0)
         ])
       ]
     )
@@ -38382,46 +38386,67 @@ var staticRenderFns = [
       "div",
       { staticClass: "row", staticStyle: { "padding-top": "15%" } },
       [
-        _c(
-          "div",
-          { staticClass: "col", staticStyle: { "text-align": "center" } },
-          [_c("h2", [_vm._v("jmferna91@gmail.com")])]
-        )
+        _c("div", { staticClass: "col up-slide" }, [
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              {
+                staticClass: "col",
+                staticStyle: { padding: "15% 20px 20px 20px" }
+              },
+              [
+                _c("h1", [
+                  _vm._v("Do you need someone to bring your vision to life?")
+                ]),
+                _vm._v(" "),
+                _c("h1", [_vm._v("Contact me:")]),
+                _c("br"),
+                _vm._v(" "),
+                _c("h3", { staticClass: "up-slide-delay-1" }, [
+                  _vm._v("jmferna91@gmail.com")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticStyle: { color: "black", "font-size": "30px" },
+                    attrs: {
+                      href:
+                        "www.linkedin.com/in/jorge-mario-fernandez-67578b106"
+                    }
+                  },
+                  [
+                    _c("h3", { staticClass: "up-slide-delay-2" }, [
+                      _vm._v("LinkedIn")
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticStyle: { color: "black", "font-size": "30px" },
+                    attrs: { href: "https://github.com/JorgeMarioFernandez91" }
+                  },
+                  [
+                    _c("h3", { staticClass: "up-slide-delay-3" }, [
+                      _vm._v("GitHub")
+                    ])
+                  ]
+                )
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col left-slide" }, [
+          _c("img", {
+            staticClass: "self-photo-align",
+            attrs: { src: "/images/photo-self.PNG", alt: "photo" }
+          })
+        ])
       ]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col", staticStyle: { "text-align": "center" } },
-        [
-          _c(
-            "a",
-            {
-              staticStyle: { color: "black", "font-size": "30px" },
-              attrs: {
-                href: "www.linkedin.com/in/jorge-mario-fernandez-67578b106"
-              }
-            },
-            [_vm._v("LinkedIn")]
-          ),
-          _c("br"),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticStyle: { color: "black", "font-size": "30px" },
-              attrs: { href: "https://github.com/JorgeMarioFernandez91" }
-            },
-            [_vm._v("GitHub")]
-          )
-        ]
-      )
-    ])
   }
 ]
 render._withStripped = true
@@ -38691,86 +38716,144 @@ var staticRenderFns = [
       },
       [
         _c("div", { staticClass: "col" }, [
-          _c("h1", [_vm._v("Education")]),
+          _c("h1", { staticClass: "left-slide-delay-1" }, [
+            _vm._v("Education")
+          ]),
           _vm._v(" "),
           _c(
             "h4",
-            { staticStyle: { "padding-top": "10%", "font-weight": "bold" } },
+            {
+              staticClass: "left-slide-delay-2",
+              staticStyle: { "padding-top": "10%", "font-weight": "bold" }
+            },
             [_vm._v("BSc with Honors in Computer Science")]
           ),
           _vm._v(" "),
-          _c("h4", [_vm._v("Western University")]),
-          _vm._v(" "),
-          _c("h6", [_vm._v("January 2016 to April 2020")]),
-          _vm._v(" "),
-          _c("br"),
-          _c("br"),
-          _vm._v(" "),
-          _c("h4", { staticStyle: { "font-weight": "bold" } }, [
-            _vm._v("BSc with Honors in Health Science")
+          _c("h4", { staticClass: "left-slide-delay-2" }, [
+            _vm._v("Western University")
           ]),
           _vm._v(" "),
-          _c("h4", [_vm._v("Western University")]),
+          _c("h6", { staticClass: "left-slide-delay-2" }, [
+            _vm._v("January 2016 to April 2020")
+          ]),
           _vm._v(" "),
-          _c("h6", [_vm._v("September 2010 to April 2014")]),
+          _c("br"),
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "h4",
+            {
+              staticClass: "left-slide-delay-3",
+              staticStyle: { "font-weight": "bold" }
+            },
+            [_vm._v("BSc with Honors in Health Science")]
+          ),
+          _vm._v(" "),
+          _c("h4", { staticClass: "left-slide-delay-3" }, [
+            _vm._v("Western University")
+          ]),
+          _vm._v(" "),
+          _c("h6", { staticClass: "left-slide-delay-3" }, [
+            _vm._v("September 2010 to April 2014")
+          ]),
           _c("br"),
           _c("br")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col" }, [
-          _c("h1", [_vm._v("Experiences")]),
+          _c("h1", { staticClass: "left-slide-delay-4" }, [
+            _vm._v("Experiences")
+          ]),
           _vm._v(" "),
           _c(
             "h4",
-            { staticStyle: { "padding-top": "10%", "font-weight": "bold" } },
+            {
+              staticClass: "left-slide-delay-5",
+              staticStyle: { "padding-top": "10%", "font-weight": "bold" }
+            },
             [_vm._v("Portfolio Website")]
           ),
           _vm._v(" "),
-          _c("h4", [_vm._v("Web Developer")]),
+          _c("h4", { staticClass: "left-slide-delay-5" }, [
+            _vm._v("Web Developer")
+          ]),
           _vm._v(" "),
-          _c("h5", [_vm._v("September 2020")]),
+          _c("h5", { staticClass: "left-slide-delay-5" }, [
+            _vm._v("September 2020")
+          ]),
           _vm._v(" "),
-          _c("h6", [
+          _c("h6", { staticClass: "left-slide-delay-5" }, [
             _vm._v("Laravel, Vue, PHP, HTML/CSS, JavaScript, Bootstrap, Git")
           ]),
           _c("br"),
           _c("br"),
           _vm._v(" "),
-          _c("h4", { staticStyle: { "font-weight": "bold" } }, [
-            _vm._v("Cookie Clicker Startup")
+          _c(
+            "h4",
+            {
+              staticClass: "left-slide-delay-6",
+              staticStyle: { "font-weight": "bold" }
+            },
+            [_vm._v("Cookie Clicker Startup")]
+          ),
+          _vm._v(" "),
+          _c("h4", { staticClass: "left-slide-delay-6" }, [
+            _vm._v("Web Developer")
           ]),
           _vm._v(" "),
-          _c("h4", [_vm._v("Web Developer")]),
+          _c("h5", { staticClass: "left-slide-delay-6" }, [
+            _vm._v("August 2020")
+          ]),
           _vm._v(" "),
-          _c("h5", [_vm._v("August 2020")]),
-          _vm._v(" "),
-          _c("h6", [_vm._v("React, HTML/CSS, JavaScript, Bootstrap, Git")]),
+          _c("h6", { staticClass: "left-slide-delay-6" }, [
+            _vm._v("React, HTML/CSS, JavaScript, Bootstrap, Git")
+          ]),
           _c("br"),
           _c("br"),
           _vm._v(" "),
-          _c("h4", { staticStyle: { "font-weight": "bold" } }, [
-            _vm._v("La Camila Coffee Co. E-Commerce Website")
+          _c(
+            "h4",
+            {
+              staticClass: "left-slide-delay-7",
+              staticStyle: { "font-weight": "bold" }
+            },
+            [_vm._v("La Camila Coffee Co. E-Commerce Website")]
+          ),
+          _vm._v(" "),
+          _c("h4", { staticClass: "left-slide-delay-7" }, [
+            _vm._v("Full Stack Developer")
           ]),
           _vm._v(" "),
-          _c("h4", [_vm._v("Full Stack Developer")]),
+          _c("h5", { staticClass: "left-slide-delay-7" }, [
+            _vm._v("January 2020 to Present")
+          ]),
           _vm._v(" "),
-          _c("h5", [_vm._v("January 2020 to Present")]),
-          _vm._v(" "),
-          _c("h6", [
+          _c("h6", { staticClass: "left-slide-delay-7" }, [
             _vm._v("PHP, HTML/CSS, JavaScript, jQuery, Bootstrap, MySQL, Git")
           ]),
           _c("br"),
           _c("br"),
           _vm._v(" "),
-          _c("h4", { staticStyle: { "font-weight": "bold" } }, [
-            _vm._v("Western University Software Researcher")
+          _c(
+            "h4",
+            {
+              staticClass: "left-slide-delay-8",
+              staticStyle: { "font-weight": "bold" }
+            },
+            [_vm._v("Western University Software Researcher")]
+          ),
+          _vm._v(" "),
+          _c("h4", { staticClass: "left-slide-delay-8" }, [
+            _vm._v("Back End Developer")
           ]),
           _vm._v(" "),
-          _c("h4", [_vm._v("Back End Developer")]),
+          _c("h5", { staticClass: "left-slide-delay-8" }, [
+            _vm._v("June 2018 to August 2019")
+          ]),
           _vm._v(" "),
-          _c("h5", [_vm._v("June 2018 to August 2019")]),
-          _vm._v(" "),
-          _c("h6", [_vm._v("Java, Docker, Kubernetes")]),
+          _c("h6", { staticClass: "left-slide-delay-8" }, [
+            _vm._v("Java, Docker, Kubernetes")
+          ]),
           _c("br"),
           _c("br")
         ])

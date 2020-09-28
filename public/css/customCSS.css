@@ -57,12 +57,38 @@ html {
     -webkit-animation-fill-mode: forwards; /* keeps animation at final state rather than boomeranging back! */
 }
 
+.up-slide-delay-1 {
+    animation-delay: 4s;  /* waits until curtain is up */
+    animation-name: slideUp;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+.up-slide-delay-2 {
+    animation-delay: 6s; 
+    animation-name: slideUp;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+.up-slide-delay-3 {
+    animation-delay: 8s; 
+    animation-name: slideUp;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
 @keyframes slideUp {
 	0% {
         transform: translateY(100%);
+        opacity: 0;
 	}
 	100% {
         transform: translateY(0%);
+        opacity: 1;
 	}
 }
 
@@ -74,13 +100,78 @@ html {
     -webkit-animation-fill-mode: forwards; /* keeps animation at final state rather than boomeranging back! */
 }
 
+.left-slide-delay-1 {
+    animation-delay: 2s;  
+    animation-name: slideIn;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+.left-slide-delay-2 {
+    animation-delay: 4s;  
+    animation-name: slideIn;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+.left-slide-delay-3 {
+    animation-delay: 6s;  
+    animation-name: slideIn;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+.left-slide-delay-4 {
+    animation-delay: 8s;  
+    animation-name: slideIn;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+.left-slide-delay-5 {
+    animation-delay: 10s;  
+    animation-name: slideIn;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+.left-slide-delay-6 {
+    animation-delay: 12s;  
+    animation-name: slideIn;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+.left-slide-delay-7 {
+    animation-delay: 14s;  
+    animation-name: slideIn;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+.left-slide-delay-8 {
+    animation-delay: 16s;  
+    animation-name: slideIn;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;  
+}
+
 @keyframes slideIn {
     0% {
-      /* transform: translateY(0); */
-        transform: translateX(100%);    }
+        transform: translateX(95%); 
+        opacity: 0;   
+    }
     100% {
-      /* transform: translateY(-100%); */
         transform: translateX(0%);  
+        opacity: 1;
     }
 }
 
@@ -119,15 +210,13 @@ html {
     }
 }
 
-@keyframes slideIn {
+/* @keyframes slideIn {
     0% {
-      /* transform: translateY(0); */
         transform: translateX(100%);    }
     100% {
-      /* transform: translateY(-100%); */
         transform: translateX(0%);  
     }
-}
+} */
 
 .work-desc-slide{
     /* padding: 15px 0 0 50px; */
@@ -188,7 +277,6 @@ a.work-links {
 
 .self-photo-align {
     max-height: 600px; 
-    height: 100%; 
     width: auto;
     margin: auto;    
     display: block;

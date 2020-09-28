@@ -6,18 +6,24 @@
                 <div id="navbar">
                     <navbar></navbar>
                 </div>
+
+                <div class="row"  style="padding-top: 15%">
+                    <div class="col up-slide" >
+                        <div class="row">
+                            <div class="col" style="padding: 15% 20px 20px 20px">
+                                <h1>Do you need someone to bring your vision to life?</h1>
+                                <h1>Contact me:</h1><br>
+                                <h3 class="up-slide-delay-1">jmferna91@gmail.com</h3>
+                                <a  href="www.linkedin.com/in/jorge-mario-fernandez-67578b106" style="color:black; font-size: 30px;" ><h3 class="up-slide-delay-2">LinkedIn</h3></a>
+                                <a  href="https://github.com/JorgeMarioFernandez91" style="color:black; font-size: 30px;"><h3 class="up-slide-delay-3">GitHub</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col left-slide">
+                        <img src="/images/photo-self.PNG" class="self-photo-align" alt="photo">
+                    </div>
+                </div>
                 
-                <div class="row" style="padding-top: 15%">
-                    <div class="col" style="text-align: center;">
-                        <h2 >jmferna91@gmail.com</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col" style="text-align: center;">
-                        <a href="www.linkedin.com/in/jorge-mario-fernandez-67578b106" style="color:black; font-size: 30px;" >LinkedIn</a><br>
-                        <a href="https://github.com/JorgeMarioFernandez91" style="color:black; font-size: 30px;">GitHub</a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -28,6 +34,5 @@
         mounted() {
             console.log('Contact Component mounted.')
         },
-        
     }
 </script>
