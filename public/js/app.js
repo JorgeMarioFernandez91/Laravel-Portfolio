@@ -2039,6 +2039,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {// console.log('Contact Component mounted.')
   },
@@ -38380,30 +38384,30 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "curtain" } }, [
-    _c(
-      "div",
-      { staticClass: "makeVisible", staticStyle: { height: "100vh" } },
-      [
-        _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "makeVisible" }, [
+      _c("div", { staticClass: "fade-gradient" }, [
+        _c("div", { staticStyle: { height: "100vh" } }, [
           _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
           _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row", staticStyle: { "padding-top": "15%" } },
-            [
-              _vm._m(0),
-              _vm._v(" "),
-              _c("div", { staticClass: "col left-slide" }, [
-                _c("img", {
-                  staticClass: "self-photo-align",
-                  attrs: { src: [_vm.image[0]], alt: "photo" }
-                })
-              ])
-            ]
-          )
+          _c("div", { staticClass: "container" }, [
+            _c(
+              "div",
+              { staticClass: "row", staticStyle: { "padding-top": "10%" } },
+              [
+                _vm._m(0),
+                _vm._v(" "),
+                _c("div", { staticClass: "col left-slide" }, [
+                  _c("img", {
+                    staticClass: "self-photo-align",
+                    attrs: { src: [_vm.image[0]], alt: "photo" }
+                  })
+                ])
+              ]
+            )
+          ])
         ])
-      ]
-    )
+      ])
+    ])
   ])
 }
 var staticRenderFns = [
