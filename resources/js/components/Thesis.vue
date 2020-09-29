@@ -14,7 +14,7 @@
 <script>
     export default {
         mounted() {
-            console.log('Detecting Sim Galaxies Component mounted.')
+            // console.log('Detecting Sim Galaxies Component mounted.')
         },
         data: () => ({
             arrowGrow1: false,

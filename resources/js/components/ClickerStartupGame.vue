@@ -14,7 +14,7 @@
 <script>
     export default {
         mounted() {
-            console.log('Clicker Start Up Component mounted.')
+            // console.log('Clicker Start Up Component mounted.')
         },
         data: () => ({
             arrowGrow1: false,

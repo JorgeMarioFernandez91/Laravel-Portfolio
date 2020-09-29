@@ -1940,14 +1940,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('About Component mounted.');
+  mounted: function mounted() {// console.log('About Component mounted.')
   },
   data: function data() {
     return {
-      image: ["/images/photo-self.png"] // image: ["https://images.unsplash.com/photo-1601277237358-93d22efff93f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"],
-
+      image: ["/images/photo-self.png"]
     };
   }
 });
@@ -1977,8 +1982,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Clicker Start Up Component mounted.');
+  mounted: function mounted() {// console.log('Clicker Start Up Component mounted.')
   },
   data: function data() {
     return {
@@ -2036,13 +2040,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Contact Component mounted.');
+  mounted: function mounted() {// console.log('Contact Component mounted.')
   },
   data: function data() {
     return {
-      image: ["/images/photo-self.png"] // image: ["https://images.unsplash.com/photo-1601277237358-93d22efff93f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"],
-
+      image: ["/images/photo-self.png"]
     };
   }
 });
@@ -2105,8 +2107,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('La Camila Component mounted.');
+  mounted: function mounted() {// console.log('La Camila Component mounted.')
   },
   data: function data() {
     return {
@@ -2152,8 +2153,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Navbar Component mounted.');
+  mounted: function mounted() {// console.log('Navbar Component mounted.')
   }
 });
 
@@ -2182,8 +2182,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Portfolio Component mounted.');
+  mounted: function mounted() {// console.log('Portfolio Component mounted.')
   },
   data: function data() {
     return {
@@ -2261,9 +2260,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Resume Component mounted.');
+  mounted: function mounted() {// console.log('Resume Component mounted.')
   }
 });
 
@@ -2292,8 +2295,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Detecting Sim Galaxies Component mounted.');
+  mounted: function mounted() {// console.log('Detecting Sim Galaxies Component mounted.')
   },
   data: function data() {
     return {
@@ -2520,8 +2522,7 @@ __webpack_require__.r(__webpack_exports__);
     num: String,
     title: String
   },
-  mounted: function mounted() {
-    console.log('Worklink Component mounted.');
+  mounted: function mounted() {// console.log('Worklink Component mounted.')
   },
   data: function data() {
     return {};
@@ -2653,8 +2654,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Work Page Component mounted.');
+  mounted: function mounted() {// console.log('Work Page Component mounted.')
   },
   props: {
     mainTitle: String,
@@ -38261,30 +38261,33 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "curtain" } }, [
-    _c(
-      "div",
-      { staticClass: "makeVisible", staticStyle: { height: "100vh" } },
-      [
-        _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "makeVisible" }, [
+      _c("div", { staticClass: "fade-gradient" }, [
+        _c("div", { staticStyle: { height: "100vh" } }, [
           _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
           _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row", staticStyle: { "padding-top": "10%" } },
-            [
-              _c("div", { staticClass: "col" }, [
-                _c("img", {
-                  staticClass: "self-photo-align",
-                  attrs: { src: [_vm.image[0]], alt: "photo" }
-                })
-              ]),
-              _vm._v(" "),
-              _vm._m(0)
-            ]
-          )
+          _c("div", { staticClass: "container" }, [
+            _c(
+              "div",
+              {
+                staticClass: "row",
+                staticStyle: { padding: "10% 20px 20px 20px" }
+              },
+              [
+                _c("div", { staticClass: "col" }, [
+                  _c("img", {
+                    staticClass: "self-photo-align",
+                    attrs: { src: [_vm.image[0]], alt: "photo" }
+                  })
+                ]),
+                _vm._v(" "),
+                _vm._m(0)
+              ]
+            )
+          ])
         ])
-      ]
-    )
+      ])
+    ])
   ])
 }
 var staticRenderFns = [
@@ -38293,25 +38296,27 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col", staticStyle: { padding: "20px" } }, [
-      _c("h3", [_vm._v("A little about myself!")]),
+      _c("h1", [
+        _vm._v("A little about "),
+        _c("span", { staticStyle: { "font-style": "italic" } }, [
+          _vm._v("myself!")
+        ])
+      ]),
+      _c("br"),
       _vm._v(" "),
-      _c("p", [_vm._v("My name is Jorge Mario, but everyone calls me Mario!")]),
+      _c("h4", [
+        _vm._v("My name is Jorge Mario, but everyone refers to me as Mario!")
+      ]),
       _vm._v(" "),
-      _c("p", [
+      _c("h4", [
         _vm._v(
-          "I'm a recent graduate from Western University in London, ON Canada."
+          "I recently graduate from Western University with a BSc with Honors in Computer Science. \n                                But my passion for software has always gone past the classroom. As such, I always have one or two projects \n                                in the works.So check back often to find out what else I'm working on! "
         )
       ]),
       _vm._v(" "),
-      _c("p", [
+      _c("h4", [
         _vm._v(
-          "I love working on all parts of software, that is why I'm pursuing the path of full stack development."
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "I'm constantly working on new projects, so check back soon (or contact me), to find out what my latest work is all about!"
+          "Currently I'm tryting to become the best developer I can be with the goal of becoming a full stack developer."
         )
       ])
     ])
@@ -38624,7 +38629,7 @@ var staticRenderFns = [
                   staticClass: "nav-item nav-link",
                   attrs: { href: "/resume" }
                 },
-                [_vm._v("Resume")]
+                [_vm._v("Résumé")]
               ),
               _vm._v(" "),
               _c(
@@ -38700,17 +38705,15 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "curtain" } }, [
-    _c(
-      "div",
-      { staticClass: "makeVisible", staticStyle: { height: "100vh" } },
-      [
-        _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "makeVisible" }, [
+      _c("div", { staticClass: "fade-gradient" }, [
+        _c("div", { staticStyle: { "min-height": "100vh" } }, [
           _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
           _vm._v(" "),
           _vm._m(0)
         ])
-      ]
-    )
+      ])
+    ])
   ])
 }
 var staticRenderFns = [
@@ -38718,157 +38721,189 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "row",
-        staticStyle: { "padding-top": "8%", "padding-left": "30px" }
-      },
-      [
-        _c("div", { staticClass: "col" }, [
-          _c("h1", { staticClass: "left-slide-delay-1" }, [
-            _vm._v("Education")
+    return _c("div", { staticClass: "container" }, [
+      _c(
+        "div",
+        {
+          staticClass: "row",
+          staticStyle: { "padding-top": "8%", "padding-left": "30px" }
+        },
+        [
+          _c("div", { staticClass: "col" }, [
+            _c("h1", { staticClass: "left-slide-delay-1" }, [
+              _vm._v("Education")
+            ]),
+            _vm._v(" "),
+            _c(
+              "h4",
+              {
+                staticClass: "left-slide-delay-2",
+                staticStyle: { "padding-top": "10%", "font-weight": "bold" }
+              },
+              [_vm._v("BSc with Honors in Computer Science")]
+            ),
+            _vm._v(" "),
+            _c("h4", { staticClass: "left-slide-delay-2" }, [
+              _vm._v("Western University")
+            ]),
+            _vm._v(" "),
+            _c(
+              "h5",
+              {
+                staticClass: "left-slide-delay-2",
+                staticStyle: { "font-style": "italic" }
+              },
+              [_vm._v("April 2020")]
+            ),
+            _vm._v(" "),
+            _c("br"),
+            _c("br"),
+            _vm._v(" "),
+            _c(
+              "h4",
+              {
+                staticClass: "left-slide-delay-3",
+                staticStyle: { "font-weight": "bold" }
+              },
+              [_vm._v("BSc with Honors in Health Science")]
+            ),
+            _vm._v(" "),
+            _c("h4", { staticClass: "left-slide-delay-3" }, [
+              _vm._v("Western University")
+            ]),
+            _vm._v(" "),
+            _c(
+              "h5",
+              {
+                staticClass: "left-slide-delay-3",
+                staticStyle: { "font-style": "italic" }
+              },
+              [_vm._v("April 2014")]
+            ),
+            _c("br"),
+            _c("br")
           ]),
           _vm._v(" "),
-          _c(
-            "h4",
-            {
-              staticClass: "left-slide-delay-2",
-              staticStyle: { "padding-top": "10%", "font-weight": "bold" }
-            },
-            [_vm._v("BSc with Honors in Computer Science")]
-          ),
-          _vm._v(" "),
-          _c("h4", { staticClass: "left-slide-delay-2" }, [
-            _vm._v("Western University")
-          ]),
-          _vm._v(" "),
-          _c("h6", { staticClass: "left-slide-delay-2" }, [
-            _vm._v("January 2016 to April 2020")
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _c("br"),
-          _vm._v(" "),
-          _c(
-            "h4",
-            {
-              staticClass: "left-slide-delay-3",
-              staticStyle: { "font-weight": "bold" }
-            },
-            [_vm._v("BSc with Honors in Health Science")]
-          ),
-          _vm._v(" "),
-          _c("h4", { staticClass: "left-slide-delay-3" }, [
-            _vm._v("Western University")
-          ]),
-          _vm._v(" "),
-          _c("h6", { staticClass: "left-slide-delay-3" }, [
-            _vm._v("September 2010 to April 2014")
-          ]),
-          _c("br"),
-          _c("br")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col" }, [
-          _c("h1", { staticClass: "left-slide-delay-4" }, [
-            _vm._v("Experiences")
-          ]),
-          _vm._v(" "),
-          _c(
-            "h4",
-            {
-              staticClass: "left-slide-delay-5",
-              staticStyle: { "padding-top": "10%", "font-weight": "bold" }
-            },
-            [_vm._v("Portfolio Website")]
-          ),
-          _vm._v(" "),
-          _c("h4", { staticClass: "left-slide-delay-5" }, [
-            _vm._v("Web Developer")
-          ]),
-          _vm._v(" "),
-          _c("h5", { staticClass: "left-slide-delay-5" }, [
-            _vm._v("September 2020")
-          ]),
-          _vm._v(" "),
-          _c("h6", { staticClass: "left-slide-delay-5" }, [
-            _vm._v("Laravel, Vue, PHP, HTML/CSS, JavaScript, Bootstrap, Git")
-          ]),
-          _c("br"),
-          _c("br"),
-          _vm._v(" "),
-          _c(
-            "h4",
-            {
-              staticClass: "left-slide-delay-6",
-              staticStyle: { "font-weight": "bold" }
-            },
-            [_vm._v("Cookie Clicker Startup")]
-          ),
-          _vm._v(" "),
-          _c("h4", { staticClass: "left-slide-delay-6" }, [
-            _vm._v("Web Developer")
-          ]),
-          _vm._v(" "),
-          _c("h5", { staticClass: "left-slide-delay-6" }, [
-            _vm._v("August 2020")
-          ]),
-          _vm._v(" "),
-          _c("h6", { staticClass: "left-slide-delay-6" }, [
-            _vm._v("React, HTML/CSS, JavaScript, Bootstrap, Git")
-          ]),
-          _c("br"),
-          _c("br"),
-          _vm._v(" "),
-          _c(
-            "h4",
-            {
-              staticClass: "left-slide-delay-7",
-              staticStyle: { "font-weight": "bold" }
-            },
-            [_vm._v("La Camila Coffee Co. E-Commerce Website")]
-          ),
-          _vm._v(" "),
-          _c("h4", { staticClass: "left-slide-delay-7" }, [
-            _vm._v("Full Stack Developer")
-          ]),
-          _vm._v(" "),
-          _c("h5", { staticClass: "left-slide-delay-7" }, [
-            _vm._v("January 2020 to Present")
-          ]),
-          _vm._v(" "),
-          _c("h6", { staticClass: "left-slide-delay-7" }, [
-            _vm._v("PHP, HTML/CSS, JavaScript, jQuery, Bootstrap, MySQL, Git")
-          ]),
-          _c("br"),
-          _c("br"),
-          _vm._v(" "),
-          _c(
-            "h4",
-            {
-              staticClass: "left-slide-delay-8",
-              staticStyle: { "font-weight": "bold" }
-            },
-            [_vm._v("Western University Software Researcher")]
-          ),
-          _vm._v(" "),
-          _c("h4", { staticClass: "left-slide-delay-8" }, [
-            _vm._v("Back End Developer")
-          ]),
-          _vm._v(" "),
-          _c("h5", { staticClass: "left-slide-delay-8" }, [
-            _vm._v("June 2018 to August 2019")
-          ]),
-          _vm._v(" "),
-          _c("h6", { staticClass: "left-slide-delay-8" }, [
-            _vm._v("Java, Docker, Kubernetes")
-          ]),
-          _c("br"),
-          _c("br")
-        ])
-      ]
-    )
+          _c("div", { staticClass: "col" }, [
+            _c("h1", { staticClass: "left-slide-delay-4" }, [
+              _vm._v("Experiences")
+            ]),
+            _vm._v(" "),
+            _c(
+              "h4",
+              {
+                staticClass: "left-slide-delay-5",
+                staticStyle: { "padding-top": "10%", "font-weight": "bold" }
+              },
+              [_vm._v("Portfolio Website")]
+            ),
+            _vm._v(" "),
+            _c("h4", { staticClass: "left-slide-delay-5" }, [
+              _vm._v("Web Developer")
+            ]),
+            _vm._v(" "),
+            _c(
+              "h5",
+              {
+                staticClass: "left-slide-delay-5",
+                staticStyle: { "font-style": "italic" }
+              },
+              [_vm._v("September 2020")]
+            ),
+            _vm._v(" "),
+            _c("h6", { staticClass: "left-slide-delay-5" }, [
+              _vm._v("Laravel, Vue, PHP, HTML/CSS, JavaScript, Bootstrap, Git")
+            ]),
+            _c("br"),
+            _c("br"),
+            _vm._v(" "),
+            _c(
+              "h4",
+              {
+                staticClass: "left-slide-delay-6",
+                staticStyle: { "font-weight": "bold" }
+              },
+              [_vm._v("Cookie Clicker Startup")]
+            ),
+            _vm._v(" "),
+            _c("h4", { staticClass: "left-slide-delay-6" }, [
+              _vm._v("Web Developer")
+            ]),
+            _vm._v(" "),
+            _c(
+              "h5",
+              {
+                staticClass: "left-slide-delay-6",
+                staticStyle: { "font-style": "italic" }
+              },
+              [_vm._v("August 2020")]
+            ),
+            _vm._v(" "),
+            _c("h6", { staticClass: "left-slide-delay-6" }, [
+              _vm._v("React, HTML/CSS, JavaScript, Bootstrap, Git")
+            ]),
+            _c("br"),
+            _c("br"),
+            _vm._v(" "),
+            _c(
+              "h4",
+              {
+                staticClass: "left-slide-delay-7",
+                staticStyle: { "font-weight": "bold" }
+              },
+              [_vm._v("La Camila Coffee Co. E-Commerce Website")]
+            ),
+            _vm._v(" "),
+            _c("h4", { staticClass: "left-slide-delay-7" }, [
+              _vm._v("Full Stack Developer")
+            ]),
+            _vm._v(" "),
+            _c(
+              "h5",
+              {
+                staticClass: "left-slide-delay-7",
+                staticStyle: { "font-style": "italic" }
+              },
+              [_vm._v("July 2020")]
+            ),
+            _vm._v(" "),
+            _c("h6", { staticClass: "left-slide-delay-7" }, [
+              _vm._v("PHP, HTML/CSS, JavaScript, jQuery, Bootstrap, MySQL, Git")
+            ]),
+            _c("br"),
+            _c("br"),
+            _vm._v(" "),
+            _c(
+              "h4",
+              {
+                staticClass: "left-slide-delay-8",
+                staticStyle: { "font-weight": "bold" }
+              },
+              [_vm._v("Western University Software Researcher")]
+            ),
+            _vm._v(" "),
+            _c("h4", { staticClass: "left-slide-delay-8" }, [
+              _vm._v("Back End Developer")
+            ]),
+            _vm._v(" "),
+            _c(
+              "h5",
+              {
+                staticClass: "left-slide-delay-8",
+                staticStyle: { "font-style": "italic" }
+              },
+              [_vm._v("August 2019")]
+            ),
+            _vm._v(" "),
+            _c("h6", { staticClass: "left-slide-delay-8" }, [
+              _vm._v("Java, Docker, Kubernetes")
+            ]),
+            _c("br"),
+            _c("br")
+          ])
+        ]
+      )
+    ])
   }
 ]
 render._withStripped = true

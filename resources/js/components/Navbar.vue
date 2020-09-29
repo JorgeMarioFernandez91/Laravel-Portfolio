@@ -10,7 +10,7 @@
                     <!-- <a class="nav-item nav-link active" href="#">Jorge Mario Fernandez<span class="sr-only">(current)</span></a> -->
                     <a class="nav-item nav-link " href="/about">About</a>
                     <a class="nav-item nav-link" href="/lacamila">Work</a>
-                    <a class="nav-item nav-link" href="/resume">Resume</a>
+                    <a class="nav-item nav-link" href="/resume">Résumé</a>
                     <a class="nav-item nav-link" href="/contact">Contact</a>
                 </div>
             </div>
@@ -21,8 +21,7 @@
 <script>
     export default {
         mounted() {
-            console.log('Navbar Component mounted.')
+            // console.log('Navbar Component mounted.')
         },
-        
     }
 </script>

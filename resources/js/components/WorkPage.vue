@@ -3,7 +3,7 @@
         <div class="makeVisible" >
             <div class="fade-gradient">
 
-                <div  style="height: 100vh;">
+                <div style="height: 100vh;">
 
                     <div id="navbar">
                         <navbar></navbar>
@@ -113,7 +113,7 @@
 <script>
     export default {
         mounted() {
-            console.log('Work Page Component mounted.')
+            // console.log('Work Page Component mounted.')
         },
         props: {
             mainTitle: String,

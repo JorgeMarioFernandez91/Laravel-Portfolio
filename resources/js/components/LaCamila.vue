@@ -14,7 +14,7 @@
 <script>
     export default {
         mounted() {
-            console.log('La Camila Component mounted.')
+            // console.log('La Camila Component mounted.')
         },
         data: () => ({
             arrowGrow1: false,

@@ -14,7 +14,7 @@
 <script>
     export default {
         mounted() {
-            console.log('Portfolio Component mounted.')
+            // console.log('Portfolio Component mounted.')
         },
         data: () => ({
             arrowGrow1: false,

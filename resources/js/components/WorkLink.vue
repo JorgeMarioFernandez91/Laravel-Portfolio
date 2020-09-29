@@ -24,7 +24,7 @@
             title: String,
         },
         mounted() {
-            console.log('Worklink Component mounted.')
+            // console.log('Worklink Component mounted.')
         },
         data: () => ({
         }),
