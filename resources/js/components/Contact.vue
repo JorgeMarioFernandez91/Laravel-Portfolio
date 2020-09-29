@@ -20,7 +20,8 @@
                         </div>
                     </div>
                     <div class="col left-slide">
-                        <img src="/images/photo-self.PNG" class="self-photo-align" alt="photo">
+                        <img :src="[image[0]]" class="self-photo-align" alt="photo">
+                        
                     </div>
                 </div>
                 
@@ -34,5 +35,9 @@
         mounted() {
             console.log('Contact Component mounted.')
         },
+        data: ()=> ({
+            image: ["/images/photo-self.png"],
+            // image: ["https://images.unsplash.com/photo-1601277237358-93d22efff93f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"],
+        })
     }
 </script>

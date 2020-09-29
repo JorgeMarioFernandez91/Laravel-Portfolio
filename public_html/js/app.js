@@ -1943,12 +1943,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('About Component mounted.');
-  },
-  data: function data() {
-    return {
-      image: ["/images/photo-self.png"] // image: ["https://images.unsplash.com/photo-1601277237358-93d22efff93f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"],
-
-    };
   }
 });
 
@@ -2034,16 +2028,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Contact Component mounted.');
-  },
-  data: function data() {
-    return {
-      image: ["/images/photo-self.png"] // image: ["https://images.unsplash.com/photo-1601277237358-93d22efff93f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"],
-
-    };
   }
 });
 
@@ -38268,20 +38255,7 @@ var render = function() {
         _c("div", { staticClass: "container" }, [
           _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
           _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row", staticStyle: { "padding-top": "10%" } },
-            [
-              _c("div", { staticClass: "col" }, [
-                _c("img", {
-                  staticClass: "self-photo-align",
-                  attrs: { src: [_vm.image[0]], alt: "photo" }
-                })
-              ]),
-              _vm._v(" "),
-              _vm._m(0)
-            ]
-          )
+          _vm._m(0)
         ])
       ]
     )
@@ -38292,29 +38266,44 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col", staticStyle: { padding: "20px" } }, [
-      _c("h3", [_vm._v("A little about myself!")]),
-      _vm._v(" "),
-      _c("p", [_vm._v("My name is Jorge Mario, but everyone calls me Mario!")]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "I'm a recent graduate from Western University in London, ON Canada."
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "I love working on all parts of software, that is why I'm pursuing the path of full stack development."
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "I'm constantly working on new projects, so check back soon (or contact me), to find out what my latest work is all about!"
-        )
-      ])
-    ])
+    return _c(
+      "div",
+      { staticClass: "row", staticStyle: { "padding-top": "10%" } },
+      [
+        _c("div", { staticClass: "col" }, [
+          _c("img", {
+            staticClass: "self-photo-align",
+            attrs: { src: "/images/photo-self.PNG", alt: "photo" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col", staticStyle: { padding: "20px" } }, [
+          _c("h3", [_vm._v("A little about myself!")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v("My name is Jorge Mario, but everyone calls me Mario!")
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "I'm a recent graduate from Western University in London, ON Canada."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "I love working on all parts of software, that is why I'm pursuing the path of full stack development."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "I'm constantly working on new projects, so check back soon (or contact me), to find out what my latest work is all about!"
+            )
+          ])
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -38382,20 +38371,7 @@ var render = function() {
         _c("div", { staticClass: "container" }, [
           _c("div", { attrs: { id: "navbar" } }, [_c("navbar")], 1),
           _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "row", staticStyle: { "padding-top": "15%" } },
-            [
-              _vm._m(0),
-              _vm._v(" "),
-              _c("div", { staticClass: "col left-slide" }, [
-                _c("img", {
-                  staticClass: "self-photo-align",
-                  attrs: { src: [_vm.image[0]], alt: "photo" }
-                })
-              ])
-            ]
-          )
+          _vm._m(0)
         ])
       ]
     )
@@ -38406,57 +38382,71 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col up-slide" }, [
-      _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          {
-            staticClass: "col",
-            staticStyle: { padding: "15% 20px 20px 20px" }
-          },
-          [
-            _c("h1", [
-              _vm._v("Do you need someone to bring your vision to life?")
-            ]),
-            _vm._v(" "),
-            _c("h1", [_vm._v("Contact me:")]),
-            _c("br"),
-            _vm._v(" "),
-            _c("h3", { staticClass: "up-slide-delay-1" }, [
-              _vm._v("jmferna91@gmail.com")
-            ]),
-            _vm._v(" "),
+    return _c(
+      "div",
+      { staticClass: "row", staticStyle: { "padding-top": "15%" } },
+      [
+        _c("div", { staticClass: "col up-slide" }, [
+          _c("div", { staticClass: "row" }, [
             _c(
-              "a",
+              "div",
               {
-                staticStyle: { color: "black", "font-size": "30px" },
-                attrs: {
-                  href: "www.linkedin.com/in/jorge-mario-fernandez-67578b106"
-                }
+                staticClass: "col",
+                staticStyle: { padding: "15% 20px 20px 20px" }
               },
               [
-                _c("h3", { staticClass: "up-slide-delay-2" }, [
-                  _vm._v("LinkedIn")
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                staticStyle: { color: "black", "font-size": "30px" },
-                attrs: { href: "https://github.com/JorgeMarioFernandez91" }
-              },
-              [
-                _c("h3", { staticClass: "up-slide-delay-3" }, [
-                  _vm._v("GitHub")
-                ])
+                _c("h1", [
+                  _vm._v("Do you need someone to bring your vision to life?")
+                ]),
+                _vm._v(" "),
+                _c("h1", [_vm._v("Contact me:")]),
+                _c("br"),
+                _vm._v(" "),
+                _c("h3", { staticClass: "up-slide-delay-1" }, [
+                  _vm._v("jmferna91@gmail.com")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticStyle: { color: "black", "font-size": "30px" },
+                    attrs: {
+                      href:
+                        "www.linkedin.com/in/jorge-mario-fernandez-67578b106"
+                    }
+                  },
+                  [
+                    _c("h3", { staticClass: "up-slide-delay-2" }, [
+                      _vm._v("LinkedIn")
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticStyle: { color: "black", "font-size": "30px" },
+                    attrs: { href: "https://github.com/JorgeMarioFernandez91" }
+                  },
+                  [
+                    _c("h3", { staticClass: "up-slide-delay-3" }, [
+                      _vm._v("GitHub")
+                    ])
+                  ]
+                )
               ]
             )
-          ]
-        )
-      ])
-    ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col left-slide" }, [
+          _c("img", {
+            staticClass: "self-photo-align",
+            attrs: { src: "/images/photo-self.PNG", alt: "photo" }
+          })
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true

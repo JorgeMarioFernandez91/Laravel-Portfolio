@@ -1,0 +1,351 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.makeInvisible {
+    opacity: 0
+}
+
+/* when the website loads we have a black curatin raise */
+#curtain {  
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation-name: raiseCurtain;
+    animation-duration: 2.5s;
+    height: 100vh;  /* height of view port */
+    min-width: 100%;
+    background-color: black;
+    -webkit-animation-fill-mode: forwards; /* keeps animation at final state rather than boomeranging back! */
+}
+
+@keyframes raiseCurtain {
+    0% {
+      /* transform: translateY(0); */
+        height: 100vh;
+    }
+    100% {
+      /* transform: translateY(-100%); */
+        height: 0;
+    }
+}
+
+/* shows the elements after the curtain lifts */
+.makeVisible {
+    animation-delay: 1.5s;  /* waits until curtain is up */
+    opacity: 0;             /* initial opacity */
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards; /* keeps animation at final state rather than boomeranging back! */
+
+}
+
+@keyframes fadeInOpacity {
+	0% {
+        opacity: 0;
+	}
+	100% {
+        opacity: 1;
+	}
+}
+
+/* after curtain raises lets elements move up the screen */
+.up-slide {
+    animation-delay: 1.5s;  /* waits until curtain is up */
+    animation-name: slideUp;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards; /* keeps animation at final state rather than boomeranging back! */
+}
+
+.up-slide-delay-1 {
+    animation-delay: 4s;  /* waits until curtain is up */
+    animation-name: slideUp;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+.up-slide-delay-2 {
+    animation-delay: 6s; 
+    animation-name: slideUp;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+.up-slide-delay-3 {
+    animation-delay: 8s; 
+    animation-name: slideUp;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+@keyframes slideUp {
+	0% {
+        transform: translateY(100%);
+        opacity: 0;
+	}
+	100% {
+        transform: translateY(0%);
+        opacity: 1;
+	}
+}
+
+/* after curtain raises work links slide in the from the right */
+.left-slide {
+    animation-delay: 2s;  /* waits until curtain is up */
+    animation-name: slideIn;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards; /* keeps animation at final state rather than boomeranging back! */
+}
+
+.left-slide-delay-1 {
+    animation-delay: 2s;  
+    animation-name: slideIn;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+.left-slide-delay-2 {
+    animation-delay: 4s;  
+    animation-name: slideIn;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+.left-slide-delay-3 {
+    animation-delay: 6s;  
+    animation-name: slideIn;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+.left-slide-delay-4 {
+    animation-delay: 8s;  
+    animation-name: slideIn;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+.left-slide-delay-5 {
+    animation-delay: 10s;  
+    animation-name: slideIn;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+.left-slide-delay-6 {
+    animation-delay: 12s;  
+    animation-name: slideIn;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+.left-slide-delay-7 {
+    animation-delay: 14s;  
+    animation-name: slideIn;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;
+}
+
+.left-slide-delay-8 {
+    animation-delay: 16s;  
+    animation-name: slideIn;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards; 
+    opacity: 0;  
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(95%); 
+        opacity: 0;   
+    }
+    100% {
+        transform: translateX(0%);  
+        opacity: 1;
+    }
+}
+
+.arrow-style {
+    width: 3em;
+    height: 3em;
+    width: 100%;
+    height: auto;
+}
+
+.arrow-grow {
+    animation-name: growArrow;
+	animation-iteration-count: 1;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes growArrow {
+	0% {
+        width: 3em;
+        height: 3em;
+	}
+	100% {
+        width: 4em;
+        height: 4em;
+	}
+}
+
+.work-title-size {
+    font-size: 70px;
+}
+
+@media only screen and (max-width: 500px){
+    .work-title-size{
+        font-size: 40px;
+    }
+}
+
+/* @keyframes slideIn {
+    0% {
+        transform: translateX(100%);    }
+    100% {
+        transform: translateX(0%);  
+    }
+} */
+
+.work-desc-slide{
+    /* padding: 15px 0 0 50px; */
+    animation-name: slideIn;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards; /* keeps animation at final state rather than boomeranging back! */
+}
+
+/* removes the formatting for <a></a> elements */
+a.work-links {
+    text-decoration: none;
+    color: black;
+    /* padding: 40px 70px 0px 0px; */
+    /* margin-right: 50px; */
+    /* display: inline-block; */
+    font-size: 30px;
+}
+
+/* for testing purposes */
+.testHover {
+    color: red;
+}
+
+/* makes work links visible while adding animation */
+.makeWorkVisible {
+    opacity: 1;
+    animation-duration: 3s;
+    animation-name: fadeInOpacity;
+}
+
+/* makes work links invisible */
+.makeWorkInvisible {
+    opacity: 0
+}
+
+.increaseHoverArea {
+    padding-right: 250px;
+    /* padding-left: 20px; */
+}
+
+.increaseHoverAreaFor4 {
+    padding-right: 370px;
+    /* padding-left: 20px; */
+}
+
+.testBorder {
+    border-style: solid;
+    border-color: coral;
+}
+  
+.img-align {
+    max-width: 1200px; 
+    width: 100%; 
+    height: auto;
+    margin: auto;    
+    display: block;
+}
+
+.self-photo-align {
+    max-height: 600px; 
+    width: auto;
+    margin: auto;    
+    display: block;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.work-spacing {
+    display: inline-block; 
+    padding-left: 25px; 
+    padding-right: 25px; 
+    margin-right: 50px;
+}
+
+.desc-spacing {
+    padding: 0 0 20px 0; 
+    margin-left: 0;
+}
+
+/* fade in on scroll section */
+
+section {
+    height: 100vh;
+}
+
+.tag {
+    opacity: 0;
+    transition: all 5s; 
+}
+
+.tag.visible {
+    opacity: 1;
+}
+
+.carousel-wrapper { -webkit-transform: translate3d(0, 0, 0);}
+
+
+/* img fade gradient */
+    
+div.fade-gradient {
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    display: block;
+    
+    
+
+    background: linear-gradient(
+        to top, 
+        rgba(255, 255, 255, 0) 0, 
+        rgba(255, 255, 255, 1) 40%, 
+        /* rgba(255, 255, 255, 1) 80%,  */
+        rgba(255, 255, 255, 1) 100%), 
+        url(https://images.unsplash.com/photo-1455612693675-112974d4880b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+        /* url(https://images.unsplash.com/photo-1571106875244-21abe17e2c71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1921&q=80)  */
+ 
+        no-repeat;
+
+    background-size: cover;
+
+    min-width: 100%;
+    min-height: 100%;
+    background-attachment: fixed;
+        
+}
